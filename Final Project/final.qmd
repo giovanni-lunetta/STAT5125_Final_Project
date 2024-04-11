@@ -452,3 +452,115 @@ ggplot(cover_percentages, aes(x = Team, y = Covered, fill = Role)) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
+
+```{r}
+library(ggwordcloud)
+
+# Obtain the number of times each team has played in the playoffs
+top_playoffs <- all_games_df |>
+  filter(Playoff_Game == "1") |>
+  group_by(Favorite) |>
+  summarize(term_frequency = n()) |>
+  arrange(desc(term_frequency))
+
+# Create a word cloud of the top playoff teams
+top_playoffs |>
+  ggplot() +
+  geom_text_wordcloud_area(aes(label = Favorite,
+                           size = term_frequency)) +
+  scale_size_area(max_size = 50) +
+  theme_bw()
+```
+
+```{r}
+library(ggplot2)
+
+# Lets make a column called Favorite_Cover_Percentage by grouping the spread
+Favorite_Cover_Percentage <- all_games_df |>
+  group_by(Spread_Value) |>
+  mutate(Favorite_Cover = if_else(Favorite_Cover == "Covered", 1, 0)) |>
+  mutate(Favorite_Cover_Percentage = sum(Favorite_Cover) / n())
+
+# Create a line plot with the y-axis being percentage the favorite team covers and the x-axis the spread of the game
+Favorite_Cover_Percentage |>
+  ggplot(aes(x = Spread_Value, y = Favorite_Cover_Percentage)) +
+  geom_line() +
+  labs(title = "Favorite Cover Percentage by Spread",
+       x = "Spread",
+       y = "Favorite Cover Percentage") +
+  geom_hline(yintercept = 0.5, linetype = "dashed") +
+  scale_x_continuous(breaks = seq(-30, 0, 2)) +
+  theme_bw()
+```
+
+```{r}
+# Lets make a column called Favorite_Win_Percentage by grouping the spread
+Favorite_Win_Percentage <- all_games_df |>
+  group_by(Spread_Value) |>
+  filter(Result != "T") |>
+  mutate(Favorite_Win = if_else(Result == "W", 1, 0)) |>
+  mutate(Favorite_Win_Percentage = sum(Favorite_Win) / n()) 
+
+# Create a line plot with the y-axis being percentage the favorite team wins and the x-axis the spread of the game
+Favorite_Win_Percentage |>
+  ggplot(aes(x = Spread_Value, y = Favorite_Win_Percentage)) +
+  geom_line() +
+  labs(title = "Favorite Win Percentage by Spread",
+       x = "Spread",
+       y = "Favorite Win Percentage") +
+  scale_x_continuous(breaks = seq(-30, 0, 2)) +
+  geom_vline(xintercept = -7.5, linetype = "dashed") +
+  theme_bw()
+```
+
+```{r}
+library(ggplot2)
+
+# Lets make a column called Favorite_Cover_Percentage by grouping the spread
+Favorite_Cover_Percentage_Week <- all_games_df |>
+    filter(str_detect(`Week/Round`, "Week")) |>
+    group_by(Spread_Value) |>
+    mutate(Favorite_Cover = if_else(Favorite_Cover == "Covered", 1, 0)) |>
+    mutate(Favorite_Cover_Percentage = sum(Favorite_Cover) / n()) 
+
+# Lets calculate the variance of the Favorite_Cover_Percentage per Week. Therefore it should be 18 variances for 18 weeks. Make a new dataset called Variance_By_Week
+Variance_By_Week <- Favorite_Cover_Percentage_Week |>
+    group_by(`Week/Round`) |>
+    summarize(variance = var(Favorite_Cover_Percentage)) |>
+    mutate(`Week/Round` = str_remove(`Week/Round`, "Week_")) |>
+    mutate(`Week/Round` = as.numeric(`Week/Round`)) |>
+    arrange(`Week/Round`)
+
+Variance_By_Week
+
+# Create a line plot with the y-axis being variance of the percentage the favorite team covers and the x-axis the week of the game
+Variance_By_Week |>
+    ggplot(aes(x = `Week/Round`, y = variance, group = 1)) +
+    geom_line() +
+    labs(title = "Variance of Favorite Cover Percentage by Week",
+         x = "Week Number",
+         y = "Variance of Favorite Cover Percentage") +
+    scale_y_continuous(limits = c(0, 0.0035)) +
+    theme_bw()
+```
+
+```{r}
+library(ggplot2)
+
+Over_Hit_Spread_Cover <- all_games_df |>
+    filter(Over_Under_Result != "Push") |>
+    group_by(Favorite, Over_Under_Result) |>
+    mutate(Favorite_Cover = if_else(Favorite_Cover == "Covered", 1, 0)) |>
+    mutate(Favorite_Cover_Percentage = sum(Favorite_Cover) / n()) |>
+    select(Over_Under_Result, Favorite_Cover_Percentage, Favorite)
+
+# Make a bar plot of the percentage the favorite team covers the spread by the Favorite team, there should be two bars per team, one for the Over and one for the Under
+Over_Hit_Spread_Cover |>
+    ggplot(aes(x = Favorite, y = Favorite_Cover_Percentage, fill = Over_Under_Result)) +
+    geom_bar(stat = "identity", position = "dodge") +
+    labs(title = "Favorite Cover Percentage by Over/Under Result",
+         x = "Favorite",
+         y = "Favorite Cover Percentage") +
+    theme_bw() +
+theme(axis.text.x = element_text(angle = 90, hjust = 1))
+```
