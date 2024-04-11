@@ -1,0 +1,36 @@
+---
+title: "Final Project Proposal"
+author: Giovanni Lunetta & Sam Lutzel
+format: 
+  html:
+    embed-resources: true
+---
+
+# Group Members
+
+- Giovanni Lunetta (giovanni.lunetta@uconn.edu)
+- Sam Lutzel (samuel.lutzel@uconn.edu)
+
+# Objective
+
+Leverage historical NFL game odds and outcomes data from 2002 to 2023 to develop a model that predicts the spread of future games accurately. Therefore our research question is as follows:
+
+Can historical NFL game odds and outcomes from 2002 to 2023 be used to accurately predict the spread of future NFL games?
+
+# Dataset
+
+We are going to incorporate two different datasets into our project. 
+
+The first dataset we will get from webscraping the website [https://www.sportsoddshistory.com](https://www.sportsoddshistory.com/nfl-game-season/?y=2002) from the years of 2002-2023 to get the historical game odds and outcomes. Here is a screenshot of what the tables look like:
+
+![Example of Table](table.png)
+
+The second dataset we will get from the website [https://www.kaggle.com](https://www.kaggle.com/datasets/tobycrabtree/nfl-scores-and-betting-data?select=nfl_teams.csv) where we will get team and stadium data.
+
+We will then combine both of these datasets to perform our analysis.
+
+# Response Variable and Features
+
+The response variable will be the spread of the game. The spread is the predicted difference in points between the two teams. The spread is a measure of how much better one team is expected to be than the other. 
+
+The features will be the historical game odds and outcomes. We will use the historical game odds and outcomes to predict the spread of future games. Additionally, we will use things like stadium data, and what week the game is in, as well as the if the games are in or out of conference.

@@ -1,0 +1,120 @@
+---
+title: "Final Template"
+author: Giovanni Lunetta
+format: 
+  html:
+    embed-resources: true
+---
+
+```{r}
+library(rvest)
+
+# Initialize an empty list to store Week 1 to Week 17
+regular_season_2002_2020 <- list()
+
+# Loop through years 2002 to 2020
+for(year in 2002:2020) {
+  # Construct URL for each year
+  url <- paste0("https://www.sportsoddshistory.com/nfl-game-season/?y=", year)
+  
+  # Read all tables from the URL
+  betting <- url |>
+    read_html() |>
+    html_table()
+  
+  # Loop through tables from 7 to 23 (Week 1 to Week 17)
+  for(week in 7:23) {
+    # Name the list element with the corresponding year and week for easier identification
+    week_name <- paste0("Year_", year, "_Week_", week - 6)
+    
+    # Store the table in the list
+    regular_season_2002_2020[[week_name]] <- betting[[week]]
+  }
+}
+```
+
+```{r}
+# Initialize an empty list to store Week 1 to Week 18
+regular_season_2021_2023 <- list()
+
+# Loop through years 2021 to 2023
+for(year in 2021:2023) {
+  # Construct URL for each year
+  url <- paste0("https://www.sportsoddshistory.com/nfl-game-season/?y=", year)
+  
+  # Read all tables from the URL
+  betting <- url |>
+    read_html() |>
+    html_table()
+  
+  # Loop through tables from 7 to 24 (Week 1 to Week 18)
+  for(week in 7:24) {
+    # Name the list element with the corresponding year and week for easier identification
+    week_name <- paste0("Year_", year, "_Week_", week - 6)
+    
+    # Store the table in the list
+    regular_season_2021_2023[[week_name]] <- betting[[week]]
+  }
+}
+```
+
+```{r}
+# Initialize an empty list to store Playoff data
+playoffs_2002_2020 <- list()
+
+# Loop through years 2002 to 2020
+for(year in 2002:2020) {
+  # Construct URL for each year
+  url <- paste0("https://www.sportsoddshistory.com/nfl-game-season/?y=", year)
+  
+  # Read all tables from the URL
+  betting <- url |>
+    read_html() |>
+    html_table()
+  
+  # Directly access the table for Playoffs (table 24)
+  playoffs_name <- paste0("Year_", year, "_Playoffs")
+  
+  # Store the Playoff table in the list
+  playoffs_2002_2020[[playoffs_name]] <- betting[[24]]
+}
+```
+
+```{r}
+# Initialize an empty list to store Playoff data
+playoffs_2021_2023 <- list()
+
+# Loop through years 2021 to 2023
+for(year in 2021:2023) {
+  # Construct URL for each year
+  url <- paste0("https://www.sportsoddshistory.com/nfl-game-season/?y=", year)
+  
+  # Read all tables from the URL
+  betting <- url |>
+    read_html() |>
+    html_table()
+  
+  # Directly access the table for Playoffs (table 25)
+  playoffs_name <- paste0("Year_", year, "_Playoffs")
+  
+  # Store the Playoff table in the list
+  playoffs_2021_2023[[playoffs_name]] <- betting[[25]]
+}
+```
+
+```{r}
+# unnest the list
+
+library(tidyr)
+
+regular_season_2002_2020 <- regular_season_2002_2020 |>
+  unnest(everything())
+```
+
+```{r}
+# write.csv(playoffs_2021_2023, "playoffs_2021_2023.csv")
+# write.csv(playoffs_2002_2020, "playoffs_2002_2020.csv")
+# write.csv(regular_season_2021_2023, "regular_season_2021_2023.csv")
+# write.csv(regular_season_2002_2020, "regular_season_2002_2020.csv")
+```
+

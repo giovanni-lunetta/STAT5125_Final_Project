@@ -1,0 +1,5 @@
+"0","regular_season_2002_2020 <- regular_season_2002_2020 |>"
+"0","    select(-c(Notes, ...14))"
+"0",""
+"0","regular_season_2021_2023 <- regular_season_2021_2023 |>"
+"0","    select(-c(Notes, ...14))"

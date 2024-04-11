@@ -1,0 +1,46 @@
+"0","# read in data"
+"0","playoffs_2002_2020 <- read_csv(""/Users/giovanni-lunetta/uconn_masters/s2/stat_5125/Final Project/playoffs_2002_2020.csv"")"
+"2","New names:"
+"2","[1mRows: [22m[34m211[39m [1mColumns: [22m[34m13[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m───────────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "",""
+[31mchr[39m  (11): source, Round, Day, Date, ...7, Favorite(Seed), Score, Spread, ...11, Underdog(Seed)...
+[32mdbl[39m   (1): ...1
+[34mtime[39m  (1): Time (ET)"
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"0","playoffs_2021_2023 <- read_csv(""/Users/giovanni-lunetta/uconn_masters/s2/stat_5125/Final Project/playoffs_2021_2023.csv"")"
+"2","New names:"
+"2","[1mRows: [22m[34m39[39m [1mColumns: [22m[34m13[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m───────────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "",""
+[31mchr[39m  (11): source, Round, Day, Date, ...7, Favorite(Seed), Score, Spread, ...11, Underdog(Seed)...
+[32mdbl[39m   (1): ...1
+[34mtime[39m  (1): Time (ET)"
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"0","regular_season_2002_2020 <- read_csv(""/Users/giovanni-lunetta/uconn_masters/s2/stat_5125/Final Project/regular_season_2002_2020.csv"")"
+"2","New names:"
+"2","[1mRows: [22m[34m4864[39m [1mColumns: [22m[34m14[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m───────────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "",""
+[31mchr[39m  (12): source, Day, Date, ...6, Favorite, Score, Spread, ...10, Underdog, Over/Under, Notes...
+[32mdbl[39m   (1): ...1
+[34mtime[39m  (1): Time (ET)"
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."
+"0","regular_season_2021_2023 <- read_csv(""/Users/giovanni-lunetta/uconn_masters/s2/stat_5125/Final Project/regular_season_2021_2023.csv"")"
+"2","New names:"
+"2","[1mRows: [22m[34m815[39m [1mColumns: [22m[34m14[39m"
+"2","[36m──[39m [1mColumn specification[22m [36m───────────────────────────────────────────────────────────────────────────[39m
+[1mDelimiter:[22m "",""
+[31mchr[39m  (11): source, Day, Date, ...6, Favorite, Score, Spread, ...10, Underdog, Over/Under, Notes
+[32mdbl[39m   (1): ...1
+[33mlgl[39m   (1): ...14
+[34mtime[39m  (1): Time (ET)"
+"2","
+[36mℹ[39m Use `spec()` to retrieve the full column specification for this data.
+[36mℹ[39m Specify the column types or set `show_col_types = FALSE` to quiet this message."

@@ -1,0 +1,816 @@
+"","source","Day","Date","Time (ET)","...4","Favorite","Score","Spread","...8","Underdog","Over/Under","Notes","...12"
+"1","Year_2021_Week_1","Thu","Sep 9, 2021","8:20","@","Tampa Bay Buccaneers","W 31-29","L -8.5","","Dallas Cowboys","O 52","Notes",NA
+"2","Year_2021_Week_1","Sun","Sep 12, 2021","1:00","@","Atlanta Falcons","L 6-32","L -3.5","","Philadelphia Eagles","U 49","",NA
+"3","Year_2021_Week_1","Sun","Sep 12, 2021","1:00","@","Buffalo Bills","L 16-23","L -6.5","","Pittsburgh Steelers","U 48.5","",NA
+"4","Year_2021_Week_1","Sun","Sep 12, 2021","1:00","@","Carolina Panthers","W 19-14","W -4","","New York Jets","U 45","",NA
+"5","Year_2021_Week_1","Sun","Sep 12, 2021","1:00","","Minnesota Vikings","L 24-27 (OT)","L -3","@","Cincinnati Bengals","O 47.5","",NA
+"6","Year_2021_Week_1","Sun","Sep 12, 2021","1:00","","San Francisco 49ers","W 41-33","L -9","@","Detroit Lions","O 45.5","",NA
+"7","Year_2021_Week_1","Sun","Sep 12, 2021","1:00","","Jacksonville Jaguars","L 21-37","L -3","@","Houston Texans","O 45","",NA
+"8","Year_2021_Week_1","Sun","Sep 12, 2021","1:00","","Seattle Seahawks","W 28-16","W -3","@","Indianapolis Colts","U 49","",NA
+"9","Year_2021_Week_1","Sun","Sep 12, 2021","1:00","@","Tennessee Titans","L 13-38","L -3","","Arizona Cardinals","U 53.5","",NA
+"10","Year_2021_Week_1","Sun","Sep 12, 2021","1:00","@","Washington Football Team","L 16-20","L -1.5","","Los Angeles Chargers","U 45","",NA
+"11","Year_2021_Week_1","Sun","Sep 12, 2021","4:25","@","Kansas City Chiefs","W 33-29","L -5.5","","Cleveland Browns","O 54.5","",NA
+"12","Year_2021_Week_1","Sun","Sep 12, 2021","4:25","@","New England Patriots","L 16-17","L -3","","Miami Dolphins","U 43.5","",NA
+"13","Year_2021_Week_1","Sun","Sep 12, 2021","4:25","N","Green Bay Packers","L 3-38","L -3.5","","New Orleans Saints","U 49.5","at Jacksonville",NA
+"14","Year_2021_Week_1","Sun","Sep 12, 2021","4:25","","Denver Broncos","W 27-13","W -3","@","New York Giants","U 41.5","",NA
+"15","Year_2021_Week_1","Sun","Sep 12, 2021","8:20","@","Los Angeles Rams","W 34-14","W -8","","Chicago Bears","O 46.5","",NA
+"16","Year_2021_Week_1","Mon","Sep 13, 2021","8:15","","Baltimore Ravens","L 27-33 (OT)","L -4","@","Las Vegas Raiders","O 50.5","",NA
+"17","Year_2021_Week_2","Thu","Sep 16, 2021","8:20","@","Washington Football Team","W 30-29","L -3.5","","New York Giants","O 40.5","Notes",NA
+"18","Year_2021_Week_2","Sun","Sep 19, 2021","1:00","","New Orleans Saints","L 7-26","L -3","@","Carolina Panthers","U 44.5","",NA
+"19","Year_2021_Week_2","Sun","Sep 19, 2021","1:00","@","Chicago Bears","W 20-17","W -1.5","","Cincinnati Bengals","U 44.5","",NA
+"20","Year_2021_Week_2","Sun","Sep 19, 2021","1:00","@","Cleveland Browns","W 31-21","L -13.5","","Houston Texans","O 48","",NA
+"21","Year_2021_Week_2","Sun","Sep 19, 2021","1:00","","Los Angeles Rams","W 27-24","L -3.5","@","Indianapolis Colts","O 48","",NA
+"22","Year_2021_Week_2","Sun","Sep 19, 2021","1:00","","Denver Broncos","W 23-13","W -6","@","Jacksonville Jaguars","U 45","",NA
+"23","Year_2021_Week_2","Sun","Sep 19, 2021","1:00","","Buffalo Bills","W 35-0","W -3.5","@","Miami Dolphins","U 47.5","",NA
+"24","Year_2021_Week_2","Sun","Sep 19, 2021","1:00","","New England Patriots","W 25-6","W -6","@","New York Jets","U 43","",NA
+"25","Year_2021_Week_2","Sun","Sep 19, 2021","1:00","","San Francisco 49ers","W 17-11","W -3","@","Philadelphia Eagles","U 49","",NA
+"26","Year_2021_Week_2","Sun","Sep 19, 2021","1:00","@","Pittsburgh Steelers","L 17-26","L -6","","Las Vegas Raiders","U 47","",NA
+"27","Year_2021_Week_2","Sun","Sep 19, 2021","4:05","@","Arizona Cardinals","W 34-33","L -3.5","","Minnesota Vikings","O 50.5","",NA
+"28","Year_2021_Week_2","Sun","Sep 19, 2021","4:05","@","Tampa Bay Buccaneers","W 48-25","W -12.5","","Atlanta Falcons","O 51.5","",NA
+"29","Year_2021_Week_2","Sun","Sep 19, 2021","4:25","@","Los Angeles Chargers","L 17-20","L -3","","Dallas Cowboys","U 55","",NA
+"30","Year_2021_Week_2","Sun","Sep 19, 2021","4:25","@","Seattle Seahawks","L 30-33 (OT)","L -6.5","","Tennessee Titans","O 54","",NA
+"31","Year_2021_Week_2","Sun","Sep 19, 2021","8:20","","Kansas City Chiefs","L 35-36","L -4","@","Baltimore Ravens","O 54.5","",NA
+"32","Year_2021_Week_2","Mon","Sep 20, 2021","8:15","@","Green Bay Packers","W 35-17","W -11.5","","Detroit Lions","O 48","",NA
+"33","Year_2021_Week_3","Thu","Sep 23, 2021","8:20","","Carolina Panthers","W 24-9","W -9","@","Houston Texans","U 43.5","Notes",NA
+"34","Year_2021_Week_3","Sun","Sep 26, 2021","1:00","@","Buffalo Bills","W 43-21","W -7","","Washington Football Team","O 45.5","",NA
+"35","Year_2021_Week_3","Sun","Sep 26, 2021","1:00","@","Cleveland Browns","W 26-6","W -7.5","","Chicago Bears","U 44.5","",NA
+"36","Year_2021_Week_3","Sun","Sep 26, 2021","1:00","","Baltimore Ravens","W 19-17","L -7.5","@","Detroit Lions","U 50.5","",NA
+"37","Year_2021_Week_3","Sun","Sep 26, 2021","1:00","","Arizona Cardinals","W 31-19","W -7.5","@","Jacksonville Jaguars","U 51.5","",NA
+"38","Year_2021_Week_3","Sun","Sep 26, 2021","1:00","@","Kansas City Chiefs","L 24-30","L -7","","Los Angeles Chargers","U 54.5","",NA
+"39","Year_2021_Week_3","Sun","Sep 26, 2021","1:00","@","New England Patriots","L 13-28","L -3","","New Orleans Saints","U 42.5","",NA
+"40","Year_2021_Week_3","Sun","Sep 26, 2021","1:00","@","New York Giants","L 14-17","L -3","","Atlanta Falcons","U 47.5","",NA
+"41","Year_2021_Week_3","Sun","Sep 26, 2021","1:00","@","Pittsburgh Steelers","L 10-24","L -3","","Cincinnati Bengals","U 43","",NA
+"42","Year_2021_Week_3","Sun","Sep 26, 2021","1:00","@","Tennessee Titans","W 25-16","W -5.5","","Indianapolis Colts","U 47.5","",NA
+"43","Year_2021_Week_3","Sun","Sep 26, 2021","4:05","@","Denver Broncos","W 26-0","W -10","","New York Jets","U 41.5","",NA
+"44","Year_2021_Week_3","Sun","Sep 26, 2021","4:05","@","Las Vegas Raiders","W 31-28 (OT)","L -4","","Miami Dolphins","O 44","",NA
+"45","Year_2021_Week_3","Sun","Sep 26, 2021","4:25","","Tampa Bay Buccaneers","L 24-34","L -1.5","@","Los Angeles Rams","O 55.5","",NA
+"46","Year_2021_Week_3","Sun","Sep 26, 2021","4:25","","Seattle Seahawks","L 17-30","L -2","@","Minnesota Vikings","U 55","",NA
+"47","Year_2021_Week_3","Sun","Sep 26, 2021","8:20","@","San Francisco 49ers","L 28-30","L -3","","Green Bay Packers","O 50.5","",NA
+"48","Year_2021_Week_3","Mon","Sep 27, 2021","8:15","@","Dallas Cowboys","W 41-21","W -3.5","","Philadelphia Eagles","O 51.5","",NA
+"49","Year_2021_Week_4","Thu","Sep 30, 2021","8:20","@","Cincinnati Bengals","W 24-21","L -7.5","","Jacksonville Jaguars","U 46.5","Notes",NA
+"50","Year_2021_Week_4","Sun","Oct 3, 2021","1:00","","Washington Football Team","W 34-30","W -2","@","Atlanta Falcons","O 48","",NA
+"51","Year_2021_Week_4","Sun","Oct 3, 2021","1:00","@","Buffalo Bills","W 40-0","W -17.5","","Houston Texans","U 47","",NA
+"52","Year_2021_Week_4","Sun","Oct 3, 2021","1:00","@","Chicago Bears","W 24-14","W -3","","Detroit Lions","U 41.5","",NA
+"53","Year_2021_Week_4","Sun","Oct 3, 2021","1:00","@","Dallas Cowboys","W 36-28","W -4","","Carolina Panthers","O 51.5","",NA
+"54","Year_2021_Week_4","Sun","Oct 3, 2021","1:00","@","Miami Dolphins","L 17-27","L -2.5","","Indianapolis Colts","O 42.5","",NA
+"55","Year_2021_Week_4","Sun","Oct 3, 2021","1:00","","Cleveland Browns","W 14-7","W -1","@","Minnesota Vikings","U 51.5","",NA
+"56","Year_2021_Week_4","Sun","Oct 3, 2021","1:00","@","New Orleans Saints","L 21-27 (OT)","L -7","","New York Giants","O 41.5","",NA
+"57","Year_2021_Week_4","Sun","Oct 3, 2021","1:00","","Tennessee Titans","L 24-27 (OT)","L -6","@","New York Jets","O 44","",NA
+"58","Year_2021_Week_4","Sun","Oct 3, 2021","1:00","","Kansas City Chiefs","W 42-30","W -7","@","Philadelphia Eagles","O 54.5","",NA
+"59","Year_2021_Week_4","Sun","Oct 3, 2021","4:05","@","Los Angeles Rams","L 20-37","L -4","","Arizona Cardinals","O 54.5","",NA
+"60","Year_2021_Week_4","Sun","Oct 3, 2021","4:05","@","San Francisco 49ers","L 21-28","L -2.5","","Seattle Seahawks","U 52","",NA
+"61","Year_2021_Week_4","Sun","Oct 3, 2021","4:25","","Baltimore Ravens","W 23-7","W -1","@","Denver Broncos","U 44","",NA
+"62","Year_2021_Week_4","Sun","Oct 3, 2021","4:25","@","Green Bay Packers","W 27-17","W -6","","Pittsburgh Steelers","U 44.5","",NA
+"63","Year_2021_Week_4","Sun","Oct 3, 2021","8:20","","Tampa Bay Buccaneers","W 19-17","L -7","@","New England Patriots","U 49.5","",NA
+"64","Year_2021_Week_4","Mon","Oct 4, 2021","8:15","@","Los Angeles Chargers","W 28-14","W -3","","Las Vegas Raiders","U 52","",NA
+"65","Year_2021_Week_5","Thu","Oct 7, 2021","8:20","","Los Angeles Rams","W 26-17","W -2.5","@","Seattle Seahawks","U 54.5","Notes",NA
+"66","Year_2021_Week_5","Sun","Oct 10, 2021","9:30","N","Atlanta Falcons","W 27-20","W -2.5","","New York Jets","O 45","at London",NA
+"67","Year_2021_Week_5","Sun","Oct 10, 2021","1:00","@","Carolina Panthers","L 18-21","L -3","","Philadelphia Eagles","U 46","",NA
+"68","Year_2021_Week_5","Sun","Oct 10, 2021","1:00","","Green Bay Packers","W 25-22 (OT)","P -3","@","Cincinnati Bengals","U 51","",NA
+"69","Year_2021_Week_5","Sun","Oct 10, 2021","1:00","","New England Patriots","W 25-22","L -8","@","Houston Texans","O 39","",NA
+"70","Year_2021_Week_5","Sun","Oct 10, 2021","1:00","","Tennessee Titans","W 37-19","W -4.5","@","Jacksonville Jaguars","O 48.5","",NA
+"71","Year_2021_Week_5","Sun","Oct 10, 2021","1:00","@","Minnesota Vikings","W 19-17","L -10","","Detroit Lions","U 49.5","",NA
+"72","Year_2021_Week_5","Sun","Oct 10, 2021","1:00","","Denver Broncos","L 19-27","L -1.5","@","Pittsburgh Steelers","O 39.5","",NA
+"73","Year_2021_Week_5","Sun","Oct 10, 2021","1:00","@","Tampa Bay Buccaneers","W 45-17","W -10","","Miami Dolphins","O 48","",NA
+"74","Year_2021_Week_5","Sun","Oct 10, 2021","1:00","","New Orleans Saints","W 33-22","W -2.5","@","Washington Football Team","O 43.5","",NA
+"75","Year_2021_Week_5","Sun","Oct 10, 2021","4:05","@","Las Vegas Raiders","L 9-20","L -5.5","","Chicago Bears","U 45.5","",NA
+"76","Year_2021_Week_5","Sun","Oct 10, 2021","4:05","@","Los Angeles Chargers","W 47-42","W -2.5","","Cleveland Browns","O 46.5","",NA
+"77","Year_2021_Week_5","Sun","Oct 10, 2021","4:25","@","Arizona Cardinals","W 17-10","W -5","","San Francisco 49ers","U 48.5","",NA
+"78","Year_2021_Week_5","Sun","Oct 10, 2021","4:25","@","Dallas Cowboys","W 44-20","W -7","","New York Giants","O 52.5","",NA
+"79","Year_2021_Week_5","Sun","Oct 10, 2021","8:20","@","Kansas City Chiefs","L 20-38","L -2.5","","Buffalo Bills","O 56.5","",NA
+"80","Year_2021_Week_5","Mon","Oct 11, 2021","8:15","@","Baltimore Ravens","W 31-25 (OT)","L -7","","Indianapolis Colts","O 46","",NA
+"81","Year_2021_Week_6","Thu","Oct 14, 2021","8:20","","Tampa Bay Buccaneers","W 28-22","L -7","@","Philadelphia Eagles","U 52.5","Notes",NA
+"82","Year_2021_Week_6","Sun","Oct 17, 2021","9:30","N","Miami Dolphins","L 20-23","L -3","","Jacksonville Jaguars","U 47","at London",NA
+"83","Year_2021_Week_6","Sun","Oct 17, 2021","1:00","@","Baltimore Ravens","W 34-6","W -2.5","","Los Angeles Chargers","U 51.5","",NA
+"84","Year_2021_Week_6","Sun","Oct 17, 2021","1:00","","Minnesota Vikings","W 34-28 (OT)","W -2.5","@","Carolina Panthers","O 45.5","",NA
+"85","Year_2021_Week_6","Sun","Oct 17, 2021","1:00","","Green Bay Packers","W 24-14","W -6","@","Chicago Bears","U 44","",NA
+"86","Year_2021_Week_6","Sun","Oct 17, 2021","1:00","","Cincinnati Bengals","W 34-11","W -3.5","@","Detroit Lions","U 47","",NA
+"87","Year_2021_Week_6","Sun","Oct 17, 2021","1:00","@","Indianapolis Colts","W 31-3","W -10","","Houston Texans","U 43.5","",NA
+"88","Year_2021_Week_6","Sun","Oct 17, 2021","1:00","","Los Angeles Rams","W 38-11","W -9","@","New York Giants","O 48.5","",NA
+"89","Year_2021_Week_6","Sun","Oct 17, 2021","1:00","","Kansas City Chiefs","W 31-13","W -7","@","Washington Football Team","U 54","",NA
+"90","Year_2021_Week_6","Sun","Oct 17, 2021","4:05","@","Cleveland Browns","L 14-37","L -3.5","","Arizona Cardinals","O 48.5","",NA
+"91","Year_2021_Week_6","Sun","Oct 17, 2021","4:25","@","Denver Broncos","L 24-34","L -4","","Las Vegas Raiders","O 43.5","",NA
+"92","Year_2021_Week_6","Sun","Oct 17, 2021","4:25","","Dallas Cowboys","W 35-29 (OT)","W -3.5","@","New England Patriots","O 50.5","",NA
+"93","Year_2021_Week_6","Sun","Oct 17, 2021","8:20","@","Pittsburgh Steelers","W 23-20 (OT)","L -5","","Seattle Seahawks","P 43","",NA
+"94","Year_2021_Week_6","Mon","Oct 18, 2021","8:15","","Buffalo Bills","L 31-34","L -6","@","Tennessee Titans","O 53.5","",NA
+"95","Year_2021_Week_7","Thu","Oct 21, 2021","8:20","@","Cleveland Browns","W 17-14","W -1.5","","Denver Broncos","U 41.5","Notes",NA
+"96","Year_2021_Week_7","Sun","Oct 24, 2021","1:00","@","Baltimore Ravens","L 17-41","L -6.5","","Cincinnati Bengals","O 45.5","",NA
+"97","Year_2021_Week_7","Sun","Oct 24, 2021","1:00","@","Green Bay Packers","W 24-10","W -8","","Washington Football Team","U 48","",NA
+"98","Year_2021_Week_7","Sun","Oct 24, 2021","1:00","","Atlanta Falcons","W 30-28","P -2","@","Miami Dolphins","O 47.5","",NA
+"99","Year_2021_Week_7","Sun","Oct 24, 2021","1:00","@","New England Patriots","W 54-13","W -7","","New York Jets","O 42.5","",NA
+"100","Year_2021_Week_7","Sun","Oct 24, 2021","1:00","","Carolina Panthers","L 3-25","L -3","@","New York Giants","U 42.5","",NA
+"101","Year_2021_Week_7","Sun","Oct 24, 2021","1:00","","Kansas City Chiefs","L 3-27","L -4","@","Tennessee Titans","U 57.5","",NA
+"102","Year_2021_Week_7","Sun","Oct 24, 2021","4:05","@","Las Vegas Raiders","W 33-22","W -3","","Philadelphia Eagles","O 48.5","",NA
+"103","Year_2021_Week_7","Sun","Oct 24, 2021","4:05","@","Los Angeles Rams","W 28-19","L -16.5","","Detroit Lions","U 50.5","",NA
+"104","Year_2021_Week_7","Sun","Oct 24, 2021","4:25","@","Arizona Cardinals","W 31-5","W -18","","Houston Texans","U 47.5","",NA
+"105","Year_2021_Week_7","Sun","Oct 24, 2021","4:25","@","Tampa Bay Buccaneers","W 38-3","W -11.5","","Chicago Bears","U 47","",NA
+"106","Year_2021_Week_7","Sun","Oct 24, 2021","8:20","@","San Francisco 49ers","L 18-30","L -4","","Indianapolis Colts","O 42.5","",NA
+"107","Year_2021_Week_7","Mon","Oct 25, 2021","8:15","","New Orleans Saints","W 13-10","L -4.5","@","Seattle Seahawks","U 42.5","",NA
+"108","Year_2021_Week_8","Thu","Oct 28, 2021","8:20","@","Arizona Cardinals","L 21-24","L -6.5","","Green Bay Packers","U 50.5","Notes",NA
+"109","Year_2021_Week_8","Sun","Oct 31, 2021","1:00","@","Atlanta Falcons","L 13-19","L -3","","Carolina Panthers","U 47","",NA
+"110","Year_2021_Week_8","Sun","Oct 31, 2021","1:00","@","Buffalo Bills","W 26-11","W -14","","Miami Dolphins","U 49","",NA
+"111","Year_2021_Week_8","Sun","Oct 31, 2021","1:00","","San Francisco 49ers","W 33-22","W -4","@","Chicago Bears","O 39.5","",NA
+"112","Year_2021_Week_8","Sun","Oct 31, 2021","1:00","@","Cleveland Browns","L 10-15","L -4.5","","Pittsburgh Steelers","U 43","",NA
+"113","Year_2021_Week_8","Sun","Oct 31, 2021","1:00","","Philadelphia Eagles","W 44-6","W -3.5","@","Detroit Lions","O 48","",NA
+"114","Year_2021_Week_8","Sun","Oct 31, 2021","1:00","","Los Angeles Rams","W 38-22","P -16","@","Houston Texans","O 46.5","",NA
+"115","Year_2021_Week_8","Sun","Oct 31, 2021","1:00","@","Indianapolis Colts","L 31-34 (OT)","L -3","","Tennessee Titans","O 51","",NA
+"116","Year_2021_Week_8","Sun","Oct 31, 2021","1:00","","Cincinnati Bengals","L 31-34","L -11","@","New York Jets","O 43","",NA
+"117","Year_2021_Week_8","Sun","Oct 31, 2021","4:05","@","Los Angeles Chargers","L 24-27","L -4.5","","New England Patriots","O 49.5","",NA
+"118","Year_2021_Week_8","Sun","Oct 31, 2021","4:05","@","Seattle Seahawks","W 31-7","W -3.5","","Jacksonville Jaguars","U 44.5","",NA
+"119","Year_2021_Week_8","Sun","Oct 31, 2021","4:25","@","Denver Broncos","W 17-10","W -3.5","","Washington Football Team","U 45","",NA
+"120","Year_2021_Week_8","Sun","Oct 31, 2021","4:25","","Tampa Bay Buccaneers","L 27-36","L -4.5","@","New Orleans Saints","O 49","",NA
+"121","Year_2021_Week_8","Sun","Oct 31, 2021","8:20","@","Minnesota Vikings","L 16-20","L -3","","Dallas Cowboys","U 51.5","",NA
+"122","Year_2021_Week_8","Mon","Nov 1, 2021","8:15","@","Kansas City Chiefs","W 20-17","L -10","","New York Giants","U 52","",NA
+"123","Year_2021_Week_9","Thu","Nov 4, 2021","8:20","@","Indianapolis Colts","W 45-30","W -10.5","","New York Jets","O 46","Notes",NA
+"124","Year_2021_Week_9","Sun","Nov 7, 2021","1:00","@","Baltimore Ravens","W 34-31 (OT)","L -6","","Minnesota Vikings","O 50.5","",NA
+"125","Year_2021_Week_9","Sun","Nov 7, 2021","1:00","","New England Patriots","W 24-6","W -3.5","@","Carolina Panthers","U 41","",NA
+"126","Year_2021_Week_9","Sun","Nov 7, 2021","1:00","@","Cincinnati Bengals","L 16-41","L -2.5","","Cleveland Browns","O 47.5","",NA
+"127","Year_2021_Week_9","Sun","Nov 7, 2021","1:00","@","Dallas Cowboys","L 16-30","L -10","","Denver Broncos","U 48.5","",NA
+"128","Year_2021_Week_9","Sun","Nov 7, 2021","1:00","","Buffalo Bills","L 6-9","L -14.5","@","Jacksonville Jaguars","U 48.5","",NA
+"129","Year_2021_Week_9","Sun","Nov 7, 2021","1:00","@","Miami Dolphins","W 17-9","W -5.5","","Houston Texans","U 46.5","",NA
+"130","Year_2021_Week_9","Sun","Nov 7, 2021","1:00","@","New Orleans Saints","L 25-27","L -6","","Atlanta Falcons","O 41.5","",NA
+"131","Year_2021_Week_9","Sun","Nov 7, 2021","1:00","","Las Vegas Raiders","L 16-23","L -3","@","New York Giants","U 46.5","",NA
+"132","Year_2021_Week_9","Sun","Nov 7, 2021","4:05","","Los Angeles Chargers","W 27-24","W -1.5","@","Philadelphia Eagles","O 49","",NA
+"133","Year_2021_Week_9","Sun","Nov 7, 2021","4:25","@","Kansas City Chiefs","W 13-7","L -7.5","","Green Bay Packers","U 48","",NA
+"134","Year_2021_Week_9","Sun","Nov 7, 2021","4:25","@","San Francisco 49ers","L 17-31","L -3.5","","Arizona Cardinals","O 45","",NA
+"135","Year_2021_Week_9","Sun","Nov 7, 2021","8:20","@","Los Angeles Rams","L 16-28","L -7.5","","Tennessee Titans","U 52.5","",NA
+"136","Year_2021_Week_9","Mon","Nov 8, 2021","8:15","@","Pittsburgh Steelers","W 29-27","L -6.5","","Chicago Bears","O 38.5","",NA
+"137","Year_2021_Week_10","Thu","Nov 11, 2021","8:20","","Baltimore Ravens","L 10-22","L -7.5","@","Miami Dolphins","U 46.5","Notes",NA
+"138","Year_2021_Week_10","Sun","Nov 14, 2021","1:00","@","Dallas Cowboys","W 43-3","W -8","","Atlanta Falcons","U 55","",NA
+"139","Year_2021_Week_10","Sun","Nov 14, 2021","1:00","@","Indianapolis Colts","W 23-17","L -10","","Jacksonville Jaguars","U 47.5","",NA
+"140","Year_2021_Week_10","Sun","Nov 14, 2021","1:00","@","New England Patriots","W 45-7","W -2.5","","Cleveland Browns","O 45","",NA
+"141","Year_2021_Week_10","Sun","Nov 14, 2021","1:00","","Buffalo Bills","W 45-17","W -13","@","New York Jets","O 47.5","",NA
+"142","Year_2021_Week_10","Sun","Nov 14, 2021","1:00","@","Pittsburgh Steelers","T 16-16 (OT)","L -6","","Detroit Lions","U 41","",NA
+"143","Year_2021_Week_10","Sun","Nov 14, 2021","1:00","@","Tennessee Titans","W 23-21","L -3","","New Orleans Saints","P 44","",NA
+"144","Year_2021_Week_10","Sun","Nov 14, 2021","1:00","","Tampa Bay Buccaneers","L 19-29","L -9.5","@","Washington Football Team","U 51","",NA
+"145","Year_2021_Week_10","Sun","Nov 14, 2021","4:05","@","Arizona Cardinals","L 10-34","L -10.5","","Carolina Panthers","O 43","",NA
+"146","Year_2021_Week_10","Sun","Nov 14, 2021","4:05","@","Los Angeles Chargers","L 20-27","L -3","","Minnesota Vikings","U 53.5","",NA
+"147","Year_2021_Week_10","Sun","Nov 14, 2021","4:25","@","Denver Broncos","L 13-30","L -2","","Philadelphia Eagles","U 46","",NA
+"148","Year_2021_Week_10","Sun","Nov 14, 2021","4:25","@","Green Bay Packers","W 17-0","W -3.5","","Seattle Seahawks","U 49.5","",NA
+"149","Year_2021_Week_10","Sun","Nov 14, 2021","8:20","","Kansas City Chiefs","W 41-14","W -2.5","@","Las Vegas Raiders","O 52","",NA
+"150","Year_2021_Week_10","Mon","Nov 15, 2021","8:15","","Los Angeles Rams","L 10-31","L -4","@","San Francisco 49ers","U 49.5","",NA
+"151","Year_2021_Week_11","Thu","Nov 18, 2021","8:20","","New England Patriots","W 25-0","W -7","@","Atlanta Falcons","U 47","Notes",NA
+"152","Year_2021_Week_11","Sun","Nov 21, 2021","1:00","@","Buffalo Bills","L 15-41","L -7","","Indianapolis Colts","O 49.5","",NA
+"153","Year_2021_Week_11","Sun","Nov 21, 2021","1:00","@","Carolina Panthers","L 21-27","L -3.5","","Washington Football Team","O 43","",NA
+"154","Year_2021_Week_11","Sun","Nov 21, 2021","1:00","","Baltimore Ravens","W 16-13","L -5","@","Chicago Bears","U 43.5","",NA
+"155","Year_2021_Week_11","Sun","Nov 21, 2021","1:00","@","Cleveland Browns","W 13-10","L -12.5","","Detroit Lions","U 42.5","",NA
+"156","Year_2021_Week_11","Sun","Nov 21, 2021","1:00","","San Francisco 49ers","W 30-10","W -6.5","@","Jacksonville Jaguars","U 45","",NA
+"157","Year_2021_Week_11","Sun","Nov 21, 2021","1:00","","Green Bay Packers","L 31-34","L -1","@","Minnesota Vikings","O 47","",NA
+"158","Year_2021_Week_11","Sun","Nov 21, 2021","1:00","","Miami Dolphins","W 24-17","W -3.5","@","New York Jets","U 44.5","",NA
+"159","Year_2021_Week_11","Sun","Nov 21, 2021","1:00","@","Philadelphia Eagles","W 40-29","W -2.5","","New Orleans Saints","O 42.5","",NA
+"160","Year_2021_Week_11","Sun","Nov 21, 2021","1:00","@","Tennessee Titans","L 13-22","L -10","","Houston Texans","U 44.5","",NA
+"161","Year_2021_Week_11","Sun","Nov 21, 2021","4:05","","Cincinnati Bengals","W 32-13","W -1","@","Las Vegas Raiders","U 50.5","",NA
+"162","Year_2021_Week_11","Sun","Nov 21, 2021","4:25","@","Kansas City Chiefs","W 19-9","W -2.5","","Dallas Cowboys","U 56.5","",NA
+"163","Year_2021_Week_11","Sun","Nov 21, 2021","4:25","@","Seattle Seahawks","L 13-23","L -2.5","","Arizona Cardinals","U 47","",NA
+"164","Year_2021_Week_11","Sun","Nov 21, 2021","8:20","@","Los Angeles Chargers","W 41-37","L -5.5","","Pittsburgh Steelers","O 47.5","",NA
+"165","Year_2021_Week_11","Mon","Nov 22, 2021","8:15","@","Tampa Bay Buccaneers","W 30-10","W -11","","New York Giants","U 50","",NA
+"166","Year_2021_Week_12","Thu","Nov 25, 2021","12:30","","Chicago Bears","W 16-14","L -3","@","Detroit Lions","U 41","Notes",NA
+"167","Year_2021_Week_12","Thu","Nov 25, 2021","4:30","@","Dallas Cowboys","L 33-36 (OT)","L -7.5","","Las Vegas Raiders","O 51.5","",NA
+"168","Year_2021_Week_12","Thu","Nov 25, 2021","8:20","","Buffalo Bills","W 31-6","W -6.5","@","New Orleans Saints","U 45","",NA
+"169","Year_2021_Week_12","Sun","Nov 28, 2021","1:00","@","Cincinnati Bengals","W 41-10","W -3.5","","Pittsburgh Steelers","O 44","",NA
+"170","Year_2021_Week_12","Sun","Nov 28, 2021","1:00","@","Houston Texans","L 14-21","L -2.5","","New York Jets","U 44.5","",NA
+"171","Year_2021_Week_12","Sun","Nov 28, 2021","1:00","","Tampa Bay Buccaneers","W 38-31","W -3","@","Indianapolis Colts","O 53.5","",NA
+"172","Year_2021_Week_12","Sun","Nov 28, 2021","1:00","","Atlanta Falcons","W 21-14","W -2","@","Jacksonville Jaguars","U 45.5","",NA
+"173","Year_2021_Week_12","Sun","Nov 28, 2021","1:00","","Carolina Panthers","L 10-33","L -2.5","@","Miami Dolphins","O 42","",NA
+"174","Year_2021_Week_12","Sun","Nov 28, 2021","1:00","@","New England Patriots","W 36-13","W -7","","Tennessee Titans","O 43.5","",NA
+"175","Year_2021_Week_12","Sun","Nov 28, 2021","1:00","","Philadelphia Eagles","L 7-13","L -3.5","@","New York Giants","U 45.5","",NA
+"176","Year_2021_Week_12","Sun","Nov 28, 2021","4:05","","Los Angeles Chargers","L 13-28","L -3","@","Denver Broncos","U 47","",NA
+"177","Year_2021_Week_12","Sun","Nov 28, 2021","4:25","","Los Angeles Rams","L 28-36","L -2","@","Green Bay Packers","O 46.5","",NA
+"178","Year_2021_Week_12","Sun","Nov 28, 2021","4:25","@","San Francisco 49ers","W 34-26","W -3.5","","Minnesota Vikings","O 49","",NA
+"179","Year_2021_Week_12","Sun","Nov 28, 2021","8:20","@","Baltimore Ravens","W 16-10","W -3.5","","Cleveland Browns","U 47","",NA
+"180","Year_2021_Week_12","Mon","Nov 29, 2021","8:15","@","Washington Football Team","W 17-15","W PK","","Seattle Seahawks","U 47","",NA
+"181","Year_2021_Week_13","Thu","Dec 2, 2021","8:20","","Dallas Cowboys","W 27-17","W -5","@","New Orleans Saints","U 47.5","Notes",NA
+"182","Year_2021_Week_13","Sun","Dec 5, 2021","1:00","","Tampa Bay Buccaneers","W 30-17","W -10.5","@","Atlanta Falcons","U 50.5","",NA
+"183","Year_2021_Week_13","Sun","Dec 5, 2021","1:00","","Arizona Cardinals","W 33-22","W -7.5","@","Chicago Bears","O 42","",NA
+"184","Year_2021_Week_13","Sun","Dec 5, 2021","1:00","@","Cincinnati Bengals","L 22-41","L -3","","Los Angeles Chargers","O 49.5","",NA
+"185","Year_2021_Week_13","Sun","Dec 5, 2021","1:00","","Minnesota Vikings","L 27-29","L -7","@","Detroit Lions","O 46.5","",NA
+"186","Year_2021_Week_13","Sun","Dec 5, 2021","1:00","","Indianapolis Colts","W 31-0","W -10","@","Houston Texans","U 44.5","",NA
+"187","Year_2021_Week_13","Sun","Dec 5, 2021","1:00","@","Miami Dolphins","W 20-9","W -6.5","","New York Giants","U 39.5","",NA
+"188","Year_2021_Week_13","Sun","Dec 5, 2021","1:00","","Philadelphia Eagles","W 33-18","W -5","@","New York Jets","O 43.5","",NA
+"189","Year_2021_Week_13","Sun","Dec 5, 2021","4:00","","San Francisco 49ers","L 23-30","L -3.5","@","Seattle Seahawks","O 45.5","",NA
+"190","Year_2021_Week_13","Sun","Dec 5, 2021","4:05","@","Las Vegas Raiders","L 15-17","L -1.5","","Washington Football Team","U 48","",NA
+"191","Year_2021_Week_13","Sun","Dec 5, 2021","4:25","@","Los Angeles Rams","W 37-7","W -13","","Jacksonville Jaguars","U 48","",NA
+"192","Year_2021_Week_13","Sun","Dec 5, 2021","4:25","","Baltimore Ravens","L 19-20","L -4.5","@","Pittsburgh Steelers","U 44","",NA
+"193","Year_2021_Week_13","Sun","Dec 5, 2021","8:20","@","Kansas City Chiefs","W 22-9","W -9.5","","Denver Broncos","U 47","",NA
+"194","Year_2021_Week_13","Mon","Dec 6, 2021","8:15","@","Buffalo Bills","L 10-14","L -2.5","","New England Patriots","U 41","",NA
+"195","Year_2021_Week_14","Thu","Dec 9, 2021","8:20","@","Minnesota Vikings","W 36-28","W -3","","Pittsburgh Steelers","O 44","Notes",NA
+"196","Year_2021_Week_14","Sun","Dec 12, 2021","1:00","@","Carolina Panthers","L 21-29","L -2.5","","Atlanta Falcons","O 41","",NA
+"197","Year_2021_Week_14","Sun","Dec 12, 2021","1:00","","San Francisco 49ers","W 26-23 (OT)","W -1.5","@","Cincinnati Bengals","P 49","",NA
+"198","Year_2021_Week_14","Sun","Dec 12, 2021","1:00","@","Cleveland Browns","W 24-22","L -3","","Baltimore Ravens","O 42.5","",NA
+"199","Year_2021_Week_14","Sun","Dec 12, 2021","1:00","","Seattle Seahawks","W 33-13","W -9","@","Houston Texans","O 40.5","",NA
+"200","Year_2021_Week_14","Sun","Dec 12, 2021","1:00","@","Kansas City Chiefs","W 48-9","W -10","","Las Vegas Raiders","O 48","",NA
+"201","Year_2021_Week_14","Sun","Dec 12, 2021","1:00","","New Orleans Saints","W 30-9","W -5.5","@","New York Jets","U 43","",NA
+"202","Year_2021_Week_14","Sun","Dec 12, 2021","1:00","@","Tennessee Titans","W 20-0","W -8.5","","Jacksonville Jaguars","U 43.5","",NA
+"203","Year_2021_Week_14","Sun","Dec 12, 2021","1:00","","Dallas Cowboys","W 27-20","W -4.5","@","Washington Football Team","U 48","",NA
+"204","Year_2021_Week_14","Sun","Dec 12, 2021","4:05","@","Denver Broncos","W 38-10","W -11","","Detroit Lions","O 42","",NA
+"205","Year_2021_Week_14","Sun","Dec 12, 2021","4:05","@","Los Angeles Chargers","W 37-21","W -9","","New York Giants","O 43","",NA
+"206","Year_2021_Week_14","Sun","Dec 12, 2021","4:25","@","Tampa Bay Buccaneers","W 33-27 (OT)","W -3.5","","Buffalo Bills","O 54.5","",NA
+"207","Year_2021_Week_14","Sun","Dec 12, 2021","8:20","@","Green Bay Packers","W 45-30","W -11.5","","Chicago Bears","O 43","",NA
+"208","Year_2021_Week_14","Mon","Dec 13, 2021","8:15","@","Arizona Cardinals","L 23-30","L -2.5","","Los Angeles Rams","O 51.5","",NA
+"209","Year_2021_Week_15","Thu","Dec 16, 2021","8:20","","Kansas City Chiefs","W 34-28 (OT)","W -3","@","Los Angeles Chargers","O 52.5","Notes",NA
+"210","Year_2021_Week_15","Sat","Dec 18, 2021","8:20","@","Indianapolis Colts","W 27-17","W -2.5","","New England Patriots","U 45.5","",NA
+"211","Year_2021_Week_15","Sun","Dec 19, 2021","1:00","","Green Bay Packers","W 31-30","L -9.5","@","Baltimore Ravens","O 45","",NA
+"212","Year_2021_Week_15","Sun","Dec 19, 2021","1:00","@","Buffalo Bills","W 31-14","W -14.5","","Carolina Panthers","O 43","",NA
+"213","Year_2021_Week_15","Sun","Dec 19, 2021","1:00","","Arizona Cardinals","L 12-30","L -13","@","Detroit Lions","U 48","",NA
+"214","Year_2021_Week_15","Sun","Dec 19, 2021","1:00","@","Jacksonville Jaguars","L 16-30","L -6","","Houston Texans","O 40","",NA
+"215","Year_2021_Week_15","Sun","Dec 19, 2021","1:00","@","Miami Dolphins","W 31-24","L -10","","New York Jets","O 42","",NA
+"216","Year_2021_Week_15","Sun","Dec 19, 2021","1:00","","Dallas Cowboys","W 21-6","W -11.5","@","New York Giants","U 43.5","",NA
+"217","Year_2021_Week_15","Sun","Dec 19, 2021","1:00","@","Pittsburgh Steelers","W 19-13","W -1","","Tennessee Titans","U 44","",NA
+"218","Year_2021_Week_15","Sun","Dec 19, 2021","4:05","@","Denver Broncos","L 10-15","L -3","","Cincinnati Bengals","U 44","",NA
+"219","Year_2021_Week_15","Sun","Dec 19, 2021","4:05","@","San Francisco 49ers","W 31-13","W -8.5","","Atlanta Falcons","U 48","",NA
+"220","Year_2021_Week_15","Sun","Dec 19, 2021","8:20","@","Tampa Bay Buccaneers","L 0-9","L -11.5","","New Orleans Saints","U 45.5","",NA
+"221","Year_2021_Week_15","Mon","Dec 20, 2021","5:00","@","Cleveland Browns","L 14-16","L -3","","Las Vegas Raiders","U 41","",NA
+"222","Year_2021_Week_15","Mon","Dec 20, 2021","8:15","","Minnesota Vikings","W 17-9","W -6.5","@","Chicago Bears","U 44.5","",NA
+"223","Year_2021_Week_15","Tue","Dec 21, 2021","7:00","@","Los Angeles Rams","W 20-10","W -7","","Seattle Seahawks","U 46","",NA
+"224","Year_2021_Week_15","Tue","Dec 21, 2021","7:00","@","Philadelphia Eagles","W 27-17","W -6.5","","Washington Football Team","O 42","",NA
+"225","Year_2021_Week_16","Thu","Dec 23, 2021","8:20","","San Francisco 49ers","L 17-20","L -3.5","@","Tennessee Titans","U 44","Notes",NA
+"226","Year_2021_Week_16","Sat","Dec 25, 2021","4:30","@","Green Bay Packers","W 24-22","L -7.5","","Cleveland Browns","U 46.5","",NA
+"227","Year_2021_Week_16","Sat","Dec 25, 2021","8:15","@","Arizona Cardinals","L 16-22","L -2","","Indianapolis Colts","U 49","",NA
+"228","Year_2021_Week_16","Sun","Dec 26, 2021","1:00","@","Atlanta Falcons","W 20-16","L -6.5","","Detroit Lions","U 42","",NA
+"229","Year_2021_Week_16","Sun","Dec 26, 2021","1:00","","Tampa Bay Buccaneers","W 32-6","W -9.5","@","Carolina Panthers","U 43","",NA
+"230","Year_2021_Week_16","Sun","Dec 26, 2021","1:00","@","Cincinnati Bengals","W 41-21","W -7","","Baltimore Ravens","O 41.5","",NA
+"231","Year_2021_Week_16","Sun","Dec 26, 2021","1:00","","Los Angeles Chargers","L 29-41","L -11","@","Houston Texans","O 45.5","",NA
+"232","Year_2021_Week_16","Sun","Dec 26, 2021","1:00","","Los Angeles Rams","W 30-23","W -3.5","@","Minnesota Vikings","O 49","",NA
+"233","Year_2021_Week_16","Sun","Dec 26, 2021","1:00","@","New England Patriots","L 21-33","L -1.5","","Buffalo Bills","O 43.5","",NA
+"234","Year_2021_Week_16","Sun","Dec 26, 2021","1:00","@","New York Jets","W 26-21","W -1.5","","Jacksonville Jaguars","O 41","",NA
+"235","Year_2021_Week_16","Sun","Dec 26, 2021","1:00","@","Philadelphia Eagles","W 34-10","W -10","","New York Giants","O 40.5","",NA
+"236","Year_2021_Week_16","Sun","Dec 26, 2021","4:05","@","Seattle Seahawks","L 24-25","L -6.5","","Chicago Bears","O 41.5","",NA
+"237","Year_2021_Week_16","Sun","Dec 26, 2021","4:25","@","Kansas City Chiefs","W 36-10","W -10","","Pittsburgh Steelers","P 46","",NA
+"238","Year_2021_Week_16","Sun","Dec 26, 2021","4:25","@","Las Vegas Raiders","W 17-13","W PK","","Denver Broncos","U 41","",NA
+"239","Year_2021_Week_16","Sun","Dec 26, 2021","8:20","@","Dallas Cowboys","W 56-14","W -10","","Washington Football Team","O 46.5","",NA
+"240","Year_2021_Week_16","Mon","Dec 27, 2021","8:15","","Miami Dolphins","W 20-3","W -2.5","@","New Orleans Saints","U 37.5","",NA
+"241","Year_2021_Week_17","Sun","Jan 2, 2022","1:00","@","Buffalo Bills","W 29-15","L -14.5","","Atlanta Falcons","P 44","Notes",NA
+"242","Year_2021_Week_17","Sun","Jan 2, 2022","1:00","@","Chicago Bears","W 29-3","W -6.5","","New York Giants","U 36.5","",NA
+"243","Year_2021_Week_17","Sun","Jan 2, 2022","1:00","","Kansas City Chiefs","L 31-34","L -4","@","Cincinnati Bengals","O 51.5","",NA
+"244","Year_2021_Week_17","Sun","Jan 2, 2022","1:00","@","Dallas Cowboys","L 22-25","L -6.5","","Arizona Cardinals","U 52.5","",NA
+"245","Year_2021_Week_17","Sun","Jan 2, 2022","1:00","@","Indianapolis Colts","L 20-23","L -8","","Las Vegas Raiders","U 45","",NA
+"246","Year_2021_Week_17","Sun","Jan 2, 2022","1:00","@","New England Patriots","W 50-10","W -16.5","","Jacksonville Jaguars","O 41.5","",NA
+"247","Year_2021_Week_17","Sun","Jan 2, 2022","1:00","@","New Orleans Saints","W 18-10","W -6.5","","Carolina Panthers","U 37.5","",NA
+"248","Year_2021_Week_17","Sun","Jan 2, 2022","1:00","","Tampa Bay Buccaneers","W 28-24","L -13.5","@","New York Jets","O 45.5","",NA
+"249","Year_2021_Week_17","Sun","Jan 2, 2022","1:00","@","Tennessee Titans","W 34-3","W -3","","Miami Dolphins","U 40","",NA
+"250","Year_2021_Week_17","Sun","Jan 2, 2022","1:00","","Philadelphia Eagles","W 20-16","L -4.5","@","Washington Football Team","U 44.5","",NA
+"251","Year_2021_Week_17","Sun","Jan 2, 2022","4:05","@","Los Angeles Chargers","W 34-13","W -7.5","","Denver Broncos","O 45","",NA
+"252","Year_2021_Week_17","Sun","Jan 2, 2022","4:05","@","San Francisco 49ers","W 23-7","W -12.5","","Houston Texans","U 43.5","",NA
+"253","Year_2021_Week_17","Sun","Jan 2, 2022","4:25","","Los Angeles Rams","W 20-19","L -6","@","Baltimore Ravens","U 46.5","",NA
+"254","Year_2021_Week_17","Sun","Jan 2, 2022","4:25","@","Seattle Seahawks","W 51-29","W -7","","Detroit Lions","O 41.5","",NA
+"255","Year_2021_Week_17","Sun","Jan 2, 2022","8:20","@","Green Bay Packers","W 37-10","W -13","","Minnesota Vikings","O 42.5","",NA
+"256","Year_2021_Week_17","Mon","Jan 3, 2022","8:15","@","Pittsburgh Steelers","W 26-14","W -2","","Cleveland Browns","U 42","",NA
+"257","Year_2021_Week_18","Sat","Jan 8, 2022","4:30","","Kansas City Chiefs","W 28-24","L -11","@","Denver Broncos","O 45","Notes",NA
+"258","Year_2021_Week_18","Sat","Jan 8, 2022","8:15","","Dallas Cowboys","W 51-26","W -4","@","Philadelphia Eagles","O 43.5","",NA
+"259","Year_2021_Week_18","Sun","Jan 9, 2022","1:00","","New Orleans Saints","W 30-20","W -3.5","@","Atlanta Falcons","O 40","",NA
+"260","Year_2021_Week_18","Sun","Jan 9, 2022","1:00","@","Baltimore Ravens","L 13-16 (OT)","L -3.5","","Pittsburgh Steelers","U 41","",NA
+"261","Year_2021_Week_18","Sun","Jan 9, 2022","1:00","@","Buffalo Bills","W 27-10","W -16.5","","New York Jets","U 40.5","",NA
+"262","Year_2021_Week_18","Sun","Jan 9, 2022","1:00","@","Cleveland Browns","W 21-16","L -5.5","","Cincinnati Bengals","P 37","",NA
+"263","Year_2021_Week_18","Sun","Jan 9, 2022","1:00","","Green Bay Packers","L 30-37","L -3","@","Detroit Lions","O 44.5","",NA
+"264","Year_2021_Week_18","Sun","Jan 9, 2022","1:00","","Tennessee Titans","W 28-25","L -10.5","@","Houston Texans","O 42.5","",NA
+"265","Year_2021_Week_18","Sun","Jan 9, 2022","1:00","","Indianapolis Colts","L 11-26","L -15","@","Jacksonville Jaguars","U 43.5","",NA
+"266","Year_2021_Week_18","Sun","Jan 9, 2022","1:00","","New England Patriots","L 24-33","L -6","@","Miami Dolphins","O 40","",NA
+"267","Year_2021_Week_18","Sun","Jan 9, 2022","1:00","@","Minnesota Vikings","W 31-17","W -4","","Chicago Bears","O 44.5","",NA
+"268","Year_2021_Week_18","Sun","Jan 9, 2022","1:00","","Washington Football Team","W 22-7","W -7","@","New York Giants","U 37.5","",NA
+"269","Year_2021_Week_18","Sun","Jan 9, 2022","1:00","@","Tampa Bay Buccaneers","W 41-17","W -9","","Carolina Panthers","O 41.5","",NA
+"270","Year_2021_Week_18","Sun","Jan 9, 2022","4:25","@","Arizona Cardinals","L 30-38","L -5.5","","Seattle Seahawks","O 48","",NA
+"271","Year_2021_Week_18","Sun","Jan 9, 2022","4:25","","Los Angeles Chargers","L 32-35 (OT)","L -3","@","Las Vegas Raiders","O 49","",NA
+"272","Year_2021_Week_18","Sun","Jan 9, 2022","4:25","@","Los Angeles Rams","L 24-27 (OT)","L -3.5","","San Francisco 49ers","O 44.5","",NA
+"273","Year_2022_Week_1","Thu","Sep 8, 2022","8:20","","Buffalo Bills","W 31-10","W -2.5","@","Los Angeles Rams","U 52","Notes",NA
+"274","Year_2022_Week_1","Sun","Sep 11, 2022","1:00","","New Orleans Saints","W 27-26","L -5.5","@","Atlanta Falcons","O 43.5","",NA
+"275","Year_2022_Week_1","Sun","Sep 11, 2022","1:00","@","Carolina Panthers","L 24-26","L -1.5","","Cleveland Browns","O 42","",NA
+"276","Year_2022_Week_1","Sun","Sep 11, 2022","1:00","","San Francisco 49ers","L 10-19","L -6","@","Chicago Bears","U 38","",NA
+"277","Year_2022_Week_1","Sun","Sep 11, 2022","1:00","@","Cincinnati Bengals","L 20-23 (OT)","L -7","","Pittsburgh Steelers","U 44","",NA
+"278","Year_2022_Week_1","Sun","Sep 11, 2022","1:00","","Philadelphia Eagles","W 38-35","L -6","@","Detroit Lions","O 48.5","",NA
+"279","Year_2022_Week_1","Sun","Sep 11, 2022","1:00","","Indianapolis Colts","T 20-20 (OT)","L -7","@","Houston Texans","U 45.5","",NA
+"280","Year_2022_Week_1","Sun","Sep 11, 2022","1:00","@","Miami Dolphins","W 20-7","W -3","","New England Patriots","U 46","",NA
+"281","Year_2022_Week_1","Sun","Sep 11, 2022","1:00","","Baltimore Ravens","W 24-9","W -6.5","@","New York Jets","U 44","",NA
+"282","Year_2022_Week_1","Sun","Sep 11, 2022","1:00","@","Washington Commanders","W 28-22","W -3","","Jacksonville Jaguars","O 43","",NA
+"283","Year_2022_Week_1","Sun","Sep 11, 2022","4:25","","Kansas City Chiefs","W 44-21","W -6.5","@","Arizona Cardinals","O 54","",NA
+"284","Year_2022_Week_1","Sun","Sep 11, 2022","4:25","@","Los Angeles Chargers","W 24-19","W -3.5","","Las Vegas Raiders","U 52.5","",NA
+"285","Year_2022_Week_1","Sun","Sep 11, 2022","4:25","@","Minnesota Vikings","W 23-7","W -2.5","","Green Bay Packers","U 46","",NA
+"286","Year_2022_Week_1","Sun","Sep 11, 2022","4:25","@","Tennessee Titans","L 20-21","L -5","","New York Giants","U 44","",NA
+"287","Year_2022_Week_1","Sun","Sep 11, 2022","8:20","","Tampa Bay Buccaneers","W 19-3","W -2","@","Dallas Cowboys","U 50","",NA
+"288","Year_2022_Week_1","Mon","Sep 12, 2022","8:20","","Denver Broncos","L 16-17","L -6.5","@","Seattle Seahawks","U 44.5","",NA
+"289","Year_2022_Week_2","Thu","Sep 15, 2022","8:15","@","Kansas City Chiefs","W 27-24","L -4","","Los Angeles Chargers","U 54","Notes",NA
+"290","Year_2022_Week_2","Sun","Sep 18, 2022","1:00","@","Baltimore Ravens","L 38-42","L -3.5","","Miami Dolphins","O 44.5","",NA
+"291","Year_2022_Week_2","Sun","Sep 18, 2022","1:00","@","Cleveland Browns","L 30-31","L -6.5","","New York Jets","O 39.5","",NA
+"292","Year_2022_Week_2","Sun","Sep 18, 2022","1:00","@","Detroit Lions","W 36-27","W -1.5","","Washington Commanders","O 48.5","",NA
+"293","Year_2022_Week_2","Sun","Sep 18, 2022","1:00","","Indianapolis Colts","L 0-24","L -3","@","Jacksonville Jaguars","U 45","",NA
+"294","Year_2022_Week_2","Sun","Sep 18, 2022","1:00","","Tampa Bay Buccaneers","W 20-10","W -2.5","@","New Orleans Saints","U 44","",NA
+"295","Year_2022_Week_2","Sun","Sep 18, 2022","1:00","@","New York Giants","W 19-16","W -2","","Carolina Panthers","U 43.5","",NA
+"296","Year_2022_Week_2","Sun","Sep 18, 2022","1:00","","New England Patriots","W 17-14","W -2.5","@","Pittsburgh Steelers","U 40.5","",NA
+"297","Year_2022_Week_2","Sun","Sep 18, 2022","4:05","@","Los Angeles Rams","W 31-27","L -10","","Atlanta Falcons","O 46.5","",NA
+"298","Year_2022_Week_2","Sun","Sep 18, 2022","4:05","@","San Francisco 49ers","W 27-7","W -9","","Seattle Seahawks","U 40.5","",NA
+"299","Year_2022_Week_2","Sun","Sep 18, 2022","4:25","","Cincinnati Bengals","L 17-20","L -7","@","Dallas Cowboys","U 42","",NA
+"300","Year_2022_Week_2","Sun","Sep 18, 2022","4:25","@","Denver Broncos","W 16-9","L -10","","Houston Texans","U 45.5","",NA
+"301","Year_2022_Week_2","Sun","Sep 18, 2022","4:25","@","Las Vegas Raiders","L 23-29 (OT)","L -5.5","","Arizona Cardinals","O 51.5","",NA
+"302","Year_2022_Week_2","Sun","Sep 18, 2022","8:20","@","Green Bay Packers","W 27-10","W -10","","Chicago Bears","U 41.5","",NA
+"303","Year_2022_Week_2","Mon","Sep 19, 2022","7:15","@","Buffalo Bills","W 41-7","W -10","","Tennessee Titans","O 47.5","",NA
+"304","Year_2022_Week_2","Mon","Sep 19, 2022","8:30","@","Philadelphia Eagles","W 24-7","W -2.5","","Minnesota Vikings","U 50.5","",NA
+"305","Year_2022_Week_3","Thu","Sep 22, 2022","8:15","@","Cleveland Browns","W 29-17","W -4.5","","Pittsburgh Steelers","O 38.5","Notes",NA
+"306","Year_2022_Week_3","Sun","Sep 25, 2022","1:00","","New Orleans Saints","L 14-22","L -2.5","@","Carolina Panthers","U 41","",NA
+"307","Year_2022_Week_3","Sun","Sep 25, 2022","1:00","@","Chicago Bears","W 23-20","P -3","","Houston Texans","O 39","",NA
+"308","Year_2022_Week_3","Sun","Sep 25, 2022","1:00","","Kansas City Chiefs","L 17-20","L -5.5","@","Indianapolis Colts","U 51","",NA
+"309","Year_2022_Week_3","Sun","Sep 25, 2022","1:00","","Buffalo Bills","L 19-21","L -4.5","@","Miami Dolphins","U 53","",NA
+"310","Year_2022_Week_3","Sun","Sep 25, 2022","1:00","@","Minnesota Vikings","W 28-24","L -6","","Detroit Lions","U 52.5","",NA
+"311","Year_2022_Week_3","Sun","Sep 25, 2022","1:00","","Baltimore Ravens","W 37-26","W -2.5","@","New England Patriots","O 44","",NA
+"312","Year_2022_Week_3","Sun","Sep 25, 2022","1:00","","Cincinnati Bengals","W 27-12","W -6","@","New York Jets","U 45","",NA
+"313","Year_2022_Week_3","Sun","Sep 25, 2022","1:00","","Las Vegas Raiders","L 22-24","L -2","@","Tennessee Titans","O 45.5","",NA
+"314","Year_2022_Week_3","Sun","Sep 25, 2022","1:00","","Philadelphia Eagles","W 24-8","W -6","@","Washington Commanders","U 47.5","",NA
+"315","Year_2022_Week_3","Sun","Sep 25, 2022","4:05","@","Los Angeles Chargers","L 10-38","L -3","","Jacksonville Jaguars","O 42.5","",NA
+"316","Year_2022_Week_3","Sun","Sep 25, 2022","4:25","","Los Angeles Rams","W 20-12","W -3.5","@","Arizona Cardinals","U 48.5","",NA
+"317","Year_2022_Week_3","Sun","Sep 25, 2022","4:25","@","Seattle Seahawks","L 23-27","L -1","","Atlanta Falcons","O 42","",NA
+"318","Year_2022_Week_3","Sun","Sep 25, 2022","4:25","@","Tampa Bay Buccaneers","L 12-14","L -1","","Green Bay Packers","U 42","",NA
+"319","Year_2022_Week_3","Sun","Sep 25, 2022","8:20","","San Francisco 49ers","L 10-11","L -1.5","@","Denver Broncos","U 44.5","",NA
+"320","Year_2022_Week_3","Mon","Sep 26, 2022","8:15","@","New York Giants","L 16-23","L -1","","Dallas Cowboys","P 39","",NA
+"321","Year_2022_Week_4","Thu","Sep 29, 2022","8:15","@","Cincinnati Bengals","W 27-15","W -3.5","","Miami Dolphins","U 47.5","Notes",NA
+"322","Year_2022_Week_4","Sun","Oct 2, 2022","1:00","","Cleveland Browns","L 20-23","L -1","@","Atlanta Falcons","U 47.5","",NA
+"323","Year_2022_Week_4","Sun","Oct 2, 2022","1:00","","Buffalo Bills","W 23-20","P -3","@","Baltimore Ravens","U 51","",NA
+"324","Year_2022_Week_4","Sun","Oct 2, 2022","1:00","@","Dallas Cowboys","W 25-10","W -3","","Washington Commanders","U 41.5","",NA
+"325","Year_2022_Week_4","Sun","Oct 2, 2022","1:00","@","Detroit Lions","L 45-48","L -3.5","","Seattle Seahawks","O 48","",NA
+"326","Year_2022_Week_4","Sun","Oct 2, 2022","1:00","","Los Angeles Chargers","W 34-24","W -6","@","Houston Texans","O 45","",NA
+"327","Year_2022_Week_4","Sun","Oct 2, 2022","1:00","@","Indianapolis Colts","L 17-24","L -3.5","","Tennessee Titans","U 43","",NA
+"328","Year_2022_Week_4","Sun","Oct 2, 2022","1:00","N","Minnesota Vikings","W 28-25","L -3.5","","New Orleans Saints","O 42","at London",NA
+"329","Year_2022_Week_4","Sun","Oct 2, 2022","1:00","@","New York Giants","W 20-12","W -3","","Chicago Bears","U 39","",NA
+"330","Year_2022_Week_4","Sun","Oct 2, 2022","1:00","@","Philadelphia Eagles","W 29-21","W -6.5","","Jacksonville Jaguars","O 45.5","",NA
+"331","Year_2022_Week_4","Sun","Oct 2, 2022","1:00","@","Pittsburgh Steelers","L 20-24","L -3.5","","New York Jets","O 41.5","",NA
+"332","Year_2022_Week_4","Sun","Oct 2, 2022","4:05","@","Carolina Panthers","L 16-26","L -1","","Arizona Cardinals","U 43.5","",NA
+"333","Year_2022_Week_4","Sun","Oct 2, 2022","4:25","@","Green Bay Packers","W 27-24 (OT)","L -9.5","","New England Patriots","O 40","",NA
+"334","Year_2022_Week_4","Sun","Oct 2, 2022","4:25","@","Las Vegas Raiders","W 32-23","W -2.5","","Denver Broncos","O 45.5","",NA
+"335","Year_2022_Week_4","Sun","Oct 2, 2022","8:20","@","Tampa Bay Buccaneers","L 31-41","L -1","","Kansas City Chiefs","O 46","",NA
+"336","Year_2022_Week_4","Mon","Oct 3, 2022","8:15","@","San Francisco 49ers","W 24-9","W -1.5","","Los Angeles Rams","U 42.5","",NA
+"337","Year_2022_Week_5","Thu","Oct 6, 2022","8:15","@","Denver Broncos","L 9-12 (OT)","L -3","","Indianapolis Colts","U 42","Notes",NA
+"338","Year_2022_Week_5","Sun","Oct 9, 2022","9:30","N","Green Bay Packers","L 22-27","L -8","","New York Giants","O 41.5","at London",NA
+"339","Year_2022_Week_5","Sun","Oct 9, 2022","1:00","@","Buffalo Bills","W 38-3","W -14","","Pittsburgh Steelers","U 45.5","",NA
+"340","Year_2022_Week_5","Sun","Oct 9, 2022","1:00","","Los Angeles Chargers","W 30-28","W -1","@","Cleveland Browns","O 47","",NA
+"341","Year_2022_Week_5","Sun","Oct 9, 2022","1:00","@","Jacksonville Jaguars","L 6-13","L -7","","Houston Texans","U 43.5","",NA
+"342","Year_2022_Week_5","Sun","Oct 9, 2022","1:00","@","Minnesota Vikings","W 29-22","L -7.5","","Chicago Bears","O 44","",NA
+"343","Year_2022_Week_5","Sun","Oct 9, 2022","1:00","@","New England Patriots","W 29-0","W -3","","Detroit Lions","U 45.5","",NA
+"344","Year_2022_Week_5","Sun","Oct 9, 2022","1:00","@","New Orleans Saints","W 39-32","W -5","","Seattle Seahawks","O 45","",NA
+"345","Year_2022_Week_5","Sun","Oct 9, 2022","1:00","","Miami Dolphins","L 17-40","L -3.5","@","New York Jets","O 45","",NA
+"346","Year_2022_Week_5","Sun","Oct 9, 2022","1:00","@","Tampa Bay Buccaneers","W 21-15","L -10","","Atlanta Falcons","U 46.5","",NA
+"347","Year_2022_Week_5","Sun","Oct 9, 2022","1:00","","Tennessee Titans","W 21-17","W -2","@","Washington Commanders","U 43","",NA
+"348","Year_2022_Week_5","Sun","Oct 9, 2022","4:05","","San Francisco 49ers","W 37-15","W -6.5","@","Carolina Panthers","O 39.5","",NA
+"349","Year_2022_Week_5","Sun","Oct 9, 2022","4:25","","Philadelphia Eagles","W 20-17","L -5","@","Arizona Cardinals","U 49","",NA
+"350","Year_2022_Week_5","Sun","Oct 9, 2022","4:25","@","Los Angeles Rams","L 10-22","L -5.5","","Dallas Cowboys","U 42","",NA
+"351","Year_2022_Week_5","Sun","Oct 9, 2022","8:20","@","Baltimore Ravens","W 19-17","L -3.5","","Cincinnati Bengals","U 47.5","",NA
+"352","Year_2022_Week_5","Mon","Oct 10, 2022","8:15","@","Kansas City Chiefs","W 30-29","L -7","","Las Vegas Raiders","O 51.5","",NA
+"353","Year_2022_Week_6","Thu","Oct 13, 2022","8:15","","Washington Commanders","W 12-7","W -1","@","Chicago Bears","U 38","Notes",NA
+"354","Year_2022_Week_6","Sun","Oct 16, 2022","1:00","","San Francisco 49ers","L 14-28","L -4.5","@","Atlanta Falcons","U 45","",NA
+"355","Year_2022_Week_6","Sun","Oct 16, 2022","1:00","@","Cleveland Browns","L 15-38","L -2.5","","New England Patriots","O 43","",NA
+"356","Year_2022_Week_6","Sun","Oct 16, 2022","1:00","@","Green Bay Packers","L 10-27","L -7.5","","New York Jets","U 45","",NA
+"357","Year_2022_Week_6","Sun","Oct 16, 2022","1:00","@","Indianapolis Colts","W 34-27","W -1.5","","Jacksonville Jaguars","O 41","",NA
+"358","Year_2022_Week_6","Sun","Oct 16, 2022","1:00","","Minnesota Vikings","W 24-16","W -3","@","Miami Dolphins","U 45.5","",NA
+"359","Year_2022_Week_6","Sun","Oct 16, 2022","1:00","","Cincinnati Bengals","W 30-26","W -3","@","New Orleans Saints","O 43","",NA
+"360","Year_2022_Week_6","Sun","Oct 16, 2022","1:00","","Baltimore Ravens","L 20-24","L -5.5","@","New York Giants","U 45.5","",NA
+"361","Year_2022_Week_6","Sun","Oct 16, 2022","1:00","","Tampa Bay Buccaneers","L 18-20","L -9.5","@","Pittsburgh Steelers","U 46","",NA
+"362","Year_2022_Week_6","Sun","Oct 16, 2022","4:05","@","Los Angeles Rams","W 24-10","W -10","","Carolina Panthers","U 41.5","",NA
+"363","Year_2022_Week_6","Sun","Oct 16, 2022","4:05","","Arizona Cardinals","L 9-19","L -2.5","@","Seattle Seahawks","U 50.5","",NA
+"364","Year_2022_Week_6","Sun","Oct 16, 2022","4:25","","Buffalo Bills","W 24-20","W -2.5","@","Kansas City Chiefs","U 54","",NA
+"365","Year_2022_Week_6","Sun","Oct 16, 2022","8:20","@","Philadelphia Eagles","W 26-17","W -6.5","","Dallas Cowboys","O 42","",NA
+"366","Year_2022_Week_6","Mon","Oct 17, 2022","8:15","@","Los Angeles Chargers","W 19-16 (OT)","L -4.5","","Denver Broncos","U 45.5","",NA
+"367","Year_2022_Week_7","Thu","Oct 20, 2022","8:15","@","Arizona Cardinals","W 42-34","W -2.5","","New Orleans Saints","O 44","Notes",NA
+"368","Year_2022_Week_7","Sun","Oct 23, 2022","1:00","@","Baltimore Ravens","W 23-20","L -6.5","","Cleveland Browns","U 45.5","",NA
+"369","Year_2022_Week_7","Sun","Oct 23, 2022","1:00","","Tampa Bay Buccaneers","L 3-21","L -13","@","Carolina Panthers","U 39.5","",NA
+"370","Year_2022_Week_7","Sun","Oct 23, 2022","1:00","@","Cincinnati Bengals","W 35-17","W -6.5","","Atlanta Falcons","O 47","",NA
+"371","Year_2022_Week_7","Sun","Oct 23, 2022","1:00","@","Dallas Cowboys","W 24-6","W -6.5","","Detroit Lions","U 49","",NA
+"372","Year_2022_Week_7","Sun","Oct 23, 2022","1:00","@","Jacksonville Jaguars","L 17-23","L -3","","New York Giants","U 43.5","",NA
+"373","Year_2022_Week_7","Sun","Oct 23, 2022","1:00","@","Tennessee Titans","W 19-10","W -2.5","","Indianapolis Colts","U 41.5","",NA
+"374","Year_2022_Week_7","Sun","Oct 23, 2022","1:00","","Green Bay Packers","L 21-23","L -4.5","@","Washington Commanders","O 41.5","",NA
+"375","Year_2022_Week_7","Sun","Oct 23, 2022","4:05","","New York Jets","W 16-9","W -1.5","@","Denver Broncos","U 37","",NA
+"376","Year_2022_Week_7","Sun","Oct 23, 2022","4:05","@","Las Vegas Raiders","W 38-20","W -7","","Houston Texans","O 46","",NA
+"377","Year_2022_Week_7","Sun","Oct 23, 2022","4:25","@","Los Angeles Chargers","L 23-37","L -4.5","","Seattle Seahawks","O 50.5","",NA
+"378","Year_2022_Week_7","Sun","Oct 23, 2022","4:25","","Kansas City Chiefs","W 44-23","W -1","@","San Francisco 49ers","O 49","",NA
+"379","Year_2022_Week_7","Sun","Oct 23, 2022","8:20","@","Miami Dolphins","W 16-10","L -7.5","","Pittsburgh Steelers","U 44.5","",NA
+"380","Year_2022_Week_7","Mon","Oct 24, 2022","8:15","@","New England Patriots","L 14-33","L -8.5","","Chicago Bears","O 40.5","",NA
+"381","Year_2022_Week_8","Thu","Oct 27, 2022","8:15","@","Tampa Bay Buccaneers","L 22-27","L -1.5","","Baltimore Ravens","O 45.5","Notes",NA
+"382","Year_2022_Week_8","Sun","Oct 30, 2022","9:30","N","Jacksonville Jaguars","L 17-21","L -2","","Denver Broncos","U 40.5","at London",NA
+"383","Year_2022_Week_8","Sun","Oct 30, 2022","1:00","@","Atlanta Falcons","W 37-34 (OT)","L -4","","Carolina Panthers","O 41","",NA
+"384","Year_2022_Week_8","Sun","Oct 30, 2022","1:00","@","Dallas Cowboys","W 49-29","W -10","","Chicago Bears","O 42.5","",NA
+"385","Year_2022_Week_8","Sun","Oct 30, 2022","1:00","","Miami Dolphins","W 31-27","W -3.5","@","Detroit Lions","O 51.5","",NA
+"386","Year_2022_Week_8","Sun","Oct 30, 2022","1:00","@","Minnesota Vikings","W 34-26","W -3.5","","Arizona Cardinals","O 48.5","",NA
+"387","Year_2022_Week_8","Sun","Oct 30, 2022","1:00","","Las Vegas Raiders","L 0-24","L -1.5","@","New Orleans Saints","U 49.5","",NA
+"388","Year_2022_Week_8","Sun","Oct 30, 2022","1:00","","New England Patriots","W 22-17","W -2.5","@","New York Jets","U 40","",NA
+"389","Year_2022_Week_8","Sun","Oct 30, 2022","1:00","@","Philadelphia Eagles","W 35-13","W -10.5","","Pittsburgh Steelers","O 43","",NA
+"390","Year_2022_Week_8","Sun","Oct 30, 2022","4:05","","Tennessee Titans","W 17-10","W -3.5","@","Houston Texans","U 39","",NA
+"391","Year_2022_Week_8","Sun","Oct 30, 2022","4:05","@","Seattle Seahawks","W 27-13","W -3","","New York Giants","U 44.5","",NA
+"392","Year_2022_Week_8","Sun","Oct 30, 2022","4:25","@","Indianapolis Colts","L 16-17","L -3","","Washington Commanders","U 39.5","",NA
+"393","Year_2022_Week_8","Sun","Oct 30, 2022","4:25","@","Los Angeles Rams","L 14-31","L -2.5","","San Francisco 49ers","O 42","",NA
+"394","Year_2022_Week_8","Sun","Oct 30, 2022","8:20","@","Buffalo Bills","W 27-17","L -10.5","","Green Bay Packers","U 47","",NA
+"395","Year_2022_Week_8","Mon","Oct 31, 2022","8:15","","Cincinnati Bengals","L 13-32","L -3","@","Cleveland Browns","P 45","",NA
+"396","Year_2022_Week_9","Thu","Nov 3, 2022","8:15","","Philadelphia Eagles","W 29-17","L -13.5","@","Houston Texans","O 45.5","Notes",NA
+"397","Year_2022_Week_9","Sun","Nov 6, 2022","1:00","","Los Angeles Chargers","W 20-17","P -3","@","Atlanta Falcons","U 49.5","",NA
+"398","Year_2022_Week_9","Sun","Nov 6, 2022","1:00","","Miami Dolphins","W 35-32","L -4","@","Chicago Bears","O 45.5","",NA
+"399","Year_2022_Week_9","Sun","Nov 6, 2022","1:00","@","Cincinnati Bengals","W 42-21","W -7","","Carolina Panthers","O 42.5","",NA
+"400","Year_2022_Week_9","Sun","Nov 6, 2022","1:00","","Green Bay Packers","L 9-15","L -3.5","@","Detroit Lions","U 49.5","",NA
+"401","Year_2022_Week_9","Sun","Nov 6, 2022","1:00","","Las Vegas Raiders","L 20-27","L -2.5","@","Jacksonville Jaguars","U 48","",NA
+"402","Year_2022_Week_9","Sun","Nov 6, 2022","1:00","@","New England Patriots","W 26-3","W -5","","Indianapolis Colts","U 40.5","",NA
+"403","Year_2022_Week_9","Sun","Nov 6, 2022","1:00","","Buffalo Bills","L 17-20","L -11","@","New York Jets","U 46","",NA
+"404","Year_2022_Week_9","Sun","Nov 6, 2022","1:00","","Minnesota Vikings","W 20-17","P -3","@","Washington Commanders","U 43.5","",NA
+"405","Year_2022_Week_9","Sun","Nov 6, 2022","4:05","@","Arizona Cardinals","L 21-31","L -2","","Seattle Seahawks","O 49","",NA
+"406","Year_2022_Week_9","Sun","Nov 6, 2022","4:25","@","Tampa Bay Buccaneers","W 16-13","P -3","","Los Angeles Rams","U 42.5","",NA
+"407","Year_2022_Week_9","Sun","Nov 6, 2022","8:20","@","Kansas City Chiefs","W 20-17 (OT)","L -12.5","","Tennessee Titans","U 45.5","",NA
+"408","Year_2022_Week_9","Mon","Nov 7, 2022","8:15","","Baltimore Ravens","W 27-13","W -1.5","@","New Orleans Saints","U 46.5","",NA
+"409","Year_2022_Week_10","Thu","Nov 10, 2022","8:15","","Atlanta Falcons","L 15-25","L -2.5","@","Carolina Panthers","U 41.5","Notes",NA
+"410","Year_2022_Week_10","Sun","Nov 13, 2022","1:00","@","Buffalo Bills","L 30-33 (OT)","L -6.5","","Minnesota Vikings","O 44.5","",NA
+"411","Year_2022_Week_10","Sun","Nov 13, 2022","1:00","@","Chicago Bears","L 30-31","L -2.5","","Detroit Lions","O 48.5","",NA
+"412","Year_2022_Week_10","Sun","Nov 13, 2022","1:00","@","Kansas City Chiefs","W 27-17","W -9","","Jacksonville Jaguars","U 51","",NA
+"413","Year_2022_Week_10","Sun","Nov 13, 2022","1:00","@","Miami Dolphins","W 39-17","W -3.5","","Cleveland Browns","O 49.5","",NA
+"414","Year_2022_Week_10","Sun","Nov 13, 2022","1:00","@","New York Giants","W 24-16","W -4.5","","Houston Texans","U 41","",NA
+"415","Year_2022_Week_10","Sun","Nov 13, 2022","1:00","","New Orleans Saints","L 10-20","L -1","@","Pittsburgh Steelers","U 40","",NA
+"416","Year_2022_Week_10","Sun","Nov 13, 2022","1:00","@","Tennessee Titans","W 17-10","W -2.5","","Denver Broncos","U 39","",NA
+"417","Year_2022_Week_10","Sun","Nov 13, 2022","4:05","@","Las Vegas Raiders","L 20-25","L -4","","Indianapolis Colts","O 41","",NA
+"418","Year_2022_Week_10","Sun","Nov 13, 2022","4:25","","Dallas Cowboys","L 28-31 (OT)","L -4","@","Green Bay Packers","O 44.5","",NA
+"419","Year_2022_Week_10","Sun","Nov 13, 2022","4:25","@","Los Angeles Rams","L 17-27","L -2.5","","Arizona Cardinals","O 39.5","",NA
+"420","Year_2022_Week_10","Sun","Nov 13, 2022","8:20","@","San Francisco 49ers","W 22-16","L -7.5","","Los Angeles Chargers","U 45","",NA
+"421","Year_2022_Week_10","Sun","Nov 13, 2022","9:30","N","Tampa Bay Buccaneers","W 21-16","W -2.5","","Seattle Seahawks","U 45","at Munich",NA
+"422","Year_2022_Week_10","Mon","Nov 14, 2022","8:15","@","Philadelphia Eagles","L 21-32","L -10.5","","Washington Commanders","O 43.5","",NA
+"423","Year_2022_Week_11","Thu","Nov 17, 2022","8:15","@","Green Bay Packers","L 17-27","L -3","","Tennessee Titans","O 41","Notes",NA
+"424","Year_2022_Week_11","Sun","Nov 20, 2022","1:00","@","Atlanta Falcons","W 27-24","W -2.5","","Chicago Bears","O 49","",NA
+"425","Year_2022_Week_11","Sun","Nov 20, 2022","1:00","@","Baltimore Ravens","W 13-3","L -13","","Carolina Panthers","U 41.5","",NA
+"426","Year_2022_Week_11","Sun","Nov 20, 2022","1:00","N","Buffalo Bills","W 31-23","W -7.5","","Cleveland Browns","O 50","at Detroit",NA
+"427","Year_2022_Week_11","Sun","Nov 20, 2022","1:00","","Washington Commanders","W 23-10","W -3","@","Houston Texans","U 41","",NA
+"428","Year_2022_Week_11","Sun","Nov 20, 2022","1:00","","Philadelphia Eagles","W 17-16","L -6.5","@","Indianapolis Colts","U 45.5","",NA
+"429","Year_2022_Week_11","Sun","Nov 20, 2022","1:00","@","New England Patriots","W 10-3","W -3.5","","New York Jets","U 38","",NA
+"430","Year_2022_Week_11","Sun","Nov 20, 2022","1:00","@","New Orleans Saints","W 27-20","W -2.5","","Los Angeles Rams","O 39","",NA
+"431","Year_2022_Week_11","Sun","Nov 20, 2022","1:00","@","New York Giants","L 18-31","L -3","","Detroit Lions","O 44.5","",NA
+"432","Year_2022_Week_11","Sun","Nov 20, 2022","4:05","@","Denver Broncos","L 16-22 (OT)","L -2.5","","Las Vegas Raiders","U 41","",NA
+"433","Year_2022_Week_11","Sun","Nov 20, 2022","4:25","","Dallas Cowboys","W 40-3","W -1.5","@","Minnesota Vikings","U 48.5","",NA
+"434","Year_2022_Week_11","Sun","Nov 20, 2022","4:25","","Cincinnati Bengals","W 37-30","W -3.5","@","Pittsburgh Steelers","O 40","",NA
+"435","Year_2022_Week_11","Sun","Nov 20, 2022","8:20","","Kansas City Chiefs","W 30-27","L -5","@","Los Angeles Chargers","O 52.5","",NA
+"436","Year_2022_Week_11","Mon","Nov 21, 2022","8:15","N","San Francisco 49ers","W 38-10","W -8","","Arizona Cardinals","O 43","at Mexico City",NA
+"437","Year_2022_Week_12","Thu","Nov 24, 2022","12:30","","Buffalo Bills","W 28-25","L -9.5","@","Detroit Lions","U 54.5","Notes",NA
+"438","Year_2022_Week_12","Thu","Nov 24, 2022","4:30","@","Dallas Cowboys","W 28-20","L -10","","New York Giants","O 45.5","",NA
+"439","Year_2022_Week_12","Thu","Nov 24, 2022","8:20","@","Minnesota Vikings","W 33-26","W -2.5","","New England Patriots","O 42.5","",NA
+"440","Year_2022_Week_12","Sun","Nov 27, 2022","1:00","","Denver Broncos","L 10-23","L -1","@","Carolina Panthers","U 36","",NA
+"441","Year_2022_Week_12","Sun","Nov 27, 2022","1:00","","Tampa Bay Buccaneers","L 17-23 (OT)","L -3","@","Cleveland Browns","U 42","",NA
+"442","Year_2022_Week_12","Sun","Nov 27, 2022","1:00","","Baltimore Ravens","L 27-28","L -3.5","@","Jacksonville Jaguars","O 43","",NA
+"443","Year_2022_Week_12","Sun","Nov 27, 2022","1:00","@","Miami Dolphins","W 30-15","W -14","","Houston Texans","U 47","",NA
+"444","Year_2022_Week_12","Sun","Nov 27, 2022","1:00","@","New York Jets","W 31-10","W -7","","Chicago Bears","O 38.5","",NA
+"445","Year_2022_Week_12","Sun","Nov 27, 2022","1:00","","Cincinnati Bengals","W 20-16","W -1.5","@","Tennessee Titans","U 43","",NA
+"446","Year_2022_Week_12","Sun","Nov 27, 2022","1:00","@","Washington Commanders","W 19-13","W -4","","Atlanta Falcons","U 40.5","",NA
+"447","Year_2022_Week_12","Sun","Nov 27, 2022","4:05","","Los Angeles Chargers","W 25-24","L -2.5","@","Arizona Cardinals","O 48.5","",NA
+"448","Year_2022_Week_12","Sun","Nov 27, 2022","4:05","@","Seattle Seahawks","L 34-40 (OT)","L -4","","Las Vegas Raiders","O 47.5","",NA
+"449","Year_2022_Week_12","Sun","Nov 27, 2022","4:25","@","Kansas City Chiefs","W 26-10","W -15.5","","Los Angeles Rams","U 42","",NA
+"450","Year_2022_Week_12","Sun","Nov 27, 2022","4:25","@","San Francisco 49ers","W 13-0","W -9","","New Orleans Saints","U 43","",NA
+"451","Year_2022_Week_12","Sun","Nov 27, 2022","8:20","@","Philadelphia Eagles","W 40-33","W -6.5","","Green Bay Packers","O 46","",NA
+"452","Year_2022_Week_12","Mon","Nov 28, 2022","8:15","@","Indianapolis Colts","L 17-24","L -2.5","","Pittsburgh Steelers","O 39.5","",NA
+"453","Year_2022_Week_13","Thu","Dec 1, 2022","8:15","","Buffalo Bills","W 24-10","W -3.5","@","New England Patriots","U 43.5","Notes",NA
+"454","Year_2022_Week_13","Sun","Dec 4, 2022","1:00","@","Atlanta Falcons","L 16-19","L -1","","Pittsburgh Steelers","U 43","",NA
+"455","Year_2022_Week_13","Sun","Dec 4, 2022","1:00","@","Baltimore Ravens","W 10-9","L -9.5","","Denver Broncos","U 39.5","",NA
+"456","Year_2022_Week_13","Sun","Dec 4, 2022","1:00","","Green Bay Packers","W 28-19","W -4.5","@","Chicago Bears","O 45","",NA
+"457","Year_2022_Week_13","Sun","Dec 4, 2022","1:00","@","Detroit Lions","W 40-14","W -1","","Jacksonville Jaguars","O 51","",NA
+"458","Year_2022_Week_13","Sun","Dec 4, 2022","1:00","","Cleveland Browns","W 27-14","W -8","@","Houston Texans","U 46.5","",NA
+"459","Year_2022_Week_13","Sun","Dec 4, 2022","1:00","@","Minnesota Vikings","W 27-22","W -3","","New York Jets","O 44.5","",NA
+"460","Year_2022_Week_13","Sun","Dec 4, 2022","1:00","","Washington Commanders","T 20-20 (OT)","L -2","@","New York Giants","U 40.5","",NA
+"461","Year_2022_Week_13","Sun","Dec 4, 2022","1:00","@","Philadelphia Eagles","W 35-10","W -4","","Tennessee Titans","O 44","",NA
+"462","Year_2022_Week_13","Sun","Dec 4, 2022","4:05","","Seattle Seahawks","W 27-23","L -7","@","Los Angeles Rams","O 41","",NA
+"463","Year_2022_Week_13","Sun","Dec 4, 2022","4:05","@","San Francisco 49ers","W 33-17","W -4.5","","Miami Dolphins","O 45.5","",NA
+"464","Year_2022_Week_13","Sun","Dec 4, 2022","4:25","","Kansas City Chiefs","L 24-27","L -2.5","@","Cincinnati Bengals","U 53","",NA
+"465","Year_2022_Week_13","Sun","Dec 4, 2022","4:25","@","Las Vegas Raiders","W 27-20","W -2.5","","Los Angeles Chargers","U 49.5","",NA
+"466","Year_2022_Week_13","Sun","Dec 4, 2022","8:20","@","Dallas Cowboys","W 54-19","W -10.5","","Indianapolis Colts","O 44.5","",NA
+"467","Year_2022_Week_13","Mon","Dec 5, 2022","8:15","@","Tampa Bay Buccaneers","W 17-16","L -3","","New Orleans Saints","U 41","",NA
+"468","Year_2022_Week_14","Thu","Dec 8, 2022","8:15","","Las Vegas Raiders","L 16-17","L -6","@","Los Angeles Rams","U 44.5","Notes",NA
+"469","Year_2022_Week_14","Sun","Dec 11, 2022","1:00","@","Buffalo Bills","W 20-12","L -10","","New York Jets","U 43","",NA
+"470","Year_2022_Week_14","Sun","Dec 11, 2022","1:00","@","Cincinnati Bengals","W 23-10","W -5.5","","Cleveland Browns","U 46.5","",NA
+"471","Year_2022_Week_14","Sun","Dec 11, 2022","1:00","@","Dallas Cowboys","W 27-23","L -17","","Houston Texans","O 44","",NA
+"472","Year_2022_Week_14","Sun","Dec 11, 2022","1:00","@","Detroit Lions","W 34-23","W -2","","Minnesota Vikings","O 51.5","",NA
+"473","Year_2022_Week_14","Sun","Dec 11, 2022","1:00","","Philadelphia Eagles","W 48-22","W -7","@","New York Giants","O 45","",NA
+"474","Year_2022_Week_14","Sun","Dec 11, 2022","1:00","@","Pittsburgh Steelers","L 14-16","L -1.5","","Baltimore Ravens","U 36.5","",NA
+"475","Year_2022_Week_14","Sun","Dec 11, 2022","1:00","@","Tennessee Titans","L 22-36","L -3.5","","Jacksonville Jaguars","O 41","",NA
+"476","Year_2022_Week_14","Sun","Dec 11, 2022","4:05","","Kansas City Chiefs","W 34-28","L -8.5","@","Denver Broncos","O 44","",NA
+"477","Year_2022_Week_14","Sun","Dec 11, 2022","4:25","@","San Francisco 49ers","W 35-7","W -3.5","","Tampa Bay Buccaneers","O 37.5","",NA
+"478","Year_2022_Week_14","Sun","Dec 11, 2022","4:25","@","Seattle Seahawks","L 24-30","L -4","","Carolina Panthers","O 44.5","",NA
+"479","Year_2022_Week_14","Sun","Dec 11, 2022","8:20","","Miami Dolphins","L 17-23","L -3","@","Los Angeles Chargers","U 53.5","",NA
+"480","Year_2022_Week_14","Mon","Dec 12, 2022","8:15","","New England Patriots","W 27-13","W -1.5","@","Arizona Cardinals","U 43.5","",NA
+"481","Year_2022_Week_15","Thu","Dec 15, 2022","8:15","","San Francisco 49ers","W 21-13","W -3","@","Seattle Seahawks","U 43","Notes",NA
+"482","Year_2022_Week_15","Sat","Dec 17, 2022","1:00","@","Minnesota Vikings","W 39-36 (OT)","L -3.5","","Indianapolis Colts","O 47.5","",NA
+"483","Year_2022_Week_15","Sat","Dec 17, 2022","4:30","@","Cleveland Browns","W 13-3","W -3","","Baltimore Ravens","U 38","",NA
+"484","Year_2022_Week_15","Sat","Dec 17, 2022","8:15","@","Buffalo Bills","W 32-29","L -7","","Miami Dolphins","O 43.5","",NA
+"485","Year_2022_Week_15","Sun","Dec 18, 2022","1:00","@","Carolina Panthers","L 16-24","L -2.5","","Pittsburgh Steelers","O 37.5","",NA
+"486","Year_2022_Week_15","Sun","Dec 18, 2022","1:00","","Philadelphia Eagles","W 25-20","L -8.5","@","Chicago Bears","U 48.5","",NA
+"487","Year_2022_Week_15","Sun","Dec 18, 2022","1:00","","Kansas City Chiefs","W 30-24 (OT)","L -14.5","@","Houston Texans","O 48.5","",NA
+"488","Year_2022_Week_15","Sun","Dec 18, 2022","1:00","","Dallas Cowboys","L 34-40 (OT)","L -4","@","Jacksonville Jaguars","O 48","",NA
+"489","Year_2022_Week_15","Sun","Dec 18, 2022","1:00","@","New Orleans Saints","W 21-18","L -4","","Atlanta Falcons","U 43.5","",NA
+"490","Year_2022_Week_15","Sun","Dec 18, 2022","1:00","@","New York Jets","L 17-20","L -1","","Detroit Lions","U 43.5","",NA
+"491","Year_2022_Week_15","Sun","Dec 18, 2022","4:05","@","Denver Broncos","W 24-15","W -1.5","","Arizona Cardinals","O 36.5","",NA
+"492","Year_2022_Week_15","Sun","Dec 18, 2022","4:25","@","Las Vegas Raiders","W 30-24","W -1.5","","New England Patriots","O 45","",NA
+"493","Year_2022_Week_15","Sun","Dec 18, 2022","4:25","@","Los Angeles Chargers","W 17-14","P -3","","Tennessee Titans","U 46.5","",NA
+"494","Year_2022_Week_15","Sun","Dec 18, 2022","4:25","","Cincinnati Bengals","W 34-23","W -3.5","@","Tampa Bay Buccaneers","O 45","",NA
+"495","Year_2022_Week_15","Sun","Dec 18, 2022","8:20","@","Washington Commanders","L 12-20","L -4.5","","New York Giants","U 40.5","",NA
+"496","Year_2022_Week_15","Mon","Dec 19, 2022","8:15","@","Green Bay Packers","W 24-12","W -7","","Los Angeles Rams","U 39.5","",NA
+"497","Year_2022_Week_16","Thu","Dec 22, 2022","8:15","@","New York Jets","L 3-19","L -2","","Jacksonville Jaguars","U 37","Notes",NA
+"498","Year_2022_Week_16","Sat","Dec 24, 2022","1:00","@","Baltimore Ravens","W 17-9","W -6.5","","Atlanta Falcons","U 34.5","",NA
+"499","Year_2022_Week_16","Sat","Dec 24, 2022","1:00","","Detroit Lions","L 23-37","L -2.5","@","Carolina Panthers","O 43.5","",NA
+"500","Year_2022_Week_16","Sat","Dec 24, 2022","1:00","","Buffalo Bills","W 35-13","W -8","@","Chicago Bears","O 40","",NA
+"501","Year_2022_Week_16","Sat","Dec 24, 2022","1:00","@","Cleveland Browns","L 10-17","L -3","","New Orleans Saints","U 32","",NA
+"502","Year_2022_Week_16","Sat","Dec 24, 2022","1:00","@","Kansas City Chiefs","W 24-10","W -10","","Seattle Seahawks","U 49.5","",NA
+"503","Year_2022_Week_16","Sat","Dec 24, 2022","1:00","@","Minnesota Vikings","W 27-24","L -4","","New York Giants","O 49.5","",NA
+"504","Year_2022_Week_16","Sat","Dec 24, 2022","1:00","","Cincinnati Bengals","W 22-18","W -3","@","New England Patriots","U 41.5","",NA
+"505","Year_2022_Week_16","Sat","Dec 24, 2022","1:00","@","Pittsburgh Steelers","W 13-10","W -2","","Las Vegas Raiders","U 38","",NA
+"506","Year_2022_Week_16","Sat","Dec 24, 2022","2:00","@","Tennessee Titans","L 14-19","L -3","","Houston Texans","U 35.5","",NA
+"507","Year_2022_Week_16","Sat","Dec 24, 2022","4:05","@","San Francisco 49ers","W 37-20","W -6.5","","Washington Commanders","O 37.5","",NA
+"508","Year_2022_Week_16","Sat","Dec 24, 2022","4:25","@","Dallas Cowboys","W 40-34","W -4.5","","Philadelphia Eagles","O 47","",NA
+"509","Year_2022_Week_16","Sun","Dec 25, 2022","1:00","@","Miami Dolphins","L 20-26","L -3.5","","Green Bay Packers","U 49.5","",NA
+"510","Year_2022_Week_16","Sun","Dec 25, 2022","4:30","","Denver Broncos","L 14-51","L -3","@","Los Angeles Rams","O 36.5","",NA
+"511","Year_2022_Week_16","Sun","Dec 25, 2022","8:20","","Tampa Bay Buccaneers","W 19-16 (OT)","L -7.5","@","Arizona Cardinals","U 40.5","",NA
+"512","Year_2022_Week_16","Mon","Dec 26, 2022","8:15","","Los Angeles Chargers","W 20-3","W -4","@","Indianapolis Colts","U 45.5","",NA
+"513","Year_2022_Week_17","Thu","Dec 29, 2022","8:15","","Dallas Cowboys","W 27-13","W -12.5","@","Tennessee Titans","O 39.5","Notes",NA
+"514","Year_2022_Week_17","Sun","Jan 1, 2023","1:00","@","Atlanta Falcons","W 20-19","L -6","","Arizona Cardinals","U 41","",NA
+"515","Year_2022_Week_17","Sun","Jan 1, 2023","1:00","@","Detroit Lions","W 41-10","W -6","","Chicago Bears","U 52.5","",NA
+"516","Year_2022_Week_17","Sun","Jan 1, 2023","1:00","","Jacksonville Jaguars","W 31-3","W -3","@","Houston Texans","U 43","",NA
+"517","Year_2022_Week_17","Sun","Jan 1, 2023","1:00","@","Kansas City Chiefs","W 27-24","L -12.5","","Denver Broncos","O 45","",NA
+"518","Year_2022_Week_17","Sun","Jan 1, 2023","1:00","@","New England Patriots","W 23-21","L -2.5","","Miami Dolphins","O 41","",NA
+"519","Year_2022_Week_17","Sun","Jan 1, 2023","1:00","@","New York Giants","W 38-10","W -5.5","","Indianapolis Colts","O 39","",NA
+"520","Year_2022_Week_17","Sun","Jan 1, 2023","1:00","@","Philadelphia Eagles","L 10-20","L -5.5","","New Orleans Saints","U 41.5","",NA
+"521","Year_2022_Week_17","Sun","Jan 1, 2023","1:00","@","Tampa Bay Buccaneers","W 30-24","W -3.5","","Carolina Panthers","O 40.5","",NA
+"522","Year_2022_Week_17","Sun","Jan 1, 2023","1:00","@","Washington Commanders","L 10-24","L -2","","Cleveland Browns","U 40.5","",NA
+"523","Year_2022_Week_17","Sun","Jan 1, 2023","4:05","","San Francisco 49ers","W 37-34 (OT)","L -9.5","@","Las Vegas Raiders","O 42.5","",NA
+"524","Year_2022_Week_17","Sun","Jan 1, 2023","4:05","","New York Jets","L 6-23","L -1.5","@","Seattle Seahawks","U 42.5","",NA
+"525","Year_2022_Week_17","Sun","Jan 1, 2023","4:25","@","Green Bay Packers","W 41-17","W -3","","Minnesota Vikings","O 47.5","",NA
+"526","Year_2022_Week_17","Sun","Jan 1, 2023","4:25","@","Los Angeles Chargers","W 31-10","W -6.5","","Los Angeles Rams","U 41.5","",NA
+"527","Year_2022_Week_17","Sun","Jan 1, 2023","8:20","@","Baltimore Ravens","L 13-16","L -2.5","","Pittsburgh Steelers","U 35","",NA
+"528","Year_2022_Week_18","Sat","Jan 7, 2023","4:30","","Kansas City Chiefs","W 31-13","W -9","@","Las Vegas Raiders","U 52.5","Notes",NA
+"529","Year_2022_Week_18","Sat","Jan 7, 2023","8:15","@","Jacksonville Jaguars","W 20-16","L -6.5","","Tennessee Titans","U 40","",NA
+"530","Year_2022_Week_18","Sun","Jan 8, 2023","1:00","@","Atlanta Falcons","W 30-17","W -4","","Tampa Bay Buccaneers","O 40.5","",NA
+"531","Year_2022_Week_18","Sun","Jan 8, 2023","1:00","@","Buffalo Bills","W 35-23","W -7.5","","New England Patriots","O 43.5","",NA
+"532","Year_2022_Week_18","Sun","Jan 8, 2023","1:00","","Minnesota Vikings","W 29-13","W -7","@","Chicago Bears","U 42.5","",NA
+"533","Year_2022_Week_18","Sun","Jan 8, 2023","1:00","@","Cincinnati Bengals","W 27-16","W -9","","Baltimore Ravens","O 39.5","",NA
+"534","Year_2022_Week_18","Sun","Jan 8, 2023","1:00","@","Indianapolis Colts","L 31-32","L -2.5","","Houston Texans","O 37.5","",NA
+"535","Year_2022_Week_18","Sun","Jan 8, 2023","1:00","@","Miami Dolphins","W 11-6","W -3.5","","New York Jets","U 37","",NA
+"536","Year_2022_Week_18","Sun","Jan 8, 2023","1:00","@","New Orleans Saints","L 7-10","L -3.5","","Carolina Panthers","U 41.5","",NA
+"537","Year_2022_Week_18","Sun","Jan 8, 2023","1:00","@","Pittsburgh Steelers","W 28-14","W -2.5","","Cleveland Browns","O 40","",NA
+"538","Year_2022_Week_18","Sun","Jan 8, 2023","4:25","@","Denver Broncos","W 31-28","P -3","","Los Angeles Chargers","O 39.5","",NA
+"539","Year_2022_Week_18","Sun","Jan 8, 2023","4:25","@","Philadelphia Eagles","W 22-16","L -16","","New York Giants","U 42","",NA
+"540","Year_2022_Week_18","Sun","Jan 8, 2023","4:25","@","San Francisco 49ers","W 38-13","W -14","","Arizona Cardinals","O 39.5","",NA
+"541","Year_2022_Week_18","Sun","Jan 8, 2023","4:25","@","Seattle Seahawks","W 19-16 (OT)","L -6","","Los Angeles Rams","U 41.5","",NA
+"542","Year_2022_Week_18","Sun","Jan 8, 2023","4:25","","Dallas Cowboys","L 6-26","L -7","@","Washington Commanders","U 40","",NA
+"543","Year_2022_Week_18","Sun","Jan 8, 2023","8:20","@","Green Bay Packers","L 16-20","L -5","","Detroit Lions","U 49","",NA
+"544","Year_2023_Week_1","Thu","Sep 7, 2023","8:20","@","Kansas City Chiefs","L 20-21","L -4","","Detroit Lions","U 53.5","Notes",NA
+"545","Year_2023_Week_1","Sun","Sep 10, 2023","1:00","@","Atlanta Falcons","W 24-10","W -3","","Carolina Panthers","U 43","",NA
+"546","Year_2023_Week_1","Sun","Sep 10, 2023","1:00","@","Baltimore Ravens","W 25-9","W -9","","Houston Texans","U 44.5","",NA
+"547","Year_2023_Week_1","Sun","Sep 10, 2023","1:00","@","Chicago Bears","L 20-38","L -2.5","","Green Bay Packers","O 44.5","",NA
+"548","Year_2023_Week_1","Sun","Sep 10, 2023","1:00","","Cincinnati Bengals","L 3-24","L -1","@","Cleveland Browns","U 46.5","",NA
+"549","Year_2023_Week_1","Sun","Sep 10, 2023","1:00","","Jacksonville Jaguars","W 31-21","W -3.5","@","Indianapolis Colts","O 43.5","",NA
+"550","Year_2023_Week_1","Sun","Sep 10, 2023","1:00","@","Minnesota Vikings","L 17-20","L -4","","Tampa Bay Buccaneers","U 45.5","",NA
+"551","Year_2023_Week_1","Sun","Sep 10, 2023","1:00","@","New Orleans Saints","W 16-15","L -3.5","","Tennessee Titans","U 41.5","",NA
+"552","Year_2023_Week_1","Sun","Sep 10, 2023","1:00","","San Francisco 49ers","W 30-7","W -2.5","@","Pittsburgh Steelers","U 40.5","",NA
+"553","Year_2023_Week_1","Sun","Sep 10, 2023","1:00","@","Washington Commanders","W 20-16","L -6","","Arizona Cardinals","U 40.5","",NA
+"554","Year_2023_Week_1","Sun","Sep 10, 2023","4:25","@","Denver Broncos","L 16-17","L -2.5","","Las Vegas Raiders","U 44.5","",NA
+"555","Year_2023_Week_1","Sun","Sep 10, 2023","4:25","@","Los Angeles Chargers","L 34-36","L -2.5","","Miami Dolphins","O 49.5","",NA
+"556","Year_2023_Week_1","Sun","Sep 10, 2023","4:25","","Philadelphia Eagles","W 25-20","W -4","@","New England Patriots","U 45.5","",NA
+"557","Year_2023_Week_1","Sun","Sep 10, 2023","4:25","@","Seattle Seahawks","L 13-30","L -5.5","","Los Angeles Rams","U 46.5","",NA
+"558","Year_2023_Week_1","Sun","Sep 10, 2023","8:20","","Dallas Cowboys","W 40-0","W -3","@","New York Giants","U 46.5","",NA
+"559","Year_2023_Week_1","Mon","Sep 11, 2023","8:15","","Buffalo Bills","L 16-22 (OT)","L -1.5","@","New York Jets","U 47.5","",NA
+"560","Year_2023_Week_2","Thu","Sep 14, 2023","8:15","@","Philadelphia Eagles","W 34-28","P -6","","Minnesota Vikings","O 49","Notes",NA
+"561","Year_2023_Week_2","Sun","Sep 17, 2023","1:00","@","Atlanta Falcons","W 25-24","L -3","","Green Bay Packers","O 40.5","",NA
+"562","Year_2023_Week_2","Sun","Sep 17, 2023","1:00","@","Buffalo Bills","W 38-10","W -8","","Las Vegas Raiders","O 47","",NA
+"563","Year_2023_Week_2","Sun","Sep 17, 2023","1:00","@","Cincinnati Bengals","L 24-27","L -3.5","","Baltimore Ravens","O 45.5","",NA
+"564","Year_2023_Week_2","Sun","Sep 17, 2023","1:00","@","Detroit Lions","L 31-37 (OT)","L -4.5","","Seattle Seahawks","O 47","",NA
+"565","Year_2023_Week_2","Sun","Sep 17, 2023","1:00","@","Houston Texans","L 20-31","L -1","","Indianapolis Colts","O 40","",NA
+"566","Year_2023_Week_2","Sun","Sep 17, 2023","1:00","","Kansas City Chiefs","W 17-9","W -3.5","@","Jacksonville Jaguars","U 51","",NA
+"567","Year_2023_Week_2","Sun","Sep 17, 2023","1:00","@","Tampa Bay Buccaneers","W 27-17","W -2.5","","Chicago Bears","O 42","",NA
+"568","Year_2023_Week_2","Sun","Sep 17, 2023","1:00","","Los Angeles Chargers","L 24-27 (OT)","L -2.5","@","Tennessee Titans","O 45.5","",NA
+"569","Year_2023_Week_2","Sun","Sep 17, 2023","4:05","","New York Giants","W 31-28","L -4.5","@","Arizona Cardinals","O 36.5","",NA
+"570","Year_2023_Week_2","Sun","Sep 17, 2023","4:05","","San Francisco 49ers","W 30-23","L -7.5","@","Los Angeles Rams","O 44.5","",NA
+"571","Year_2023_Week_2","Sun","Sep 17, 2023","4:25","@","Dallas Cowboys","W 30-10","W -8.5","","New York Jets","O 38.5","",NA
+"572","Year_2023_Week_2","Sun","Sep 17, 2023","4:25","@","Denver Broncos","L 33-35","L -4","","Washington Commanders","O 38.5","",NA
+"573","Year_2023_Week_2","Sun","Sep 17, 2023","8:20","","Miami Dolphins","W 24-17","W -2","@","New England Patriots","U 46.5","",NA
+"574","Year_2023_Week_2","Mon","Sep 18, 2023","7:15","","New Orleans Saints","W 20-17","P -3","@","Carolina Panthers","U 39.5","",NA
+"575","Year_2023_Week_2","Mon","Sep 18, 2023","8:15","","Cleveland Browns","L 22-26","L -2.5","@","Pittsburgh Steelers","O 39","",NA
+"576","Year_2023_Week_3","Thu","Sep 21, 2023","8:15","@","San Francisco 49ers","W 30-12","W -10.5","","New York Giants","U 43.5","Notes",NA
+"577","Year_2023_Week_3","Sun","Sep 24, 2023","1:00","@","Baltimore Ravens","L 19-22 (OT)","L -7.5","","Indianapolis Colts","U 44.5","",NA
+"578","Year_2023_Week_3","Sun","Sep 24, 2023","1:00","@","Cleveland Browns","W 27-3","W -3.5","","Tennessee Titans","U 38","",NA
+"579","Year_2023_Week_3","Sun","Sep 24, 2023","1:00","@","Detroit Lions","W 20-6","W -3","","Atlanta Falcons","U 47.5","",NA
+"580","Year_2023_Week_3","Sun","Sep 24, 2023","1:00","@","Green Bay Packers","W 18-17","L -1.5","","New Orleans Saints","U 41.5","",NA
+"581","Year_2023_Week_3","Sun","Sep 24, 2023","1:00","@","Jacksonville Jaguars","L 17-37","L -9.5","","Houston Texans","O 43.5","",NA
+"582","Year_2023_Week_3","Sun","Sep 24, 2023","1:00","@","Miami Dolphins","W 70-20","W -6","","Denver Broncos","O 47.5","",NA
+"583","Year_2023_Week_3","Sun","Sep 24, 2023","1:00","@","Minnesota Vikings","L 24-28","L -1","","Los Angeles Chargers","U 53","",NA
+"584","Year_2023_Week_3","Sun","Sep 24, 2023","1:00","","New England Patriots","W 15-10","W -2.5","@","New York Jets","U 35.5","",NA
+"585","Year_2023_Week_3","Sun","Sep 24, 2023","1:00","","Buffalo Bills","W 37-3","W -4.5","@","Washington Commanders","U 43.5","",NA
+"586","Year_2023_Week_3","Sun","Sep 24, 2023","4:05","@","Seattle Seahawks","W 37-27","W -5","","Carolina Panthers","O 43","",NA
+"587","Year_2023_Week_3","Sun","Sep 24, 2023","4:25","","Dallas Cowboys","L 16-28","L -11.5","@","Arizona Cardinals","O 43.5","",NA
+"588","Year_2023_Week_3","Sun","Sep 24, 2023","4:25","@","Kansas City Chiefs","W 41-10","W -13","","Chicago Bears","O 48.5","",NA
+"589","Year_2023_Week_3","Sun","Sep 24, 2023","8:20","@","Las Vegas Raiders","L 18-23","L -3","","Pittsburgh Steelers","U 43.5","",NA
+"590","Year_2023_Week_3","Mon","Sep 25, 2023","7:15","","Philadelphia Eagles","W 25-11","W -6","@","Tampa Bay Buccaneers","U 44","",NA
+"591","Year_2023_Week_3","Mon","Sep 25, 2023","8:15","@","Cincinnati Bengals","W 19-16","P -3","","Los Angeles Rams","U 45.5","",NA
+"592","Year_2023_Week_4","Thu","Sep 28, 2023","8:15","","Detroit Lions","W 34-20","W -2.5","@","Green Bay Packers","O 45","Notes",NA
+"593","Year_2023_Week_4","Sun","Oct 1, 2023","9:30","N","Jacksonville Jaguars","W 23-7","W -3.5","","Atlanta Falcons","U 42.5","at London",NA
+"594","Year_2023_Week_4","Sun","Oct 1, 2023","1:00","@","Buffalo Bills","W 48-20","W -2.5","","Miami Dolphins","O 53","",NA
+"595","Year_2023_Week_4","Sun","Oct 1, 2023","1:00","","Minnesota Vikings","W 21-13","W -4.5","@","Carolina Panthers","U 46.5","",NA
+"596","Year_2023_Week_4","Sun","Oct 1, 2023","1:00","","Denver Broncos","W 31-28","P -3","@","Chicago Bears","O 47","",NA
+"597","Year_2023_Week_4","Sun","Oct 1, 2023","1:00","","Baltimore Ravens","W 28-3","W -2.5","@","Cleveland Browns","U 41","",NA
+"598","Year_2023_Week_4","Sun","Oct 1, 2023","1:00","","Pittsburgh Steelers","L 6-30","L -3","@","Houston Texans","U 41.5","",NA
+"599","Year_2023_Week_4","Sun","Oct 1, 2023","1:00","","Los Angeles Rams","W 29-23 (OT)","W -1","@","Indianapolis Colts","O 44.5","",NA
+"600","Year_2023_Week_4","Sun","Oct 1, 2023","1:00","@","New Orleans Saints","L 9-26","L -4.5","","Tampa Bay Buccaneers","U 41","",NA
+"601","Year_2023_Week_4","Sun","Oct 1, 2023","1:00","@","Philadelphia Eagles","W 34-31 (OT)","L -9.5","","Washington Commanders","O 43","",NA
+"602","Year_2023_Week_4","Sun","Oct 1, 2023","1:00","","Cincinnati Bengals","L 3-27","L -2.5","@","Tennessee Titans","U 41.5","",NA
+"603","Year_2023_Week_4","Sun","Oct 1, 2023","4:05","@","Los Angeles Chargers","W 24-17","W -5.5","","Las Vegas Raiders","U 48.5","",NA
+"604","Year_2023_Week_4","Sun","Oct 1, 2023","4:25","@","Dallas Cowboys","W 38-3","W -6.5","","New England Patriots","U 43.5","",NA
+"605","Year_2023_Week_4","Sun","Oct 1, 2023","4:25","@","San Francisco 49ers","W 35-16","W -16.5","","Arizona Cardinals","O 44.5","",NA
+"606","Year_2023_Week_4","Sun","Oct 1, 2023","8:20","","Kansas City Chiefs","W 23-20","L -9.5","@","New York Jets","O 41.5","",NA
+"607","Year_2023_Week_4","Mon","Oct 2, 2023","8:15","","Seattle Seahawks","W 24-3","W -2.5","@","New York Giants","U 46.5","",NA
+"608","Year_2023_Week_5","Thu","Oct 5, 2023","8:15","@","Washington Commanders","L 20-40","L -6","","Chicago Bears","O 44.5","Notes",NA
+"609","Year_2023_Week_5","Sun","Oct 8, 2023","9:30","N","Buffalo Bills","L 20-25","L -5.5","","Jacksonville Jaguars","U 48.5","at London",NA
+"610","Year_2023_Week_5","Sun","Oct 8, 2023","1:00","@","Atlanta Falcons","W 21-19","L -2.5","","Houston Texans","U 42","",NA
+"611","Year_2023_Week_5","Sun","Oct 8, 2023","1:00","@","Detroit Lions","W 42-24","W -9.5","","Carolina Panthers","O 43.5","",NA
+"612","Year_2023_Week_5","Sun","Oct 8, 2023","1:00","","Tennessee Titans","L 16-23","L -2.5","@","Indianapolis Colts","U 43.5","",NA
+"613","Year_2023_Week_5","Sun","Oct 8, 2023","1:00","@","Miami Dolphins","W 31-16","W -13","","New York Giants","U 47.5","",NA
+"614","Year_2023_Week_5","Sun","Oct 8, 2023","1:00","@","New England Patriots","L 0-34","L -1.5","","New Orleans Saints","U 38.5","",NA
+"615","Year_2023_Week_5","Sun","Oct 8, 2023","1:00","","Baltimore Ravens","L 10-17","L -4.5","@","Pittsburgh Steelers","U 38.5","",NA
+"616","Year_2023_Week_5","Sun","Oct 8, 2023","4:05","","Cincinnati Bengals","W 34-20","W -3","@","Arizona Cardinals","O 45.5","",NA
+"617","Year_2023_Week_5","Sun","Oct 8, 2023","4:05","","Philadelphia Eagles","W 23-14","W -3.5","@","Los Angeles Rams","U 49.5","",NA
+"618","Year_2023_Week_5","Sun","Oct 8, 2023","4:25","@","Denver Broncos","L 21-31","L -2.5","","New York Jets","O 42.5","",NA
+"619","Year_2023_Week_5","Sun","Oct 8, 2023","4:25","","Kansas City Chiefs","W 27-20","W -3.5","@","Minnesota Vikings","U 52.5","",NA
+"620","Year_2023_Week_5","Sun","Oct 8, 2023","8:20","@","San Francisco 49ers","W 42-10","W -3.5","","Dallas Cowboys","O 45","",NA
+"621","Year_2023_Week_5","Mon","Oct 9, 2023","8:15","@","Las Vegas Raiders","W 17-13","W -1.5","","Green Bay Packers","U 44.5","",NA
+"622","Year_2023_Week_6","Thu","Oct 12, 2023","8:15","@","Kansas City Chiefs","W 19-8","W -10.5","","Denver Broncos","U 47.5","Notes",NA
+"623","Year_2023_Week_6","Sun","Oct 15, 2023","9:30","N","Baltimore Ravens","W 24-16","W -5","","Tennessee Titans","U 42.5","at London",NA
+"624","Year_2023_Week_6","Sun","Oct 15, 2023","1:00","@","Atlanta Falcons","L 16-24","L -1.5","","Washington Commanders","U 41.5","",NA
+"625","Year_2023_Week_6","Sun","Oct 15, 2023","1:00","","Minnesota Vikings","W 19-13","W -3","@","Chicago Bears","U 44.5","",NA
+"626","Year_2023_Week_6","Sun","Oct 15, 2023","1:00","@","Cincinnati Bengals","W 17-13","W -3","","Seattle Seahawks","U 45.5","",NA
+"627","Year_2023_Week_6","Sun","Oct 15, 2023","1:00","","San Francisco 49ers","L 17-19","L -9.5","@","Cleveland Browns","O 35.5","",NA
+"628","Year_2023_Week_6","Sun","Oct 15, 2023","1:00","","New Orleans Saints","L 13-20","L -2.5","@","Houston Texans","U 41.5","",NA
+"629","Year_2023_Week_6","Sun","Oct 15, 2023","1:00","@","Jacksonville Jaguars","W 37-20","W -4.5","","Indianapolis Colts","O 43.5","",NA
+"630","Year_2023_Week_6","Sun","Oct 15, 2023","1:00","@","Miami Dolphins","W 42-21","W -14","","Carolina Panthers","O 47.5","",NA
+"631","Year_2023_Week_6","Sun","Oct 15, 2023","4:05","@","Las Vegas Raiders","W 21-17","W -2.5","","New England Patriots","U 42.5","",NA
+"632","Year_2023_Week_6","Sun","Oct 15, 2023","4:25","@","Los Angeles Rams","W 26-9","W -7","","Arizona Cardinals","U 47.5","",NA
+"633","Year_2023_Week_6","Sun","Oct 15, 2023","4:25","","Philadelphia Eagles","L 14-20","L -6.5","@","New York Jets","U 43.5","",NA
+"634","Year_2023_Week_6","Sun","Oct 15, 2023","4:25","","Detroit Lions","W 20-6","W -3","@","Tampa Bay Buccaneers","U 43.5","",NA
+"635","Year_2023_Week_6","Sun","Oct 15, 2023","8:20","@","Buffalo Bills","W 14-9","L -15.5","","New York Giants","U 43.5","",NA
+"636","Year_2023_Week_6","Mon","Oct 16, 2023","8:15","","Dallas Cowboys","W 20-17","W -1.5","@","Los Angeles Chargers","U 50","",NA
+"637","Year_2023_Week_7","Thu","Oct 19, 2023","8:15","@","New Orleans Saints","L 24-31","L -2.5","","Jacksonville Jaguars","O 40.5","Notes",NA
+"638","Year_2023_Week_7","Sun","Oct 22, 2023","1:00","@","Baltimore Ravens","W 38-6","W -3","","Detroit Lions","O 43.5","",NA
+"639","Year_2023_Week_7","Sun","Oct 22, 2023","1:00","","Las Vegas Raiders","L 12-30","L -2.5","@","Chicago Bears","O 38.5","",NA
+"640","Year_2023_Week_7","Sun","Oct 22, 2023","1:00","","Cleveland Browns","W 39-38","L -3.5","@","Indianapolis Colts","O 39.5","",NA
+"641","Year_2023_Week_7","Sun","Oct 22, 2023","1:00","","Buffalo Bills","L 25-29","L -7.5","@","New England Patriots","O 41.5","",NA
+"642","Year_2023_Week_7","Sun","Oct 22, 2023","1:00","","Washington Commanders","L 7-14","L -3","@","New York Giants","U 36.5","",NA
+"643","Year_2023_Week_7","Sun","Oct 22, 2023","1:00","@","Tampa Bay Buccaneers","L 13-16","L -3","","Atlanta Falcons","U 37.5","",NA
+"644","Year_2023_Week_7","Sun","Oct 22, 2023","4:05","@","Los Angeles Rams","L 17-24","L -3","","Pittsburgh Steelers","U 43.5","",NA
+"645","Year_2023_Week_7","Sun","Oct 22, 2023","4:05","@","Seattle Seahawks","W 20-10","W -8.5","","Arizona Cardinals","U 43.5","",NA
+"646","Year_2023_Week_7","Sun","Oct 22, 2023","4:25","@","Denver Broncos","W 19-17","W -1","","Green Bay Packers","U 44","",NA
+"647","Year_2023_Week_7","Sun","Oct 22, 2023","4:25","@","Kansas City Chiefs","W 31-17","W -5.5","","Los Angeles Chargers","U 48.5","",NA
+"648","Year_2023_Week_7","Sun","Oct 22, 2023","8:20","@","Philadelphia Eagles","W 31-17","W -3","","Miami Dolphins","U 51.5","",NA
+"649","Year_2023_Week_7","Mon","Oct 23, 2023","8:15","","San Francisco 49ers","L 17-22","L -7","@","Minnesota Vikings","U 44","",NA
+"650","Year_2023_Week_8","Thu","Oct 26, 2023","8:15","@","Buffalo Bills","W 24-18","L -10","","Tampa Bay Buccaneers","U 43.5","Notes",NA
+"651","Year_2023_Week_8","Sun","Oct 29, 2023","1:00","","Houston Texans","L 13-15","L -3.5","@","Carolina Panthers","U 42.5","",NA
+"652","Year_2023_Week_8","Sun","Oct 29, 2023","1:00","@","Dallas Cowboys","W 43-20","W -6.5","","Los Angeles Rams","O 44.5","",NA
+"653","Year_2023_Week_8","Sun","Oct 29, 2023","1:00","","Minnesota Vikings","W 24-10","W -1.5","@","Green Bay Packers","U 41.5","",NA
+"654","Year_2023_Week_8","Sun","Oct 29, 2023","1:00","","New Orleans Saints","W 38-27","W -1.5","@","Indianapolis Colts","O 43.5","",NA
+"655","Year_2023_Week_8","Sun","Oct 29, 2023","1:00","@","Miami Dolphins","W 31-17","W -8.5","","New England Patriots","O 46.5","",NA
+"656","Year_2023_Week_8","Sun","Oct 29, 2023","1:00","","New York Jets","W 13-10 (OT)","L -3.5","@","New York Giants","U 34.5","",NA
+"657","Year_2023_Week_8","Sun","Oct 29, 2023","1:00","","Jacksonville Jaguars","W 20-10","W -2.5","@","Pittsburgh Steelers","U 40.5","",NA
+"658","Year_2023_Week_8","Sun","Oct 29, 2023","1:00","","Atlanta Falcons","L 23-28","L -2.5","@","Tennessee Titans","O 35.5","",NA
+"659","Year_2023_Week_8","Sun","Oct 29, 2023","1:00","","Philadelphia Eagles","W 38-31","W -6.5","@","Washington Commanders","O 42.5","",NA
+"660","Year_2023_Week_8","Sun","Oct 29, 2023","4:05","@","Seattle Seahawks","W 24-20","L -4.5","","Cleveland Browns","O 39.5","",NA
+"661","Year_2023_Week_8","Sun","Oct 29, 2023","4:25","","Baltimore Ravens","W 31-24","L -9.5","@","Arizona Cardinals","O 44.5","",NA
+"662","Year_2023_Week_8","Sun","Oct 29, 2023","4:25","","Kansas City Chiefs","L 9-24","L -7","@","Denver Broncos","U 45.5","",NA
+"663","Year_2023_Week_8","Sun","Oct 29, 2023","4:25","@","San Francisco 49ers","L 17-31","L -4.5","","Cincinnati Bengals","O 44.5","",NA
+"664","Year_2023_Week_8","Sun","Oct 29, 2023","8:20","@","Los Angeles Chargers","W 30-13","W -10.5","","Chicago Bears","U 45.5","",NA
+"665","Year_2023_Week_8","Mon","Oct 30, 2023","8:15","@","Detroit Lions","W 26-14","W -7","","Las Vegas Raiders","U 45.5","",NA
+"666","Year_2023_Week_9","Thu","Nov 2, 2023","8:15","@","Pittsburgh Steelers","W 20-16","W -3","","Tennessee Titans","U 36.5","Notes",NA
+"667","Year_2023_Week_9","Sun","Nov 5, 2023","9:30","N","Kansas City Chiefs","W 21-14","W -1.5","","Miami Dolphins","U 51.5","at Frankfurt",NA
+"668","Year_2023_Week_9","Sun","Nov 5, 2023","1:00","@","Atlanta Falcons","L 28-31","L -3.5","","Minnesota Vikings","O 39.5","",NA
+"669","Year_2023_Week_9","Sun","Nov 5, 2023","1:00","@","Baltimore Ravens","W 37-3","W -6.5","","Seattle Seahawks","U 44.5","",NA
+"670","Year_2023_Week_9","Sun","Nov 5, 2023","1:00","@","Cleveland Browns","W 27-0","W -13.5","","Arizona Cardinals","U 38.5","",NA
+"671","Year_2023_Week_9","Sun","Nov 5, 2023","1:00","@","Green Bay Packers","W 20-3","W -3.5","","Los Angeles Rams","U 37.5","",NA
+"672","Year_2023_Week_9","Sun","Nov 5, 2023","1:00","@","Houston Texans","W 39-37","L -2.5","","Tampa Bay Buccaneers","O 36.5","",NA
+"673","Year_2023_Week_9","Sun","Nov 5, 2023","1:00","@","New England Patriots","L 17-20","L -2.5","","Washington Commanders","U 40.5","",NA
+"674","Year_2023_Week_9","Sun","Nov 5, 2023","1:00","@","New Orleans Saints","W 24-17","L -8.5","","Chicago Bears","U 42.5","",NA
+"675","Year_2023_Week_9","Sun","Nov 5, 2023","4:05","","Indianapolis Colts","W 27-13","W -1.5","@","Carolina Panthers","U 44.5","",NA
+"676","Year_2023_Week_9","Sun","Nov 5, 2023","4:25","@","Las Vegas Raiders","W 30-6","W -1.5","","New York Giants","U 38.5","",NA
+"677","Year_2023_Week_9","Sun","Nov 5, 2023","4:25","@","Philadelphia Eagles","W 28-23","W -3","","Dallas Cowboys","O 46.5","",NA
+"678","Year_2023_Week_9","Sun","Nov 5, 2023","8:20","@","Cincinnati Bengals","W 24-18","W -1.5","","Buffalo Bills","U 50.5","",NA
+"679","Year_2023_Week_9","Mon","Nov 6, 2023","8:15","","Los Angeles Chargers","W 27-6","W -3","@","New York Jets","U 41","",NA
+"680","Year_2023_Week_10","Thu","Nov 9, 2023","8:15","@","Chicago Bears","W 16-13","L -3.5","","Carolina Panthers","U 38.5","Notes",NA
+"681","Year_2023_Week_10","Sun","Nov 12, 2023","9:30","N","Indianapolis Colts","W 10-6","W -2.5","","New England Patriots","U 41.5","at Frankfurt",NA
+"682","Year_2023_Week_10","Sun","Nov 12, 2023","1:00","@","Baltimore Ravens","L 31-33","L -6","","Cleveland Browns","O 38.5","",NA
+"683","Year_2023_Week_10","Sun","Nov 12, 2023","1:00","@","Cincinnati Bengals","L 27-30","L -5.5","","Houston Texans","O 45.5","",NA
+"684","Year_2023_Week_10","Sun","Nov 12, 2023","1:00","","San Francisco 49ers","W 34-3","W -3","@","Jacksonville Jaguars","U 44.5","",NA
+"685","Year_2023_Week_10","Sun","Nov 12, 2023","1:00","","New Orleans Saints","L 19-27","L -2.5","@","Minnesota Vikings","O 40.5","",NA
+"686","Year_2023_Week_10","Sun","Nov 12, 2023","1:00","@","Pittsburgh Steelers","W 23-19","W -3","","Green Bay Packers","O 38.5","",NA
+"687","Year_2023_Week_10","Sun","Nov 12, 2023","1:00","@","Tampa Bay Buccaneers","W 20-6","W -2.5","","Tennessee Titans","U 38.5","",NA
+"688","Year_2023_Week_10","Sun","Nov 12, 2023","4:05","","Atlanta Falcons","L 23-25","L -2.5","@","Arizona Cardinals","O 43.5","",NA
+"689","Year_2023_Week_10","Sun","Nov 12, 2023","4:05","","Detroit Lions","W 41-38","W -2.5","@","Los Angeles Chargers","O 48.5","",NA
+"690","Year_2023_Week_10","Sun","Nov 12, 2023","4:25","@","Dallas Cowboys","W 49-17","W -17.5","","New York Giants","O 38.5","",NA
+"691","Year_2023_Week_10","Sun","Nov 12, 2023","4:25","@","Seattle Seahawks","W 29-26","L -5.5","","Washington Commanders","O 44.5","",NA
+"692","Year_2023_Week_10","Sun","Nov 12, 2023","8:20","","New York Jets","L 12-16","L -1.5","@","Las Vegas Raiders","U 35.5","",NA
+"693","Year_2023_Week_10","Mon","Nov 13, 2023","8:15","@","Buffalo Bills","L 22-24","L -7.5","","Denver Broncos","U 47.5","",NA
+"694","Year_2023_Week_11","Thu","Nov 16, 2023","8:15","@","Baltimore Ravens","W 34-20","W -3.5","","Cincinnati Bengals","O 46.5","Notes",NA
+"695","Year_2023_Week_11","Sun","Nov 19, 2023","1:00","","Dallas Cowboys","W 33-10","W -11","@","Carolina Panthers","O 42.5","",NA
+"696","Year_2023_Week_11","Sun","Nov 19, 2023","1:00","@","Cleveland Browns","W 13-10","W -1.5","","Pittsburgh Steelers","U 33.5","",NA
+"697","Year_2023_Week_11","Sun","Nov 19, 2023","1:00","@","Detroit Lions","W 31-26","L -7.5","","Chicago Bears","O 48.5","",NA
+"698","Year_2023_Week_11","Sun","Nov 19, 2023","1:00","","Los Angeles Chargers","L 20-23","L -3","@","Green Bay Packers","U 44","",NA
+"699","Year_2023_Week_11","Sun","Nov 19, 2023","1:00","@","Houston Texans","W 21-16","L -5.5","","Arizona Cardinals","U 48.5","",NA
+"700","Year_2023_Week_11","Sun","Nov 19, 2023","1:00","@","Jacksonville Jaguars","W 34-14","W -6.5","","Tennessee Titans","O 40","",NA
+"701","Year_2023_Week_11","Sun","Nov 19, 2023","1:00","@","Miami Dolphins","W 20-13","L -13.5","","Las Vegas Raiders","U 46","",NA
+"702","Year_2023_Week_11","Sun","Nov 19, 2023","1:00","@","Washington Commanders","L 19-31","L -7.5","","New York Giants","O 39.5","",NA
+"703","Year_2023_Week_11","Sun","Nov 19, 2023","4:05","@","San Francisco 49ers","W 27-14","L -13.5","","Tampa Bay Buccaneers","U 41.5","",NA
+"704","Year_2023_Week_11","Sun","Nov 19, 2023","4:25","@","Buffalo Bills","W 32-6","W -7.5","","New York Jets","U 38.5","",NA
+"705","Year_2023_Week_11","Sun","Nov 19, 2023","4:25","@","Los Angeles Rams","W 17-16","L -2","","Seattle Seahawks","U 45.5","",NA
+"706","Year_2023_Week_11","Sun","Nov 19, 2023","8:20","@","Denver Broncos","W 21-20","L -2.5","","Minnesota Vikings","U 42.5","",NA
+"707","Year_2023_Week_11","Mon","Nov 20, 2023","8:15","@","Kansas City Chiefs","L 17-21","L -2.5","","Philadelphia Eagles","U 45.5","",NA
+"708","Year_2023_Week_12","Thu","Nov 23, 2023","12:30","@","Detroit Lions","L 22-29","L -8.5","","Green Bay Packers","O 46.5","Notes",NA
+"709","Year_2023_Week_12","Thu","Nov 23, 2023","4:30","@","Dallas Cowboys","W 45-10","W -13.5","","Washington Commanders","O 47.5","",NA
+"710","Year_2023_Week_12","Thu","Nov 23, 2023","8:20","","San Francisco 49ers","W 31-13","W -7","@","Seattle Seahawks","O 43.5","",NA
+"711","Year_2023_Week_12","Fri","Nov 24, 2023","3:00","","Miami Dolphins","W 34-13","W -9.5","@","New York Jets","O 39.5","",NA
+"712","Year_2023_Week_12","Sun","Nov 26, 2023","1:00","","New Orleans Saints","L 15-24","L -1.5","@","Atlanta Falcons","U 40.5","",NA
+"713","Year_2023_Week_12","Sun","Nov 26, 2023","1:00","","Pittsburgh Steelers","W 16-10","W -2.5","@","Cincinnati Bengals","U 35.5","",NA
+"714","Year_2023_Week_12","Sun","Nov 26, 2023","1:00","","Jacksonville Jaguars","W 24-21","W -1.5","@","Houston Texans","U 48.5","",NA
+"715","Year_2023_Week_12","Sun","Nov 26, 2023","1:00","@","Indianapolis Colts","W 27-20","W -2.5","","Tampa Bay Buccaneers","O 44.5","",NA
+"716","Year_2023_Week_12","Sun","Nov 26, 2023","1:00","","New England Patriots","L 7-10","L -4","@","New York Giants","U 36","",NA
+"717","Year_2023_Week_12","Sun","Nov 26, 2023","1:00","@","Tennessee Titans","W 17-10","W -3.5","","Carolina Panthers","U 36.5","",NA
+"718","Year_2023_Week_12","Sun","Nov 26, 2023","4:05","","Los Angeles Rams","W 37-14","W -2.5","@","Arizona Cardinals","O 45.5","",NA
+"719","Year_2023_Week_12","Sun","Nov 26, 2023","4:05","@","Denver Broncos","W 29-12","W -1","","Cleveland Browns","O 37","",NA
+"720","Year_2023_Week_12","Sun","Nov 26, 2023","4:25","","Kansas City Chiefs","W 31-17","W -9.5","@","Las Vegas Raiders","O 42.5","",NA
+"721","Year_2023_Week_12","Sun","Nov 26, 2023","4:25","@","Philadelphia Eagles","W 37-34 (OT)","W -2.5","","Buffalo Bills","O 48.5","",NA
+"722","Year_2023_Week_12","Sun","Nov 26, 2023","8:20","","Baltimore Ravens","W 20-10","W -3","@","Los Angeles Chargers","U 48.5","",NA
+"723","Year_2023_Week_12","Mon","Nov 27, 2023","8:15","@","Minnesota Vikings","L 10-12","L -3","","Chicago Bears","U 43.5","",NA
+"724","Year_2023_Week_13","Thu","Nov 30, 2023","8:15","@","Dallas Cowboys","W 41-35","L -9.5","","Seattle Seahawks","O 47.5","Notes",NA
+"725","Year_2023_Week_13","Sun","Dec 3, 2023","1:00","@","Houston Texans","W 22-17","W -3.5","","Denver Broncos","U 47","",NA
+"726","Year_2023_Week_13","Sun","Dec 3, 2023","1:00","","Los Angeles Chargers","W 6-0","W -4.5","@","New England Patriots","U 39","",NA
+"727","Year_2023_Week_13","Sun","Dec 3, 2023","1:00","","Detroit Lions","W 33-28","W -4","@","New Orleans Saints","O 48","",NA
+"728","Year_2023_Week_13","Sun","Dec 3, 2023","1:00","","Atlanta Falcons","W 13-8","W -2","@","New York Jets","U 33","",NA
+"729","Year_2023_Week_13","Sun","Dec 3, 2023","1:00","@","Pittsburgh Steelers","L 10-24","L -6","","Arizona Cardinals","U 41","",NA
+"730","Year_2023_Week_13","Sun","Dec 3, 2023","1:00","","Indianapolis Colts","W 31-28 (OT)","W -1.5","@","Tennessee Titans","O 42.5","",NA
+"731","Year_2023_Week_13","Sun","Dec 3, 2023","1:00","","Miami Dolphins","W 45-15","W -8.5","@","Washington Commanders","O 49.5","",NA
+"732","Year_2023_Week_13","Sun","Dec 3, 2023","4:05","@","Tampa Bay Buccaneers","W 21-18","L -3.5","","Carolina Panthers","O 37","",NA
+"733","Year_2023_Week_13","Sun","Dec 3, 2023","4:25","@","Los Angeles Rams","W 36-19","W -3.5","","Cleveland Browns","O 39.5","",NA
+"734","Year_2023_Week_13","Sun","Dec 3, 2023","4:25","","San Francisco 49ers","W 42-19","W -3","@","Philadelphia Eagles","O 46.5","",NA
+"735","Year_2023_Week_13","Sun","Dec 3, 2023","8:20","","Kansas City Chiefs","L 19-27","L -5.5","@","Green Bay Packers","O 43.5","",NA
+"736","Year_2023_Week_13","Mon","Dec 4, 2023","8:15","@","Jacksonville Jaguars","L 31-34 (OT)","L -10","","Cincinnati Bengals","O 40.5","",NA
+"737","Year_2023_Week_14","Thu","Dec 7, 2023","8:15","@","Pittsburgh Steelers","L 18-21","L -5.5","","New England Patriots","O 30.5","Notes",NA
+"738","Year_2023_Week_14","Sun","Dec 10, 2023","1:00","@","Atlanta Falcons","L 25-29","L -1.5","","Tampa Bay Buccaneers","O 41.5","",NA
+"739","Year_2023_Week_14","Sun","Dec 10, 2023","1:00","@","Baltimore Ravens","W 37-31 (OT)","L -7.5","","Los Angeles Rams","O 42","",NA
+"740","Year_2023_Week_14","Sun","Dec 10, 2023","1:00","","Detroit Lions","L 13-28","L -3","@","Chicago Bears","U 44.5","",NA
+"741","Year_2023_Week_14","Sun","Dec 10, 2023","1:00","@","Cincinnati Bengals","W 34-14","W -3","","Indianapolis Colts","O 44.5","",NA
+"742","Year_2023_Week_14","Sun","Dec 10, 2023","1:00","@","Cleveland Browns","W 31-27","W -2.5","","Jacksonville Jaguars","O 37.5","",NA
+"743","Year_2023_Week_14","Sun","Dec 10, 2023","1:00","@","New Orleans Saints","W 28-6","W -6","","Carolina Panthers","U 38.5","",NA
+"744","Year_2023_Week_14","Sun","Dec 10, 2023","1:00","","Houston Texans","L 6-30","L -3","@","New York Jets","O 33.5","",NA
+"745","Year_2023_Week_14","Sun","Dec 10, 2023","4:05","","Minnesota Vikings","W 3-0","P -3","@","Las Vegas Raiders","U 40.5","",NA
+"746","Year_2023_Week_14","Sun","Dec 10, 2023","4:05","@","San Francisco 49ers","W 28-16","L -14.5","","Seattle Seahawks","U 44.5","",NA
+"747","Year_2023_Week_14","Sun","Dec 10, 2023","4:25","@","Kansas City Chiefs","L 17-20","L -1.5","","Buffalo Bills","U 49","",NA
+"748","Year_2023_Week_14","Sun","Dec 10, 2023","4:25","@","Los Angeles Chargers","L 7-24","L -3","","Denver Broncos","U 44.5","",NA
+"749","Year_2023_Week_14","Sun","Dec 10, 2023","8:20","@","Dallas Cowboys","W 33-13","W -3.5","","Philadelphia Eagles","U 52.5","",NA
+"750","Year_2023_Week_14","Mon","Dec 11, 2023","8:15","@","Miami Dolphins","L 27-28","L -13.5","","Tennessee Titans","O 44.5","",NA
+"751","Year_2023_Week_14","Mon","Dec 11, 2023","8:15","","Green Bay Packers","L 22-24","L -5.5","@","New York Giants","O 37.5","",NA
+"752","Year_2023_Week_15","Thu","Dec 14, 2023","8:15","@","Las Vegas Raiders","W 63-21","W -3","","Los Angeles Chargers","O 36","Notes",NA
+"753","Year_2023_Week_15","Sat","Dec 16, 2023","1:00","@","Cincinnati Bengals","W 27-24 (OT)","P -3","","Minnesota Vikings","O 41.5","",NA
+"754","Year_2023_Week_15","Sat","Dec 16, 2023","4:30","@","Indianapolis Colts","W 30-13","W -1.5","","Pittsburgh Steelers","O 41.5","",NA
+"755","Year_2023_Week_15","Sat","Dec 16, 2023","8:15","@","Detroit Lions","W 42-17","W -5.5","","Denver Broncos","O 49","",NA
+"756","Year_2023_Week_15","Sun","Dec 17, 2023","1:00","","Atlanta Falcons","L 7-9","L -3","@","Carolina Panthers","U 32.5","",NA
+"757","Year_2023_Week_15","Sun","Dec 17, 2023","1:00","@","Cleveland Browns","W 20-17","W -2.5","","Chicago Bears","U 38","",NA
+"758","Year_2023_Week_15","Sun","Dec 17, 2023","1:00","@","Green Bay Packers","L 20-34","L -3.5","","Tampa Bay Buccaneers","O 41.5","",NA
+"759","Year_2023_Week_15","Sun","Dec 17, 2023","1:00","@","Miami Dolphins","W 30-0","W -7","","New York Jets","U 35.5","",NA
+"760","Year_2023_Week_15","Sun","Dec 17, 2023","1:00","","Kansas City Chiefs","W 27-17","P -10","@","New England Patriots","O 39.5","",NA
+"761","Year_2023_Week_15","Sun","Dec 17, 2023","1:00","@","New Orleans Saints","W 24-6","W -6","","New York Giants","U 39.5","",NA
+"762","Year_2023_Week_15","Sun","Dec 17, 2023","1:00","@","Tennessee Titans","L 16-19 (OT)","L -3","","Houston Texans","U 38","",NA
+"763","Year_2023_Week_15","Sun","Dec 17, 2023","4:05","","San Francisco 49ers","W 45-29","W -12","@","Arizona Cardinals","O 48","",NA
+"764","Year_2023_Week_15","Sun","Dec 17, 2023","4:05","@","Los Angeles Rams","W 28-20","W -6.5","","Washington Commanders","U 48.5","",NA
+"765","Year_2023_Week_15","Sun","Dec 17, 2023","4:25","@","Buffalo Bills","W 31-10","W -2.5","","Dallas Cowboys","U 49","",NA
+"766","Year_2023_Week_15","Sun","Dec 17, 2023","8:20","","Baltimore Ravens","W 23-7","W -4","@","Jacksonville Jaguars","U 42","",NA
+"767","Year_2023_Week_15","Mon","Dec 18, 2023","8:15","","Philadelphia Eagles","L 17-20","L -5.5","@","Seattle Seahawks","U 46","",NA
+"768","Year_2023_Week_16","Thu","Dec 21, 2023","8:15","@","Los Angeles Rams","W 30-22","W -4","","New Orleans Saints","O 45.5","Notes",NA
+"769","Year_2023_Week_16","Sat","Dec 23, 2023","4:30","","Cincinnati Bengals","L 11-34","L -3","@","Pittsburgh Steelers","O 39","",NA
+"770","Year_2023_Week_16","Sat","Dec 23, 2023","8:00","","Buffalo Bills","W 24-22","L -12.5","@","Los Angeles Chargers","O 44.5","",NA
+"771","Year_2023_Week_16","Sun","Dec 24, 2023","1:00","@","Atlanta Falcons","W 29-10","W -2.5","","Indianapolis Colts","U 44.5","",NA
+"772","Year_2023_Week_16","Sun","Dec 24, 2023","1:00","","Green Bay Packers","W 33-30","L -3.5","@","Carolina Panthers","O 39.5","",NA
+"773","Year_2023_Week_16","Sun","Dec 24, 2023","1:00","","Cleveland Browns","W 36-22","W -3","@","Houston Texans","O 40","",NA
+"774","Year_2023_Week_16","Sun","Dec 24, 2023","1:00","","Detroit Lions","W 30-24","W -2.5","@","Minnesota Vikings","O 47.5","",NA
+"775","Year_2023_Week_16","Sun","Dec 24, 2023","1:00","@","New York Jets","W 30-28","L -3","","Washington Commanders","O 36.5","",NA
+"776","Year_2023_Week_16","Sun","Dec 24, 2023","1:00","","Seattle Seahawks","W 20-17","P -3","@","Tennessee Titans","U 42.5","",NA
+"777","Year_2023_Week_16","Sun","Dec 24, 2023","4:05","","Jacksonville Jaguars","L 12-30","L -2.5","@","Tampa Bay Buccaneers","U 43.5","",NA
+"778","Year_2023_Week_16","Sun","Dec 24, 2023","4:25","@","Chicago Bears","W 27-16","W -4.5","","Arizona Cardinals","O 42.5","",NA
+"779","Year_2023_Week_16","Sun","Dec 24, 2023","4:25","@","Miami Dolphins","W 22-20","W -1.5","","Dallas Cowboys","U 48.5","",NA
+"780","Year_2023_Week_16","Sun","Dec 24, 2023","8:15","@","Denver Broncos","L 23-26","L -7","","New England Patriots","O 37","",NA
+"781","Year_2023_Week_16","Mon","Dec 25, 2023","1:00","@","Kansas City Chiefs","L 14-20","L -10.5","","Las Vegas Raiders","U 40.5","",NA
+"782","Year_2023_Week_16","Mon","Dec 25, 2023","4:30","@","Philadelphia Eagles","W 33-25","L -14","","New York Giants","O 41.5","",NA
+"783","Year_2023_Week_16","Mon","Dec 25, 2023","8:15","@","San Francisco 49ers","L 19-33","L -6.5","","Baltimore Ravens","O 47","",NA
+"784","Year_2023_Week_17","Thu","Dec 28, 2023","8:15","@","Cleveland Browns","W 37-20","W -7","","New York Jets","O 33.5","Notes",NA
+"785","Year_2023_Week_17","Sat","Dec 30, 2023","8:15","@","Dallas Cowboys","W 20-19","L -5","","Detroit Lions","U 53.5","",NA
+"786","Year_2023_Week_17","Sun","Dec 31, 2023","1:00","@","Baltimore Ravens","W 56-19","W -3.5","","Miami Dolphins","O 46.5","",NA
+"787","Year_2023_Week_17","Sun","Dec 31, 2023","1:00","@","Buffalo Bills","W 27-21","L -14.5","","New England Patriots","O 40","",NA
+"788","Year_2023_Week_17","Sun","Dec 31, 2023","1:00","@","Chicago Bears","W 37-17","W -2.5","","Atlanta Falcons","O 39","",NA
+"789","Year_2023_Week_17","Sun","Dec 31, 2023","1:00","@","Houston Texans","W 26-3","W -5.5","","Tennessee Titans","U 44","",NA
+"790","Year_2023_Week_17","Sun","Dec 31, 2023","1:00","@","Indianapolis Colts","W 23-20","L -3.5","","Las Vegas Raiders","O 42.5","",NA
+"791","Year_2023_Week_17","Sun","Dec 31, 2023","1:00","@","Jacksonville Jaguars","W 26-0","W -3.5","","Carolina Panthers","U 38.5","",NA
+"792","Year_2023_Week_17","Sun","Dec 31, 2023","1:00","","Los Angeles Rams","W 26-25","L -6.5","@","New York Giants","O 43.5","",NA
+"793","Year_2023_Week_17","Sun","Dec 31, 2023","1:00","@","Philadelphia Eagles","L 31-35","L -12.5","","Arizona Cardinals","O 48","",NA
+"794","Year_2023_Week_17","Sun","Dec 31, 2023","1:00","@","Tampa Bay Buccaneers","L 13-23","L -2.5","","New Orleans Saints","U 42.5","",NA
+"795","Year_2023_Week_17","Sun","Dec 31, 2023","1:00","","San Francisco 49ers","W 27-10","W -14","@","Washington Commanders","U 48.5","",NA
+"796","Year_2023_Week_17","Sun","Dec 31, 2023","4:05","@","Seattle Seahawks","L 23-30","L -4.5","","Pittsburgh Steelers","O 40.5","",NA
+"797","Year_2023_Week_17","Sun","Dec 31, 2023","4:25","@","Denver Broncos","W 16-9","W -3.5","","Los Angeles Chargers","U 39.5","",NA
+"798","Year_2023_Week_17","Sun","Dec 31, 2023","4:25","@","Kansas City Chiefs","W 25-17","W -7","","Cincinnati Bengals","U 45.5","",NA
+"799","Year_2023_Week_17","Sun","Dec 31, 2023","8:20","@","Minnesota Vikings","L 10-33","L -1.5","","Green Bay Packers","O 42.5","",NA
+"800","Year_2023_Week_18","Sat","Jan 6, 2024","4:30","","Pittsburgh Steelers","W 17-10","W -3","@","Baltimore Ravens","U 34","Notes",NA
+"801","Year_2023_Week_18","Sat","Jan 6, 2024","8:15","","Houston Texans","W 23-19","W -1.5","@","Indianapolis Colts","U 47.5","",NA
+"802","Year_2023_Week_18","Sun","Jan 7, 2024","1:00","","Tampa Bay Buccaneers","W 9-0","W -4","@","Carolina Panthers","U 36.5","",NA
+"803","Year_2023_Week_18","Sun","Jan 7, 2024","1:00","@","Cincinnati Bengals","W 31-14","W -7.5","","Cleveland Browns","O 37","",NA
+"804","Year_2023_Week_18","Sun","Jan 7, 2024","1:00","@","Detroit Lions","W 30-20","W -3.5","","Minnesota Vikings","O 47.5","",NA
+"805","Year_2023_Week_18","Sun","Jan 7, 2024","1:00","@","New England Patriots","L 3-17","L -2","","New York Jets","U 28.5","",NA
+"806","Year_2023_Week_18","Sun","Jan 7, 2024","1:00","@","New Orleans Saints","W 48-17","W -3","","Atlanta Falcons","O 42","",NA
+"807","Year_2023_Week_18","Sun","Jan 7, 2024","1:00","","Jacksonville Jaguars","L 20-28","L -3.5","@","Tennessee Titans","O 41.5","",NA
+"808","Year_2023_Week_18","Sun","Jan 7, 2024","4:25","","Seattle Seahawks","W 21-20","L -3","@","Arizona Cardinals","U 47.5","",NA
+"809","Year_2023_Week_18","Sun","Jan 7, 2024","4:25","@","Green Bay Packers","W 17-9","W -3","","Chicago Bears","U 46","",NA
+"810","Year_2023_Week_18","Sun","Jan 7, 2024","4:25","@","Las Vegas Raiders","W 27-14","W -3","","Denver Broncos","O 37.5","",NA
+"811","Year_2023_Week_18","Sun","Jan 7, 2024","4:25","@","Los Angeles Chargers","L 12-13","L -3.5","","Kansas City Chiefs","U 35","",NA
+"812","Year_2023_Week_18","Sun","Jan 7, 2024","4:25","","Philadelphia Eagles","L 10-27","L -5","@","New York Giants","U 42.5","",NA
+"813","Year_2023_Week_18","Sun","Jan 7, 2024","4:25","@","San Francisco 49ers","L 20-21","L -5.5","","Los Angeles Rams","O 40","",NA
+"814","Year_2023_Week_18","Sun","Jan 7, 2024","4:25","","Dallas Cowboys","W 38-10","W -13","@","Washington Commanders","O 47.5","",NA
+"815","Year_2023_Week_18","Sun","Jan 7, 2024","8:20","","Buffalo Bills","W 21-14","W -2.5","@","Miami Dolphins","U 48","",NA

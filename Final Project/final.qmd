@@ -1,0 +1,454 @@
+---
+title: "Final Project Proposal"
+author: Giovanni Lunetta & Sam Lutzel
+format: 
+  html:
+    embed-resources: true
+---
+
+```{r}
+library(tidyverse)
+library(tidymodels)
+library(dplyr)
+library(stringr)
+library(tidyr)
+library(ggplot2)
+```
+
+# Data Import
+```{r}
+# read in data
+playoffs_2002_2020 <- read_csv("/Users/giovanni-lunetta/uconn_masters/s2/stat_5125/Final Project/playoffs_2002_2020.csv")
+playoffs_2021_2023 <- read_csv("/Users/giovanni-lunetta/uconn_masters/s2/stat_5125/Final Project/playoffs_2021_2023.csv")
+regular_season_2002_2020 <- read_csv("/Users/giovanni-lunetta/uconn_masters/s2/stat_5125/Final Project/regular_season_2002_2020.csv")
+regular_season_2021_2023 <- read_csv("/Users/giovanni-lunetta/uconn_masters/s2/stat_5125/Final Project/regular_season_2021_2023.csv")
+```
+
+```{r}
+playoffs_2002_2020 |>
+    glimpse()
+
+playoffs_2021_2023 |>
+    glimpse()
+
+regular_season_2002_2020 |>
+    glimpse()
+
+regular_season_2021_2023 |>
+    glimpse()
+```
+
+
+# Data Cleaning
+
+### Cleaning Home & Away Team Columns
+```{r}
+playoffs_2002_2020 <- playoffs_2002_2020 |>
+    rename(Favorite_Home = `...7`, Underdog_Home = `...11`)
+
+playoffs_2021_2023 <- playoffs_2021_2023 |>
+    rename(Favorite_Home = `...7`, Underdog_Home = `...11`)
+
+regular_season_2002_2020 <- regular_season_2002_2020 |>
+    rename(Favorite_Home = `...6`, Underdog_Home = `...10`)
+
+regular_season_2021_2023 <- regular_season_2021_2023 |>
+    rename(Favorite_Home = `...6`, Underdog_Home = `...10`)
+```
+
+```{r}
+process_favorite_home <- function(df) {  
+  df <- df |>
+    mutate(
+      Favorite_Home = case_when(
+        Favorite_Home == "@" ~ "H",
+        is.na(Favorite_Home) ~ "A", # Assumes NA represents 'Away'
+        Favorite_Home == "N" ~ "N",
+        TRUE ~ Favorite_Home # Keeps original values if none of the above conditions are met
+      )
+    )
+  return(df)
+}
+
+playoffs_2002_2020 <- process_favorite_home(playoffs_2002_2020)
+playoffs_2021_2023 <- process_favorite_home(playoffs_2021_2023)
+regular_season_2002_2020 <- process_favorite_home(regular_season_2002_2020)
+regular_season_2021_2023 <- process_favorite_home(regular_season_2021_2023)
+```
+
+```{r}
+# playoffs_2002_2020 |>
+#     glimpse()
+
+# playoffs_2021_2023 |>
+#     glimpse()
+
+# regular_season_2002_2020 |>
+#     glimpse()
+
+# regular_season_2021_2023 |>
+#     glimpse()
+```
+
+### Renaming source Column for Playoffs
+
+```{r}
+process_playoffs <- function(df) {
+  df |>
+    mutate(
+      Season = as.integer(str_extract(source, "\\d{4}")), # Extract the year and convert to integer
+      `Week/Round` = Round # Rename Round to Week/Round
+    ) |>
+    select(-source, -Round) # Drop the original source and Round columns
+}
+
+playoffs_2002_2020 <- process_playoffs(playoffs_2002_2020)
+playoffs_2021_2023 <- process_playoffs(playoffs_2021_2023)
+```
+
+```{r}
+playoffs_2002_2020 |>
+    glimpse()
+
+playoffs_2021_2023 |>
+    glimpse()
+```
+
+### Seperating source Column for Regular Season
+
+```{r}
+process_regular_season <- function(df) {
+  df |>
+    mutate(
+      Season = as.integer(str_extract(source, "\\d{4}")), # Extract the year and convert to integer
+      `Week/Round` = str_extract(source, "Week_\\d+") # Extract the week
+    ) |>
+    select(-source) # Drop the original source column
+}
+
+regular_season_2002_2020 <- process_regular_season(regular_season_2002_2020)
+regular_season_2021_2023 <- process_regular_season(regular_season_2021_2023)
+```
+
+```{r}
+regular_season_2002_2020 |>
+    glimpse()
+
+regular_season_2021_2023 |>
+    glimpse()
+```
+
+### Removing Unnecessary Columns
+```{r}
+regular_season_2002_2020 <- regular_season_2002_2020 |>
+    select(-c(Notes, ...14))
+
+regular_season_2021_2023 <- regular_season_2021_2023 |>
+    select(-c(Notes, ...14))
+```
+
+```{r}
+# playoffs_2002_2020 |>
+#     glimpse()
+
+# playoffs_2021_2023 |>
+#     glimpse()
+
+# regular_season_2002_2020 |>
+#     glimpse()
+
+# regular_season_2021_2023 |>
+#     glimpse()
+```
+
+### Clean Score Column
+
+```{r}
+transform_scores <- function(df) {
+  df <- df |>
+    mutate(
+      Result = case_when(
+        str_detect(Score, "^W") ~ "W", # Mark 'W' if Favorite won
+        str_detect(Score, "^L") ~ "L", # Mark 'L' if Favorite lost
+        str_detect(Score, "^T") ~ "T", # Mark 'T' if there was a tie
+        TRUE ~ NA_character_ # NA for any unexpected format
+      ),
+      Overtime = if_else(str_detect(Score, "\\(OT\\)"), 1, 0), # 1 if there's an OT, else 0
+      Favorite_Score = as.integer(str_extract(Score, "(?<=^\\w\\s)[0-9]+")), # Extract Favorite score
+      Underdog_Score = as.integer(str_extract(Score, "(?<=-)[0-9]+\\b")), # Extract Underdog score
+      Total_Points = Favorite_Score + Underdog_Score # Sum of Favorite and Underdog scores
+    )
+  return(df)
+}
+
+
+playoffs_2002_2020 <- transform_scores(playoffs_2002_2020)
+playoffs_2021_2023 <- transform_scores(playoffs_2021_2023)
+regular_season_2002_2020 <- transform_scores(regular_season_2002_2020)
+regular_season_2021_2023 <- transform_scores(regular_season_2021_2023)
+```
+
+```{r}
+# playoffs_2002_2020 |>
+#     glimpse()
+
+# playoffs_2021_2023 |>
+#     glimpse()
+
+# regular_season_2002_2020 |>
+#     glimpse()
+
+# regular_season_2021_2023 |>
+#     glimpse()
+```
+
+### Cleaning Over/Under Column
+
+```{r}
+process_over_under <- function(df) {
+  
+  df <- df |>
+    mutate(
+      Over_Under_Result = case_when(
+        str_detect(`Over/Under`, "^O") ~ "Over",
+        str_detect(`Over/Under`, "^U") ~ "Under",
+        str_detect(`Over/Under`, "^P") ~ "Push",
+        TRUE ~ NA_character_ # Handles unexpected cases
+      ),
+      Betting_Line = as.numeric(str_extract(`Over/Under`, "[0-9]+\\.?[0-9]*")) # Extracts the numeric betting line
+    )
+  return(df)
+}
+
+playoffs_2002_2020 <- process_over_under(playoffs_2002_2020)
+playoffs_2021_2023 <- process_over_under(playoffs_2021_2023)
+regular_season_2002_2020 <- process_over_under(regular_season_2002_2020)
+regular_season_2021_2023 <- process_over_under(regular_season_2021_2023)
+```
+
+```{r}
+# playoffs_2002_2020 |>
+#     glimpse()
+
+# playoffs_2021_2023 |>
+#     glimpse()
+
+# regular_season_2002_2020 |>
+#     glimpse()
+
+# regular_season_2021_2023 |>
+#     glimpse()
+```
+
+### Cleaning Spread Column
+
+```{r}
+process_spread <- function(df) {
+  df <- df |>
+    mutate(
+      Favorite_Cover = case_when(
+        str_detect(Spread, "^W") ~ "Covered",
+        str_detect(Spread, "^L") ~ "Failed",
+        str_detect(Spread, "^P") ~ "Push",
+        TRUE ~ NA_character_ # Handles unexpected cases
+      ),
+      Spread_Value = as.numeric(str_extract(Spread, "-?[0-9]+\\.?[0-9]*")) # Extracts the numeric spread value
+    ) |>
+    mutate(Spread_Value = if_else(is.na(Spread_Value), 0, Spread_Value)) # Impute missing Spread_Value with 0
+
+  return(df)
+}
+
+playoffs_2002_2020 <- process_spread(playoffs_2002_2020)
+playoffs_2021_2023 <- process_spread(playoffs_2021_2023)
+regular_season_2002_2020 <- process_spread(regular_season_2002_2020)
+regular_season_2021_2023 <- process_spread(regular_season_2021_2023)
+```
+
+```{r}
+# playoffs_2002_2020 |>
+#     glimpse()
+
+# playoffs_2021_2023 |>
+#     glimpse()
+
+# regular_season_2002_2020 |>
+#     glimpse()
+
+# regular_season_2021_2023 |>
+#     glimpse()
+```
+
+### Remove Seed From Playoff Team Names
+
+```{r}
+process_playoff_teams <- function(df) {
+  library(dplyr)
+  library(stringr)
+  
+  df <- df |>
+    rename(Favorite = `Favorite(Seed)`, Underdog = `Underdog(Seed)`) |>
+    mutate(
+      Favorite = str_replace(Favorite, " \\(\\d+\\)$", ""), # Removes the seed, e.g., " (4)"
+      Underdog = str_replace(Underdog, " \\(\\d+\\)$", "")  # Same for Underdog
+    )
+  
+  return(df)
+}
+
+playoffs_2002_2020 <- process_playoff_teams(playoffs_2002_2020)
+playoffs_2021_2023 <- process_playoff_teams(playoffs_2021_2023)
+```
+
+### Adding Playoff Indicator
+
+```{r}
+playoffs_2002_2020 <- playoffs_2002_2020 |>
+    mutate(Playoff_Game = 1)
+
+playoffs_2021_2023 <- playoffs_2021_2023 |>
+    mutate(Playoff_Game = 1)
+
+regular_season_2002_2020 <- regular_season_2002_2020 |>
+    mutate(Playoff_Game = 0)
+
+regular_season_2021_2023 <- regular_season_2021_2023 |>
+    mutate(Playoff_Game = 0)
+```
+
+```{r}
+# playoffs_2002_2020 |>
+#     glimpse()
+
+# playoffs_2021_2023 |>
+#     glimpse()
+
+# regular_season_2002_2020 |>
+#     glimpse()
+
+# regular_season_2021_2023 |>
+#     glimpse()
+```
+
+### Cleaning Time Related Columns
+
+```{r}
+library(dplyr)
+library(lubridate)
+
+time_process <- function(df) {
+  df <- df |>
+    mutate(Date = mdy(Date), # Convert Date from 'Sep 9, 2021' to Date object
+           `Time (ET)` = hms(`Time (ET)`)
+           )
+  return(df)
+}
+
+playoffs_2002_2020 <- time_process(playoffs_2002_2020)
+playoffs_2021_2023 <- time_process(playoffs_2021_2023)
+regular_season_2002_2020 <- time_process(regular_season_2002_2020)
+regular_season_2021_2023 <- time_process(regular_season_2021_2023)
+```
+### Removing Cleaned Columns
+
+```{r}
+remove_processed_columns <- function(df) {
+  df <- df |>
+    select(-c(Score, Spread, Underdog_Home, `Over/Under`))
+  return(df)
+}
+
+playoffs_2002_2020 <- remove_processed_columns(playoffs_2002_2020)
+playoffs_2021_2023 <- remove_processed_columns(playoffs_2021_2023)
+regular_season_2002_2020 <- remove_processed_columns(regular_season_2002_2020)
+regular_season_2021_2023 <- remove_processed_columns(regular_season_2021_2023)
+```
+
+```{r}
+playoffs_2002_2020 |>
+    glimpse()
+
+playoffs_2021_2023 |>
+    glimpse()
+
+regular_season_2002_2020 |>
+    glimpse()
+
+regular_season_2021_2023 |>
+    glimpse()
+```
+
+### Merging Data
+
+```{r}
+# Merge all datasets into one
+all_games_df <- bind_rows(playoffs_2002_2020, playoffs_2021_2023, regular_season_2002_2020, regular_season_2021_2023)
+
+all_games_df |>
+    glimpse()
+```
+
+### Renaming Mismatched Team Names
+
+```{r}
+# Step 1: Create a mapping of old team names to their current names
+team_name_updates <- c(
+  'San Diego Chargers' = 'Los Angeles Chargers',
+  'Oakland Raiders' = 'Las Vegas Raiders',
+  'St Louis Rams' = 'Los Angeles Rams',
+  'Washington Redskins' = 'Washington Commanders',
+  'Washington Football Team' = 'Washington Commanders'
+)
+
+# Step 2: Update the names in both the "Favorite" and "Underdog" columns
+all_games_df$Favorite <- plyr::mapvalues(all_games_df$Favorite, from = names(team_name_updates), to = team_name_updates)
+all_games_df$Underdog <- plyr::mapvalues(all_games_df$Underdog, from = names(team_name_updates), to = team_name_updates)
+
+write_csv(all_games_df, "all_games_df.csv")
+```
+
+# Data Exploration
+
+```{r}
+combined_df <- all_games_df |>
+  mutate(Cover_Favorite = case_when(
+    Favorite_Cover == 'Covered' ~ 'Covered',
+    Favorite_Cover == 'Failed' ~ 'Failed',
+    Favorite_Cover == 'Push' ~ 'Push',
+    TRUE ~ NA_character_), # Handles unexpected cases
+         Cover_Underdog = case_when(
+    Favorite_Cover == 'Covered' ~ 'Failed',
+    Favorite_Cover == 'Failed' ~ 'Covered',
+    Favorite_Cover == 'Push' ~ 'Push',
+    TRUE ~ NA_character_)) |>
+  select(Team_Favorite = Favorite, Cover_Favorite, Team_Underdog = Underdog, Cover_Underdog) |>
+  pivot_longer(cols = c(Team_Favorite, Team_Underdog),
+               names_to = "Role",
+               values_to = "Team",
+               names_prefix = "Team_") |>
+  pivot_longer(cols = c(Cover_Favorite, Cover_Underdog),
+               names_to = "Cover_Status",
+               values_to = "Cover",
+               names_prefix = "Cover_") |>
+  filter(Role == str_remove(Cover_Status, "_[a-zA-Z]+")) |>
+  select(-Cover_Status)
+
+# Calculate the percentages including 'Push'
+cover_percentages <- combined_df |>
+  group_by(Team, Role) |>
+  summarise(Covered = sum(Cover == 'Covered') / n() * 100,
+            Failed = sum(Cover == 'Failed') / n() * 100,
+            Push = sum(Cover == 'Push') / n() * 100) |>
+  ungroup()
+
+cover_percentages
+
+# Plot the data in a dual barplot for each team
+ggplot(cover_percentages, aes(x = Team, y = Covered, fill = Role)) +
+  geom_bar(stat = 'identity', position = 'dodge') +
+  labs(title = 'Percentage of Games Covered by Team and Role',
+       x = 'Team',
+       y = 'Percentage') +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
