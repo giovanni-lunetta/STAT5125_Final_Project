@@ -317,17 +317,17 @@ regular_season_2021_2023 <- regular_season_2021_2023 |>
 ```
 
 ```{r}
-# playoffs_2002_2020 |>
-#     glimpse()
+playoffs_2002_2020 |>
+    glimpse()
 
-# playoffs_2021_2023 |>
-#     glimpse()
+playoffs_2021_2023 |>
+    glimpse()
 
-# regular_season_2002_2020 |>
-#     glimpse()
+regular_season_2002_2020 |>
+    glimpse()
 
-# regular_season_2021_2023 |>
-#     glimpse()
+regular_season_2021_2023 |>
+    glimpse()
 ```
 
 ### Cleaning Time Related Columns
@@ -348,7 +348,37 @@ playoffs_2002_2020 <- time_process(playoffs_2002_2020)
 playoffs_2021_2023 <- time_process(playoffs_2021_2023)
 regular_season_2002_2020 <- time_process(regular_season_2002_2020)
 regular_season_2021_2023 <- time_process(regular_season_2021_2023)
+
+# If Time (ET) is at time 1H change to 1, if 2H change to 2, etc.
+playoffs_2002_2020 <- playoffs_2002_2020 |>
+    mutate(`Time (ET)` = hour(`Time (ET)`))
+
+playoffs_2021_2023 <- playoffs_2021_2023 |>
+    mutate(`Time (ET)` = hour(`Time (ET)`))
+
+regular_season_2002_2020 <- regular_season_2002_2020 |>
+    mutate(`Time (ET)` = hour(`Time (ET)`))
+
+regular_season_2021_2023 <- regular_season_2021_2023 |>
+    mutate(`Time (ET)` = hour(`Time (ET)`))
 ```
+
+
+
+```{r}
+playoffs_2002_2020 |>
+    glimpse()
+
+playoffs_2021_2023 |>
+    glimpse()
+
+regular_season_2002_2020 |>
+    glimpse()
+
+regular_season_2021_2023 |>
+    glimpse()
+```
+
 ### Removing Cleaned Columns
 
 ```{r}
@@ -564,3 +594,191 @@ Over_Hit_Spread_Cover |>
     theme_bw() +
 theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ```
+
+# Modeling
+
+```{r}
+all_games_df |>
+    glimpse()
+
+library(tidyverse)
+library(tidymodels)
+theme_set(theme_bw())
+tidymodels_prefer()
+
+df <- read_csv("/Users/giovanni-lunetta/uconn_masters/s2/stat_5125/Final Project/all_games_df.csv")
+
+# Remove ...1 and Date columns
+
+df <- df |>
+    select(-c(...1, Date))
+
+# subset data to include all columns exceot Favorite_Score, Underdog_Score, Total_Points, Over_Under_Result, Result
+
+df_model <- df |>
+    select(-c(Favorite_Score, Underdog_Score, Total_Points, Over_Under_Result, Result))
+
+# df_model <- df_model |>
+#   mutate(df = factor(df))
+
+df_model |>
+  glimpse()
+```
+
+```{r}
+```{r}
+# YOUR CODE HERE
+logistic_reg_spec <- logistic_reg() |> 
+  set_engine("glm") |>
+  set_mode("classification")
+
+recipe_A <- recipe(Favorite_Cover ~ ., data = df_model) |> 
+  step_normalize(all_numeric_predictors()) |>
+  step_other(origin, threshold = 0.01) |>
+  step_dummy(all_nominal_predictors(), -all_outcomes())
+
+workflow_A <- workflow() |> 
+  add_model(logistic_reg_spec) |> 
+  add_recipe(recipe_A)
+```
+
+```{r}
+# YOUR CODE HERE
+# Define the logistic regression model with lasso penalty
+logistic_lasso_spec <- logistic_reg(penalty = 0.1, mixture = 1) |> 
+  set_engine("glmnet") |> 
+  set_mode("classification")
+
+recipe_B <- recipe_A
+
+workflow_B <- workflow() |> 
+  add_model(logistic_lasso_spec) |> 
+  add_recipe(recipe_B)
+```
+
+```{r}
+# YOUR CODE HERE
+knn_spec <- nearest_neighbor(neighbors = 10) |> 
+  set_engine("kknn") |> 
+  set_mode("classification")
+
+recipe_C <- recipe_A
+
+workflow_C <- workflow() |> 
+  add_model(knn_spec) |> 
+  add_recipe(recipe_C)
+```
+
+```{r}
+# YOUR CODE HERE
+random_forest_spec <- rand_forest() |> 
+  set_engine("ranger") |> 
+  set_mode("classification")
+
+recipe_D <- recipe_A
+
+workflow_D <- workflow() |>
+  add_model(random_forest_spec) |> 
+  add_recipe(recipe_D)
+```
+
+```{r}
+# YOUR CODE HERE
+set.seed(123)
+data_split <- initial_split(df_model, prop = 0.7, strata = NULL)
+
+training_set <- training(data_split)
+testing_set <- testing(data_split)
+```
+
+```{r}
+# YOUR CODE HERE
+set.seed(123)
+val_set <- validation_split(training_set, prop = 0.8, strata = Favorite_Cover)
+```
+
+```{r}
+# YOUR CODE HERE
+set.seed(123)
+vfold_set <- vfold_cv(training_set, v = 5, strata = Favorite_Cover)
+```
+
+```{r}
+# YOUR CODE HERE
+set.seed(123)
+mc_set <- bootstraps(training_set, times = 10, strata = Favorite_Cover)
+```
+
+```{r}
+# YOUR CODE HERE
+set.seed(123)
+bootstrap_set <- bootstraps(training_set, times = 10)
+```
+
+```{r}
+# YOUR CODE HERE
+workflow_names <- c("glm_logistic", 
+                    "glm_lasso",
+                    "knn_5",
+                    "rf")
+
+workflow_objects <- list(workflow_A,
+                         workflow_B,
+                         workflow_C,
+                         workflow_D)
+
+workflows_tbl <- tibble(work_names = workflow_names,
+                        work_objects = workflow_objects) 
+```
+
+```{r}
+set.seed(123)
+workflows_tbl <-  workflows_tbl |>
+  rowwise() |>
+  mutate(fits = list(fit(work_objects, 
+                         training_set)))
+```
+
+### TEST SET FOR LATER PROBLEM
+```{r}
+workflows_tbl_predictions <- workflows_tbl |>
+  mutate(pred_class = list(predict(fits,
+                                   testing_set,
+                                   type = "class"))) |>
+  mutate(pred_prob = list(predict(fits,
+                                  testing_set,
+                                  type = "prob")))
+
+workflows_tbl_predictions <- workflows_tbl_predictions |>
+  mutate(predictions = list(bind_cols(pred_class, pred_prob))) |>
+  select(-c(pred_class, pred_prob))
+
+predictions_tbl  <- workflows_tbl_predictions |>
+  select(work_names, 
+         predictions) |>
+  unnest(cols = c(predictions)) |>
+  cbind(Favorite_Cover = testing_set |>
+          pull(Favorite_Cover))
+
+predictions_tbl |>
+  glimpse()
+
+roc_all <- predictions_tbl |>
+  group_by(work_names) |>
+  roc_curve(truth = Favorite_Cover,
+            .pred_TRUE,
+            event_level = "second")
+
+roc_all |>
+  ggplot(aes(x = 1- specificity, 
+             y = sensitivity, 
+             color = work_names)) +
+  geom_path()
+
+roc_auc_all <- predictions_tbl |>
+  group_by(work_names) |>
+  roc_auc(truth = Favorite_Cover,
+          .pred_TRUE,
+          event_level = "second")
+
+roc_auc_all
