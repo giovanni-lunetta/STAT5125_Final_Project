@@ -1,0 +1,885 @@
+---
+title: "Final Project Proposal"
+author: Giovanni Lunetta & Sam Lutzel
+format: 
+  html:
+    embed-resources: true
+---
+
+# Web Scraping
+
+We begin by web scraping sportsoddshistory.com. This website contains historical NFL betting odds data from most of the NFL's. We will scrape the data for seasons from 2002 to 2023, the season that most recently finished. The data includes betting odds for regular season games and playoff games, including the Super Bowl. The data includes information such as the date, time, teams, betting lines, over/under, and the final score of the game.
+
+Because the seasons from 2002 to 2020 have 17 weeks in the regular season, while the seasons from 2021 to 2023 have 18 weeks, we will scrape the data separately for these two groups of seasons. We will also scrape the playoff data separately for the two groups of seasons.
+
+```{r}
+library(rvest)
+
+# Initialize an empty list to store Week 1 to Week 17
+regular_season_2002_2020 <- list()
+
+# Loop through years 2002 to 2020
+for(year in 2002:2020) {
+  # Construct URL for each year
+  url <- paste0("https://www.sportsoddshistory.com/nfl-game-season/?y=", year)
+  
+  # Read all tables from the URL
+  betting <- url |>
+    read_html() |>
+    html_table()
+  
+  # Loop through tables from 7 to 23 (Week 1 to Week 17)
+  for(week in 7:23) {
+    # Name the list element with the corresponding year and week for easier identification
+    week_name <- paste0("Year_", year, "_Week_", week - 6)
+    
+    # Store the table in the list
+    regular_season_2002_2020[[week_name]] <- betting[[week]]
+  }
+}
+```
+
+```{r}
+# Initialize an empty list to store Week 1 to Week 18
+regular_season_2021_2023 <- list()
+
+# Loop through years 2021 to 2023
+for(year in 2021:2023) {
+  # Construct URL for each year
+  url <- paste0("https://www.sportsoddshistory.com/nfl-game-season/?y=", year)
+  
+  # Read all tables from the URL
+  betting <- url |>
+    read_html() |>
+    html_table()
+  
+  # Loop through tables from 7 to 24 (Week 1 to Week 18)
+  for(week in 7:24) {
+    # Name the list element with the corresponding year and week for easier identification
+    week_name <- paste0("Year_", year, "_Week_", week - 6)
+    
+    # Store the table in the list
+    regular_season_2021_2023[[week_name]] <- betting[[week]]
+  }
+}
+```
+
+```{r}
+# Initialize an empty list to store Playoff data
+playoffs_2002_2020 <- list()
+
+# Loop through years 2002 to 2020
+for(year in 2002:2020) {
+  # Construct URL for each year
+  url <- paste0("https://www.sportsoddshistory.com/nfl-game-season/?y=", year)
+  
+  # Read all tables from the URL
+  betting <- url |>
+    read_html() |>
+    html_table()
+  
+  # Directly access the table for Playoffs (table 24)
+  playoffs_name <- paste0("Year_", year, "_Playoffs")
+  
+  # Store the Playoff table in the list
+  playoffs_2002_2020[[playoffs_name]] <- betting[[24]]
+}
+```
+
+```{r}
+# Initialize an empty list to store Playoff data
+playoffs_2021_2023 <- list()
+
+# Loop through years 2021 to 2023
+for(year in 2021:2023) {
+  # Construct URL for each year
+  url <- paste0("https://www.sportsoddshistory.com/nfl-game-season/?y=", year)
+  
+  # Read all tables from the URL
+  betting <- url |>
+    read_html() |>
+    html_table()
+  
+  # Directly access the table for Playoffs (table 25)
+  playoffs_name <- paste0("Year_", year, "_Playoffs")
+  
+  # Store the Playoff table in the list
+  playoffs_2021_2023[[playoffs_name]] <- betting[[25]]
+}
+```
+
+After scraping the data we bind the rows of each list which stacks the data into a single dataframe. We then write the data to a csv file.
+```{r}
+library(dplyr)
+
+# For regular season 2002 to 2020
+regular_season_2002_2020_df <- bind_rows(regular_season_2002_2020, .id = "source")
+
+# For regular season 2021 to 2023
+regular_season_2021_2023_df <- bind_rows(regular_season_2021_2023, .id = "source")
+
+# For playoffs 2002 to 2020
+playoffs_2002_2020_df <- bind_rows(playoffs_2002_2020, .id = "source")
+
+# For playoffs 2021 to 2023
+playoffs_2021_2023_df <- bind_rows(playoffs_2021_2023, .id = "source")
+```
+
+```{r}
+write.csv(regular_season_2002_2020_df, "regular_season_2002_2020.csv")
+write.csv(regular_season_2021_2023_df, "regular_season_2021_2023.csv")
+write.csv(playoffs_2002_2020_df, "playoffs_2002_2020.csv")
+write.csv(playoffs_2021_2023_df, "playoffs_2021_2023.csv")
+```
+
+# Data Import
+
+Now that we have scraped the data, we will import the data into R and begin the data cleaning process.
+
+Here are the libraries we will be using for this project:
+```{r}
+library(tidyverse)
+library(tidymodels)
+library(dplyr)
+library(stringr)
+library(tidyr)
+library(ggplot2)
+```
+
+```{r}
+# read in data
+playoffs_2002_2020 <- read_csv("/Users/giovanni-lunetta/uconn_masters/s2/stat_5125/Final Project/playoffs_2002_2020.csv")
+playoffs_2021_2023 <- read_csv("/Users/giovanni-lunetta/uconn_masters/s2/stat_5125/Final Project/playoffs_2021_2023.csv")
+regular_season_2002_2020 <- read_csv("/Users/giovanni-lunetta/uconn_masters/s2/stat_5125/Final Project/regular_season_2002_2020.csv")
+regular_season_2021_2023 <- read_csv("/Users/giovanni-lunetta/uconn_masters/s2/stat_5125/Final Project/regular_season_2021_2023.csv")
+```
+
+```{r}
+playoffs_2002_2020 |>
+    glimpse()
+
+playoffs_2021_2023 |>
+    glimpse()
+
+regular_season_2002_2020 |>
+    glimpse()
+
+regular_season_2021_2023 |>
+    glimpse()
+```
+
+# Data Cleaning
+
+### Cleaning Home & Away Team Columns
+
+The first step in the data cleaning process is to rename the columns for the home and away teams. We will rename the columns to `Favorite_Home` and `Underdog_Home` for both the playoffs and regular season data.
+```{r}
+playoffs_2002_2020 <- playoffs_2002_2020 |>
+    rename(Favorite_Home = `...7`, Underdog_Home = `...11`)
+
+playoffs_2021_2023 <- playoffs_2021_2023 |>
+    rename(Favorite_Home = `...7`, Underdog_Home = `...11`)
+
+regular_season_2002_2020 <- regular_season_2002_2020 |>
+    rename(Favorite_Home = `...6`, Underdog_Home = `...10`)
+
+regular_season_2021_2023 <- regular_season_2021_2023 |>
+    rename(Favorite_Home = `...6`, Underdog_Home = `...10`)
+```
+
+```{r}
+process_favorite_home <- function(df) {  
+  df <- df |>
+    mutate(
+      Favorite_Home = case_when(
+        Favorite_Home == "@" ~ "H",
+        is.na(Favorite_Home) ~ "A", # Assumes NA represents 'Away'
+        Favorite_Home == "N" ~ "N",
+        TRUE ~ Favorite_Home # Keeps original values if none of the above conditions are met
+      )
+    )
+  return(df)
+}
+
+playoffs_2002_2020 <- process_favorite_home(playoffs_2002_2020)
+playoffs_2021_2023 <- process_favorite_home(playoffs_2021_2023)
+regular_season_2002_2020 <- process_favorite_home(regular_season_2002_2020)
+regular_season_2021_2023 <- process_favorite_home(regular_season_2021_2023)
+```
+
+### Renaming source Column for Playoffs
+
+```{r}
+process_playoffs <- function(df) {
+  df |>
+    mutate(
+      Season = as.integer(str_extract(source, "\\d{4}")), # Extract the year and convert to integer
+      `Week/Round` = Round # Rename Round to Week/Round
+    ) |>
+    select(-source, -Round) # Drop the original source and Round columns
+}
+
+playoffs_2002_2020 <- process_playoffs(playoffs_2002_2020)
+playoffs_2021_2023 <- process_playoffs(playoffs_2021_2023)
+```
+
+```{r}
+playoffs_2002_2020 |>
+    glimpse()
+
+playoffs_2021_2023 |>
+    glimpse()
+```
+
+### Seperating source Column for Regular Season
+
+```{r}
+process_regular_season <- function(df) {
+  df |>
+    mutate(
+      Season = as.integer(str_extract(source, "\\d{4}")), # Extract the year and convert to integer
+      `Week/Round` = str_extract(source, "Week_\\d+") # Extract the week
+    ) |>
+    select(-source) # Drop the original source column
+}
+
+regular_season_2002_2020 <- process_regular_season(regular_season_2002_2020)
+regular_season_2021_2023 <- process_regular_season(regular_season_2021_2023)
+```
+
+```{r}
+regular_season_2002_2020 |>
+    glimpse()
+
+regular_season_2021_2023 |>
+    glimpse()
+```
+
+### Removing Unnecessary Columns
+```{r}
+regular_season_2002_2020 <- regular_season_2002_2020 |>
+    select(-c(Notes, ...14))
+
+regular_season_2021_2023 <- regular_season_2021_2023 |>
+    select(-c(Notes, ...14))
+```
+
+### Clean Score Column
+
+```{r}
+transform_scores <- function(df) {
+  df <- df |>
+    mutate(
+      Result = case_when(
+        str_detect(Score, "^W") ~ "W", # Mark 'W' if Favorite won
+        str_detect(Score, "^L") ~ "L", # Mark 'L' if Favorite lost
+        str_detect(Score, "^T") ~ "T", # Mark 'T' if there was a tie
+        TRUE ~ NA_character_ # NA for any unexpected format
+      ),
+      Overtime = if_else(str_detect(Score, "\\(OT\\)"), 1, 0), # 1 if there's an OT, else 0
+      Favorite_Score = as.integer(str_extract(Score, "(?<=^\\w\\s)[0-9]+")), # Extract Favorite score
+      Underdog_Score = as.integer(str_extract(Score, "(?<=-)[0-9]+\\b")), # Extract Underdog score
+      Total_Points = Favorite_Score + Underdog_Score # Sum of Favorite and Underdog scores
+    )
+  return(df)
+}
+
+
+playoffs_2002_2020 <- transform_scores(playoffs_2002_2020)
+playoffs_2021_2023 <- transform_scores(playoffs_2021_2023)
+regular_season_2002_2020 <- transform_scores(regular_season_2002_2020)
+regular_season_2021_2023 <- transform_scores(regular_season_2021_2023)
+```
+
+```{r}
+# playoffs_2002_2020 |>
+#     glimpse()
+
+# playoffs_2021_2023 |>
+#     glimpse()
+
+# regular_season_2002_2020 |>
+#     glimpse()
+
+# regular_season_2021_2023 |>
+#     glimpse()
+```
+
+### Cleaning Over/Under Column
+
+```{r}
+process_over_under <- function(df) {
+  
+  df <- df |>
+    mutate(
+      Over_Under_Result = case_when(
+        str_detect(`Over/Under`, "^O") ~ "Over",
+        str_detect(`Over/Under`, "^U") ~ "Under",
+        str_detect(`Over/Under`, "^P") ~ "Push",
+        TRUE ~ NA_character_ # Handles unexpected cases
+      ),
+      Betting_Line = as.numeric(str_extract(`Over/Under`, "[0-9]+\\.?[0-9]*")) # Extracts the numeric betting line
+    )
+  return(df)
+}
+
+playoffs_2002_2020 <- process_over_under(playoffs_2002_2020)
+playoffs_2021_2023 <- process_over_under(playoffs_2021_2023)
+regular_season_2002_2020 <- process_over_under(regular_season_2002_2020)
+regular_season_2021_2023 <- process_over_under(regular_season_2021_2023)
+```
+
+```{r}
+# playoffs_2002_2020 |>
+#     glimpse()
+
+# playoffs_2021_2023 |>
+#     glimpse()
+
+# regular_season_2002_2020 |>
+#     glimpse()
+
+# regular_season_2021_2023 |>
+#     glimpse()
+```
+
+### Cleaning Spread Column
+
+```{r}
+process_spread <- function(df) {
+  df <- df |>
+    mutate(
+      Favorite_Cover = case_when(
+        str_detect(Spread, "^W") ~ "Covered",
+        str_detect(Spread, "^L") ~ "Failed",
+        str_detect(Spread, "^P") ~ "Push",
+        TRUE ~ NA_character_ # Handles unexpected cases
+      ),
+      Spread_Value = as.numeric(str_extract(Spread, "-?[0-9]+\\.?[0-9]*")) # Extracts the numeric spread value
+    ) |>
+    mutate(Spread_Value = if_else(is.na(Spread_Value), 0, Spread_Value)) # Impute missing Spread_Value with 0
+
+  return(df)
+}
+
+playoffs_2002_2020 <- process_spread(playoffs_2002_2020)
+playoffs_2021_2023 <- process_spread(playoffs_2021_2023)
+regular_season_2002_2020 <- process_spread(regular_season_2002_2020)
+regular_season_2021_2023 <- process_spread(regular_season_2021_2023)
+```
+
+```{r}
+# playoffs_2002_2020 |>
+#     glimpse()
+
+# playoffs_2021_2023 |>
+#     glimpse()
+
+# regular_season_2002_2020 |>
+#     glimpse()
+
+# regular_season_2021_2023 |>
+#     glimpse()
+```
+
+### Remove Seed From Playoff Team Names
+
+```{r}
+process_playoff_teams <- function(df) {
+  library(dplyr)
+  library(stringr)
+  
+  df <- df |>
+    rename(Favorite = `Favorite(Seed)`, Underdog = `Underdog(Seed)`) |>
+    mutate(
+      Favorite = str_replace(Favorite, " \\(\\d+\\)$", ""), # Removes the seed, e.g., " (4)"
+      Underdog = str_replace(Underdog, " \\(\\d+\\)$", "")  # Same for Underdog
+    )
+  
+  return(df)
+}
+
+playoffs_2002_2020 <- process_playoff_teams(playoffs_2002_2020)
+playoffs_2021_2023 <- process_playoff_teams(playoffs_2021_2023)
+```
+
+### Adding Playoff Indicator
+
+```{r}
+playoffs_2002_2020 <- playoffs_2002_2020 |>
+    mutate(Playoff_Game = 1)
+
+playoffs_2021_2023 <- playoffs_2021_2023 |>
+    mutate(Playoff_Game = 1)
+
+regular_season_2002_2020 <- regular_season_2002_2020 |>
+    mutate(Playoff_Game = 0)
+
+regular_season_2021_2023 <- regular_season_2021_2023 |>
+    mutate(Playoff_Game = 0)
+```
+
+```{r}
+playoffs_2002_2020 |>
+    glimpse()
+
+playoffs_2021_2023 |>
+    glimpse()
+
+regular_season_2002_2020 |>
+    glimpse()
+
+regular_season_2021_2023 |>
+    glimpse()
+```
+
+### Cleaning Time Related Columns
+
+```{r}
+library(dplyr)
+library(lubridate)
+
+time_process <- function(df) {
+  df <- df |>
+    mutate(Date = mdy(Date), # Convert Date from 'Sep 9, 2021' to Date object
+           `Time (ET)` = hms(`Time (ET)`)
+           )
+  return(df)
+}
+
+playoffs_2002_2020 <- time_process(playoffs_2002_2020)
+playoffs_2021_2023 <- time_process(playoffs_2021_2023)
+regular_season_2002_2020 <- time_process(regular_season_2002_2020)
+regular_season_2021_2023 <- time_process(regular_season_2021_2023)
+
+# If Time (ET) is at time 1H change to 1, if 2H change to 2, etc.
+playoffs_2002_2020 <- playoffs_2002_2020 |>
+    mutate(`Time (ET)` = hour(`Time (ET)`))
+
+playoffs_2021_2023 <- playoffs_2021_2023 |>
+    mutate(`Time (ET)` = hour(`Time (ET)`))
+
+regular_season_2002_2020 <- regular_season_2002_2020 |>
+    mutate(`Time (ET)` = hour(`Time (ET)`))
+
+regular_season_2021_2023 <- regular_season_2021_2023 |>
+    mutate(`Time (ET)` = hour(`Time (ET)`))
+```
+
+
+
+```{r}
+playoffs_2002_2020 |>
+    glimpse()
+
+playoffs_2021_2023 |>
+    glimpse()
+
+regular_season_2002_2020 |>
+    glimpse()
+
+regular_season_2021_2023 |>
+    glimpse()
+```
+
+### Removing Cleaned Columns
+
+```{r}
+remove_processed_columns <- function(df) {
+  df <- df |>
+    select(-c(Score, Spread, Underdog_Home, `Over/Under`))
+  return(df)
+}
+
+playoffs_2002_2020 <- remove_processed_columns(playoffs_2002_2020)
+playoffs_2021_2023 <- remove_processed_columns(playoffs_2021_2023)
+regular_season_2002_2020 <- remove_processed_columns(regular_season_2002_2020)
+regular_season_2021_2023 <- remove_processed_columns(regular_season_2021_2023)
+```
+
+```{r}
+playoffs_2002_2020 |>
+    glimpse()
+
+playoffs_2021_2023 |>
+    glimpse()
+
+regular_season_2002_2020 |>
+    glimpse()
+
+regular_season_2021_2023 |>
+    glimpse()
+```
+
+### Merging Data
+
+```{r}
+# Merge all datasets into one
+all_games_df <- bind_rows(playoffs_2002_2020, playoffs_2021_2023, regular_season_2002_2020, regular_season_2021_2023)
+
+all_games_df |>
+    glimpse()
+```
+
+### Renaming Mismatched Team Names
+
+```{r}
+# Step 1: Create a mapping of old team names to their current names
+team_name_updates <- c(
+  'San Diego Chargers' = 'Los Angeles Chargers',
+  'Oakland Raiders' = 'Las Vegas Raiders',
+  'St Louis Rams' = 'Los Angeles Rams',
+  'Washington Redskins' = 'Washington Commanders',
+  'Washington Football Team' = 'Washington Commanders'
+)
+
+# Step 2: Update the names in both the "Favorite" and "Underdog" columns
+all_games_df$Favorite <- plyr::mapvalues(all_games_df$Favorite, from = names(team_name_updates), to = team_name_updates)
+all_games_df$Underdog <- plyr::mapvalues(all_games_df$Underdog, from = names(team_name_updates), to = team_name_updates)
+```
+
+### Renaming Superbowls to Just Superbowl
+
+```{r}
+all_games_df <- all_games_df |>
+    mutate(`Week/Round` = if_else(str_detect(`Week/Round`, "Super"), "Super Bowl", `Week/Round`))
+```
+
+### Removing Game Instances on Friday, Wednesday, and Tuesday
+
+```{r}
+all_games_df <- all_games_df |>
+    filter(Day != "Fri" & Day != "Wed" & Day != "Tue")
+
+write_csv(all_games_df, "all_games_df.csv")
+```
+
+# Data Exploration
+
+```{r}
+combined_df <- all_games_df |>
+  mutate(Cover_Favorite = case_when(
+    Favorite_Cover == 'Covered' ~ 'Covered',
+    Favorite_Cover == 'Failed' ~ 'Failed',
+    Favorite_Cover == 'Push' ~ 'Push',
+    TRUE ~ NA_character_), # Handles unexpected cases
+         Cover_Underdog = case_when(
+    Favorite_Cover == 'Covered' ~ 'Failed',
+    Favorite_Cover == 'Failed' ~ 'Covered',
+    Favorite_Cover == 'Push' ~ 'Push',
+    TRUE ~ NA_character_)) |>
+  select(Team_Favorite = Favorite, Cover_Favorite, Team_Underdog = Underdog, Cover_Underdog) |>
+  pivot_longer(cols = c(Team_Favorite, Team_Underdog),
+               names_to = "Role",
+               values_to = "Team",
+               names_prefix = "Team_") |>
+  pivot_longer(cols = c(Cover_Favorite, Cover_Underdog),
+               names_to = "Cover_Status",
+               values_to = "Cover",
+               names_prefix = "Cover_") |>
+  filter(Role == str_remove(Cover_Status, "_[a-zA-Z]+")) |>
+  select(-Cover_Status)
+
+# Calculate the percentages including 'Push'
+cover_percentages <- combined_df |>
+  group_by(Team, Role) |>
+  summarise(Covered = sum(Cover == 'Covered') / n() * 100,
+            Failed = sum(Cover == 'Failed') / n() * 100,
+            Push = sum(Cover == 'Push') / n() * 100) |>
+  ungroup()
+
+cover_percentages
+
+# Plot the data in a dual barplot for each team
+ggplot(cover_percentages, aes(x = Team, y = Covered, fill = Role)) +
+  geom_bar(stat = 'identity', position = 'dodge') +
+  labs(title = 'Percentage of Games Covered by Team and Role',
+       x = 'Team',
+       y = 'Percentage') +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+```{r}
+library(ggwordcloud)
+
+# Obtain the number of times each team has played in the playoffs
+top_playoffs <- all_games_df |>
+  filter(Playoff_Game == "1") |>
+  group_by(Favorite) |>
+  summarize(term_frequency = n()) |>
+  arrange(desc(term_frequency))
+
+# Create a word cloud of the top playoff teams
+top_playoffs |>
+  ggplot() +
+  geom_text_wordcloud_area(aes(label = Favorite,
+                           size = term_frequency)) +
+  scale_size_area(max_size = 50) +
+  theme_bw()
+```
+
+```{r}
+library(ggplot2)
+
+# Lets make a column called Favorite_Cover_Percentage by grouping the spread
+Favorite_Cover_Percentage <- all_games_df |>
+  group_by(Spread_Value) |>
+  mutate(Favorite_Cover = if_else(Favorite_Cover == "Covered", 1, 0)) |>
+  mutate(Favorite_Cover_Percentage = sum(Favorite_Cover) / n())
+
+# Create a line plot with the y-axis being percentage the favorite team covers and the x-axis the spread of the game
+Favorite_Cover_Percentage |>
+  ggplot(aes(x = Spread_Value, y = Favorite_Cover_Percentage)) +
+  geom_line() +
+  labs(title = "Favorite Cover Percentage by Spread",
+       x = "Spread",
+       y = "Favorite Cover Percentage") +
+  geom_hline(yintercept = 0.5, linetype = "dashed") +
+  scale_x_continuous(breaks = seq(-30, 0, 2)) +
+  theme_bw()
+```
+
+```{r}
+# Lets make a column called Favorite_Win_Percentage by grouping the spread
+Favorite_Win_Percentage <- all_games_df |>
+  group_by(Spread_Value) |>
+  filter(Result != "T") |>
+  mutate(Favorite_Win = if_else(Result == "W", 1, 0)) |>
+  mutate(Favorite_Win_Percentage = sum(Favorite_Win) / n()) 
+
+# Create a line plot with the y-axis being percentage the favorite team wins and the x-axis the spread of the game
+Favorite_Win_Percentage |>
+  ggplot(aes(x = Spread_Value, y = Favorite_Win_Percentage)) +
+  geom_line() +
+  labs(title = "Favorite Win Percentage by Spread",
+       x = "Spread",
+       y = "Favorite Win Percentage") +
+  scale_x_continuous(breaks = seq(-30, 0, 2)) +
+  geom_vline(xintercept = -7.5, linetype = "dashed") +
+  theme_bw()
+```
+
+```{r}
+library(ggplot2)
+
+# Lets make a column called Favorite_Cover_Percentage by grouping the spread
+Favorite_Cover_Percentage_Week <- all_games_df |>
+    filter(str_detect(`Week/Round`, "Week")) |>
+    group_by(Spread_Value) |>
+    mutate(Favorite_Cover = if_else(Favorite_Cover == "Covered", 1, 0)) |>
+    mutate(Favorite_Cover_Percentage = sum(Favorite_Cover) / n()) 
+
+# Lets calculate the variance of the Favorite_Cover_Percentage per Week. Therefore it should be 18 variances for 18 weeks. Make a new dataset called Variance_By_Week
+Variance_By_Week <- Favorite_Cover_Percentage_Week |>
+    group_by(`Week/Round`) |>
+    summarize(variance = var(Favorite_Cover_Percentage)) |>
+    mutate(`Week/Round` = str_remove(`Week/Round`, "Week_")) |>
+    mutate(`Week/Round` = as.numeric(`Week/Round`)) |>
+    arrange(`Week/Round`)
+
+Variance_By_Week
+
+# Create a line plot with the y-axis being variance of the percentage the favorite team covers and the x-axis the week of the game
+Variance_By_Week |>
+    ggplot(aes(x = `Week/Round`, y = variance, group = 1)) +
+    geom_line() +
+    labs(title = "Variance of Favorite Cover Percentage by Week",
+         x = "Week Number",
+         y = "Variance of Favorite Cover Percentage") +
+    scale_y_continuous(limits = c(0, 0.0035)) +
+    theme_bw()
+```
+
+```{r}
+library(ggplot2)
+
+Over_Hit_Spread_Cover <- all_games_df |>
+    filter(Over_Under_Result != "Push") |>
+    group_by(Favorite, Over_Under_Result) |>
+    mutate(Favorite_Cover = if_else(Favorite_Cover == "Covered", 1, 0)) |>
+    mutate(Favorite_Cover_Percentage = sum(Favorite_Cover) / n()) |>
+    select(Over_Under_Result, Favorite_Cover_Percentage, Favorite)
+
+# Make a bar plot of the percentage the favorite team covers the spread by the Favorite team, there should be two bars per team, one for the Over and one for the Under
+Over_Hit_Spread_Cover |>
+    ggplot(aes(x = Favorite, y = Favorite_Cover_Percentage, fill = Over_Under_Result)) +
+    geom_bar(stat = "identity", position = "dodge") +
+    labs(title = "Favorite Cover Percentage by Over/Under Result",
+         x = "Favorite",
+         y = "Favorite Cover Percentage") +
+    theme_bw() +
+theme(axis.text.x = element_text(angle = 90, hjust = 1))
+```
+
+# Modeling
+
+Now that we have all of our data prepared, lets focus on the modeling aspect. For modelling, we will be predicting whethjer or not the favorite team will cover the spread. In order to do this, we cannot know the result of the game, the score of either team, total number of points scored by both team, or the over under result. Therefore, we will first be removing these columns from our dataset.
+
+```{r}
+all_games_df |>
+    glimpse()
+
+library(tidyverse)
+library(tidymodels)
+theme_set(theme_bw())
+tidymodels_prefer()
+
+df <- read_csv("/Users/giovanni-lunetta/uconn_masters/s2/stat_5125/Final Project/all_games_df.csv")
+
+df <- df |>
+    select(-c(...1, Date))
+
+df_model <- df |>
+    select(-c(Favorite_Score, Underdog_Score, Total_Points, Over_Under_Result, Result))
+
+df_model <- df_model |>
+  mutate(
+    Day = as.character(Day),
+    `Time (ET)` = as.numeric(`Time (ET)`),
+    Favorite_Home = as.character(Favorite_Home),
+    Favorite = as.character(Favorite),
+    Underdog = as.character(Underdog),
+    Season = as.numeric(Season),
+    `Week/Round` = as.character(`Week/Round`),
+    Overtime = as.numeric(Overtime),
+    Betting_Line = as.numeric(Betting_Line),
+    Favorite_Cover = as.character(Favorite_Cover),
+    Spread_Value = as.numeric(Spread_Value),
+    Playoff_Game = as.numeric(Playoff_Game)
+  )
+
+df_model <- df_model |>
+  mutate(Favorite_Cover = ifelse(Favorite_Cover == "Push", "Failed", Favorite_Cover))
+
+df_model |>
+  glimpse()
+
+```
+
+As for the models, we will begin by splitting the data into training and testing sets. This is important as we want to train our models on a subset of the data and then test the models on a different subset of the data. This will allow us to see how well our models generalize to new data.
+
+```{r}
+set.seed(123)
+data_split <- initial_split(df_model, prop = 0.7, strata = NULL)
+
+training_set <- training(data_split)
+testing_set <- testing(data_split)
+```
+
+Furthermore, we will also be splitting the training set into a training and validation set. This will allow us to tune and compare our models on the validation set. The method for obtaining the validation set that will be used is the bootstrap method.
+
+```{r}
+set.seed(123)
+bootstrap_set <- bootstraps(training_set, times = 10)
+```
+
+Now lets obtain our workflows for each of our models. The following models will be used and assessed:
+
+1. A logistic regression, fit using maximum likelihood
+2. A logistic regression, fit using the lasso with a varying penalty
+3. A k-nearest neighbors model, fit with varying number of neighbors
+4. A random forest model, fit using ranger
+
+These workflows are defined below.
+
+```{r}
+log_maxlikelihood <- logistic_reg() |> 
+  set_engine("glm") |>
+  set_mode("classification")
+
+recipe <- recipe(Favorite_Cover ~ ., data = training_set) |> 
+  step_normalize(all_numeric_predictors()) |>
+  step_dummy(all_nominal_predictors(), -all_outcomes())
+
+workflow_A <- workflow() |> 
+  add_model(log_maxlikelihood) |> 
+  add_recipe(recipe)
+```
+
+```{r}
+log_lasso <- logistic_reg(penalty = 0.1) |>
+  set_engine("glmnet") |>
+  set_mode("classification")
+
+workflow_B <- workflow() |>
+  add_recipe(recipe) |>
+  add_model(log_lasso)
+```
+
+```{r}
+knn <- nearest_neighbor(neighbors = 10) |>
+  set_mode("classification") |>
+  set_engine("kknn")
+
+workflow_C <- workflow() |>
+  add_recipe(recipe) |>
+  add_model(knn)
+```
+
+```{r}
+library(ranger)
+rfr <- rand_forest() |>
+  set_mode("classification") |>
+  set_engine("ranger")
+
+workflow_D <- workflow() |>
+  add_recipe(recipe) |>
+  add_model(rfr)
+```
+
+Now that we have our workflows, we can create a workflow object for each model, making it easy to fit each model.
+
+```{r}
+# YOUR CODE HERE
+workflow_names <- c("glm_logistic", 
+                    "glm_lasso",
+                    "knn",
+                    "rf")
+
+workflow_objects <- list(workflow_A,
+                         workflow_B,
+                         workflow_C,
+                         workflow_D)
+
+workflows_tbl <- tibble(work_names = workflow_names,
+                        work_objects = workflow_objects) 
+```
+
+With the workflow object in place, we can fit our training set to each of the models.
+
+```{r}
+set.seed(123)
+workflows_tbl <-  workflows_tbl |>
+  rowwise() |>
+  mutate(fits = list(fit(work_objects, 
+                         training_set)))
+```
+
+With all models fitted with the training data, we can now utilize our validation set to assess the performance of each model and pick the best one. This will be done by defining a metric set consisting of area under the ROC curve, accuracy, and F1 score.
+
+```{r}
+metric_set <- metric_set(roc_auc)
+```
+
+```{r}
+workflows_bootstrap <- workflows_tbl |>
+  mutate(fits = list(fit_resamples(work_objects,
+                                   bootstrap_set,
+                                   metrics = metric_set))) |>
+  mutate(metrics = list(collect_metrics(fits)))
+```
+
+With all model predictions calculated, lets visualize which model performed the best.
+
+```{r}
+# YOUR CODE HERE
+workflows_bootstrap |>
+  select(c(work_names,
+           metrics)) |>
+  unnest(metrics) |>
+  ggplot(aes(y = work_names,
+             fill = work_names,
+             x = std_err)) +
+  geom_col()
+```
