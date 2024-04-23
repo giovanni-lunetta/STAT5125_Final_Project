@@ -433,6 +433,20 @@ team_name_updates <- c(
 # Step 2: Update the names in both the "Favorite" and "Underdog" columns
 all_games_df$Favorite <- plyr::mapvalues(all_games_df$Favorite, from = names(team_name_updates), to = team_name_updates)
 all_games_df$Underdog <- plyr::mapvalues(all_games_df$Underdog, from = names(team_name_updates), to = team_name_updates)
+```
+
+### Renaming Superbowls to Just Superbowl
+
+```{r}
+all_games_df <- all_games_df |>
+    mutate(`Week/Round` = if_else(str_detect(`Week/Round`, "Super"), "Super Bowl", `Week/Round`))
+```
+
+### Removing Game Instances on Friday, Wednesday, and Tuesday
+
+```{r}
+all_games_df <- all_games_df |>
+    filter(Day != "Fri" & Day != "Wed" & Day != "Tue")
 
 write_csv(all_games_df, "all_games_df.csv")
 ```
@@ -597,6 +611,8 @@ theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
 # Modeling
 
+Now that we have all of our data prepared, lets focus on the modeling aspect. For modelling, we will be predicting whethjer or not the favorite team will cover the spread. In order to do this, we cannot know the result of the game, the score of either team, total number of points scored by both team, or the over under result. Therefore, we will first be removing these columns from our dataset.
+
 ```{r}
 all_games_df |>
     glimpse()
@@ -608,82 +624,39 @@ tidymodels_prefer()
 
 df <- read_csv("/Users/giovanni-lunetta/uconn_masters/s2/stat_5125/Final Project/all_games_df.csv")
 
-# Remove ...1 and Date columns
-
 df <- df |>
     select(-c(...1, Date))
-
-# subset data to include all columns exceot Favorite_Score, Underdog_Score, Total_Points, Over_Under_Result, Result
 
 df_model <- df |>
     select(-c(Favorite_Score, Underdog_Score, Total_Points, Over_Under_Result, Result))
 
-# df_model <- df_model |>
-#   mutate(df = factor(df))
+df_model <- df_model |>
+  mutate(
+    Day = as.character(Day),
+    `Time (ET)` = as.numeric(`Time (ET)`),
+    Favorite_Home = as.character(Favorite_Home),
+    Favorite = as.character(Favorite),
+    Underdog = as.character(Underdog),
+    Season = as.numeric(Season),
+    `Week/Round` = as.character(`Week/Round`),
+    Overtime = as.numeric(Overtime),
+    Betting_Line = as.numeric(Betting_Line),
+    Favorite_Cover = as.character(Favorite_Cover),
+    Spread_Value = as.numeric(Spread_Value),
+    Playoff_Game = as.numeric(Playoff_Game)
+  )
+
+df_model <- df_model |>
+  mutate(Favorite_Cover = ifelse(Favorite_Cover == "Push", "Failed", Favorite_Cover))
 
 df_model |>
   glimpse()
+
 ```
 
-```{r}
-```{r}
-# YOUR CODE HERE
-logistic_reg_spec <- logistic_reg() |> 
-  set_engine("glm") |>
-  set_mode("classification")
-
-recipe_A <- recipe(Favorite_Cover ~ ., data = df_model) |> 
-  step_normalize(all_numeric_predictors()) |>
-  step_other(origin, threshold = 0.01) |>
-  step_dummy(all_nominal_predictors(), -all_outcomes())
-
-workflow_A <- workflow() |> 
-  add_model(logistic_reg_spec) |> 
-  add_recipe(recipe_A)
-```
+As for the models, we will begin by splitting the data into training and testing sets. This is important as we want to train our models on a subset of the data and then test the models on a different subset of the data. This will allow us to see how well our models generalize to new data.
 
 ```{r}
-# YOUR CODE HERE
-# Define the logistic regression model with lasso penalty
-logistic_lasso_spec <- logistic_reg(penalty = 0.1, mixture = 1) |> 
-  set_engine("glmnet") |> 
-  set_mode("classification")
-
-recipe_B <- recipe_A
-
-workflow_B <- workflow() |> 
-  add_model(logistic_lasso_spec) |> 
-  add_recipe(recipe_B)
-```
-
-```{r}
-# YOUR CODE HERE
-knn_spec <- nearest_neighbor(neighbors = 10) |> 
-  set_engine("kknn") |> 
-  set_mode("classification")
-
-recipe_C <- recipe_A
-
-workflow_C <- workflow() |> 
-  add_model(knn_spec) |> 
-  add_recipe(recipe_C)
-```
-
-```{r}
-# YOUR CODE HERE
-random_forest_spec <- rand_forest() |> 
-  set_engine("ranger") |> 
-  set_mode("classification")
-
-recipe_D <- recipe_A
-
-workflow_D <- workflow() |>
-  add_model(random_forest_spec) |> 
-  add_recipe(recipe_D)
-```
-
-```{r}
-# YOUR CODE HERE
 set.seed(123)
 data_split <- initial_split(df_model, prop = 0.7, strata = NULL)
 
@@ -691,35 +664,74 @@ training_set <- training(data_split)
 testing_set <- testing(data_split)
 ```
 
-```{r}
-# YOUR CODE HERE
-set.seed(123)
-val_set <- validation_split(training_set, prop = 0.8, strata = Favorite_Cover)
-```
+Furthermore, we will also be splitting the training set into a training and validation set. This will allow us to tune and compare our models on the validation set. The method for obtaining the validation set that will be used is the bootstrap method.
 
 ```{r}
-# YOUR CODE HERE
-set.seed(123)
-vfold_set <- vfold_cv(training_set, v = 5, strata = Favorite_Cover)
-```
-
-```{r}
-# YOUR CODE HERE
-set.seed(123)
-mc_set <- bootstraps(training_set, times = 10, strata = Favorite_Cover)
-```
-
-```{r}
-# YOUR CODE HERE
 set.seed(123)
 bootstrap_set <- bootstraps(training_set, times = 10)
 ```
+
+Now lets obtain our workflows for each of our models. The following models will be used and assessed:
+
+1. A logistic regression, fit using maximum likelihood
+2. A logistic regression, fit using the lasso with a varying penalty
+3. A k-nearest neighbors model, fit with varying number of neighbors
+4. A random forest model, fit using ranger
+
+These workflows are defined below.
+
+```{r}
+log_maxlikelihood <- logistic_reg() |> 
+  set_engine("glm") |>
+  set_mode("classification")
+
+recipe <- recipe(Favorite_Cover ~ ., data = training_set) |> 
+  step_normalize(all_numeric_predictors()) |>
+  step_dummy(all_nominal_predictors(), -all_outcomes())
+
+workflow_A <- workflow() |> 
+  add_model(log_maxlikelihood) |> 
+  add_recipe(recipe)
+```
+
+```{r}
+log_lasso <- logistic_reg(penalty = 0.1) |>
+  set_engine("glmnet") |>
+  set_mode("classification")
+
+workflow_B <- workflow() |>
+  add_recipe(recipe) |>
+  add_model(log_lasso)
+```
+
+```{r}
+knn <- nearest_neighbor(neighbors = 10) |>
+  set_mode("classification") |>
+  set_engine("kknn")
+
+workflow_C <- workflow() |>
+  add_recipe(recipe) |>
+  add_model(knn)
+```
+
+```{r}
+library(ranger)
+rfr <- rand_forest() |>
+  set_mode("classification") |>
+  set_engine("ranger")
+
+workflow_D <- workflow() |>
+  add_recipe(recipe) |>
+  add_model(rfr)
+```
+
+Now that we have our workflows, we can create a workflow object for each model, making it easy to fit each model.
 
 ```{r}
 # YOUR CODE HERE
 workflow_names <- c("glm_logistic", 
                     "glm_lasso",
-                    "knn_5",
+                    "knn",
                     "rf")
 
 workflow_objects <- list(workflow_A,
@@ -731,6 +743,8 @@ workflows_tbl <- tibble(work_names = workflow_names,
                         work_objects = workflow_objects) 
 ```
 
+With the workflow object in place, we can fit our training set to each of the models.
+
 ```{r}
 set.seed(123)
 workflows_tbl <-  workflows_tbl |>
@@ -739,46 +753,30 @@ workflows_tbl <-  workflows_tbl |>
                          training_set)))
 ```
 
-### TEST SET FOR LATER PROBLEM
+With all models fitted with the training data, we can now utilize our validation set to assess the performance of each model and pick the best one. This will be done by defining a metric set consisting of area under the ROC curve, accuracy, and F1 score.
+
 ```{r}
-workflows_tbl_predictions <- workflows_tbl |>
-  mutate(pred_class = list(predict(fits,
-                                   testing_set,
-                                   type = "class"))) |>
-  mutate(pred_prob = list(predict(fits,
-                                  testing_set,
-                                  type = "prob")))
+metric_set <- metric_set(roc_auc)
+```
 
-workflows_tbl_predictions <- workflows_tbl_predictions |>
-  mutate(predictions = list(bind_cols(pred_class, pred_prob))) |>
-  select(-c(pred_class, pred_prob))
+```{r}
+workflows_bootstrap <- workflows_tbl |>
+  mutate(fits = list(fit_resamples(work_objects,
+                                   bootstrap_set,
+                                   metrics = metric_set))) |>
+  mutate(metrics = list(collect_metrics(fits)))
+```
 
-predictions_tbl  <- workflows_tbl_predictions |>
-  select(work_names, 
-         predictions) |>
-  unnest(cols = c(predictions)) |>
-  cbind(Favorite_Cover = testing_set |>
-          pull(Favorite_Cover))
+With all model predictions calculated, lets visualize which model performed the best.
 
-predictions_tbl |>
-  glimpse()
-
-roc_all <- predictions_tbl |>
-  group_by(work_names) |>
-  roc_curve(truth = Favorite_Cover,
-            .pred_TRUE,
-            event_level = "second")
-
-roc_all |>
-  ggplot(aes(x = 1- specificity, 
-             y = sensitivity, 
-             color = work_names)) +
-  geom_path()
-
-roc_auc_all <- predictions_tbl |>
-  group_by(work_names) |>
-  roc_auc(truth = Favorite_Cover,
-          .pred_TRUE,
-          event_level = "second")
-
-roc_auc_all
+```{r}
+# YOUR CODE HERE
+workflows_bootstrap |>
+  select(c(work_names,
+           metrics)) |>
+  unnest(metrics) |>
+  ggplot(aes(y = work_names,
+             fill = work_names,
+             x = std_err)) +
+  geom_col()
+```
