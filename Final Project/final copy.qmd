@@ -18,10 +18,10 @@ library(ggplot2)
 # Data Import
 ```{r}
 # read in data
-playoffs_2002_2020 <- read_csv("/Users/giovanni-lunetta/uconn_masters/s2/stat_5125/Final Project/playoffs_2002_2020.csv")
-playoffs_2021_2023 <- read_csv("/Users/giovanni-lunetta/uconn_masters/s2/stat_5125/Final Project/playoffs_2021_2023.csv")
-regular_season_2002_2020 <- read_csv("/Users/giovanni-lunetta/uconn_masters/s2/stat_5125/Final Project/regular_season_2002_2020.csv")
-regular_season_2021_2023 <- read_csv("/Users/giovanni-lunetta/uconn_masters/s2/stat_5125/Final Project/regular_season_2021_2023.csv")
+playoffs_2002_2020 <- read_csv("playoffs_2002_2020.csv")
+playoffs_2021_2023 <- read_csv("playoffs_2021_2023.csv")
+regular_season_2002_2020 <- read_csv("regular_season_2002_2020.csv")
+regular_season_2021_2023 <- read_csv("regular_season_2021_2023.csv")
 ```
 
 ```{r}
@@ -622,7 +622,7 @@ library(tidymodels)
 theme_set(theme_bw())
 tidymodels_prefer()
 
-df <- read_csv("/Users/giovanni-lunetta/uconn_masters/s2/stat_5125/Final Project/all_games_df.csv")
+df <- read_csv("all_games_df.csv")
 
 df <- df |>
     select(-c(...1, Date))
